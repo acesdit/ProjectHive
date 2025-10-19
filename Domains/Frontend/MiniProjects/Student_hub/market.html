@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Campus Marketplace</title>
+  <link rel="stylesheet" href="market.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Campus Marketplace</h1>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="form-group role-group">
+        <label>Choose Your Role:</label>
+        <div class="radio-options">
+          <label><input type="radio" name="role" value="buyer" /> Buyer</label>
+          <label><input type="radio" name="role" value="seller" /> Seller</label>
+        </div>
+      </div>
+
+      <button type="submit">Login</button>
+    </form>
+  </div>
+
+  <!-- Seller Upload Section -->
+  <div class="seller-form" id="sellerForm" style="display:none;">
+    <h2>Upload Item to Sell</h2>
+    <form id="uploadForm">
+      <input type="text" id="itemTitle" placeholder="Item title (e.g., Graphics Kit)" required />
+      <textarea id="itemDescription" placeholder="Description" required></textarea>
+      <input type="text" id="itemPrice" placeholder="Price (e.g., ₹250)" required />
+      <button type="submit">Add Item</button>
+    </form>
+  </div>
+
+  <!-- Book & Product List -->
+  <div class="book-list" id="bookList"></div>
+
+  <!-- Chatbox -->
+  <div class="chatbox-container">
+    <div class="chatbox">
+      <div class="chat-messages" id="chatMessages"></div>
+      <input type="text" id="chatInput" placeholder="Type a message..." disabled />
+      <button id="sendBtn" disabled>Send</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

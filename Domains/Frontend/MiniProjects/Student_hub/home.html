@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Student Resource Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+
+    nav {
+      background-color: #1e1e1e;
+      padding: 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .nav-title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .nav-buttons {
+      display: flex;
+      gap: 20px;
+    }
+
+    .btn {
+      width: 6.5em;
+      height: 2.3em;
+      background: black;
+      color: white;
+      border: none;
+      border-radius: 0.625em;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+    }
+
+    .btn:hover {
+      color: black;
+    }
+
+    .btn:after {
+      content: "";
+      background: white;
+      position: absolute;
+      z-index: -1;
+      left: -20%;
+      right: -20%;
+      top: 0;
+      bottom: 0;
+      transform: skewX(-45deg) scale(0, 1);
+      transition: all 0.5s;
+    }
+
+    .btn:hover:after {
+      transform: skewX(-45deg) scale(1, 1);
+    }
+
+    .btn-cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 10px;
+      border: none;
+      background-color: transparent;
+      position: relative;
+    }
+
+    .btn-cart::after {
+      content: attr(data-quantity);
+      position: absolute;
+      font-size: 15px;
+      color: white;
+      opacity: 0;
+      visibility: hidden;
+      transition: .2s linear;
+      top: 115%;
+    }
+
+    .icon-cart {
+      width: 24.38px;
+      height: 30.52px;
+      transition: .2s linear;
+    }
+
+    .icon-cart path {
+      fill: rgb(240, 8, 8);
+      transition: .2s linear;
+    }
+
+    .btn-cart:hover > .icon-cart {
+      transform: scale(1.2);
+    }
+
+    .btn-cart:hover > .icon-cart path {
+      fill: rgb(186, 34, 233);
+    }
+
+    .btn-cart:hover::after {
+      visibility: visible;
+      opacity: 1;
+      top: 105%;
+    }
+
+    .container {
+      text-align: center;
+      padding: 80px 20px 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #cfcfcf;
+      margin-bottom: 40px;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    /* Study Materials Button - Glass Effect */
+    .glass-btn {
+      padding: 15px 40px;
+      border: none;
+      font-size: 1.1em;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.1);
+      color: white;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 4px 30px rgba(0, 255, 204, 0.2);
+      border: 1px solid rgba(0, 255, 204, 0.3);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .glass-btn:hover {
+      background: rgba(0, 255, 204, 0.2);
+      transform: scale(1.05);
+    }
+
+    /* Marketplace Button - Neon Border */
+    .neon-btn {
+      padding: 15px 40px;
+      font-size: 1.1em;
+      background: transparent;
+      color: #ff4081;
+      border: 2px solid #ff4081;
+      border-radius: 8px;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .neon-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background: #ff4081;
+      z-index: -1;
+      transition: 0.4s ease;
+    }
+
+    .neon-btn:hover::before {
+      width: 100%;
+    }
+
+    .neon-btn:hover {
+      color: black;
+    }
+
+    footer {
+      background-color: #1e1e1e;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+      color: #aaa;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<!-- Particle Background -->
+<div id="particles-js"></div>
+
+<body>
+
+  <nav>
+    <div class="nav-title">Student Resource Hub</div>
+    <div class="nav-buttons">
+      <a href="studymaterial.html">
+        <button class="btn">Study</button>
+      </a>
+      <a href="market.html">
+        <button class="btn-cart" data-quantity="0">
+          <svg class="icon-cart" viewBox="0 0 24.38 30.52" xmlns="http://www.w3.org/2000/svg">
+            <title>icon-cart</title>
+            <path transform="translate(-3.62 -0.85)" d="M28,27.3L26.24,7.51a.75.75,0,0,0-.76-.69h-3.7a6,6,0,0,0-12,0H6.13a.76.76,0,0,0-.76.69L3.62,27.3v.07a4.29,4.29,0,0,0,4.52,4H23.48a4.29,4.29,0,0,0,4.52-4ZM15.81,2.37a4.47,4.47,0,0,1,4.46,4.45H11.35a4.47,4.47,0,0,1,4.46-4.45Zm7.67,27.48H8.13a2.79,2.79,0,0,1-3-2.45..." />
+          </svg>
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Welcome to Student Resource Hub</h1>
+    <p>Your one-stop destination for all student needs.<br>
+    Explore study materials and a vibrant marketplace to empower your academic journey.</p>
+
+    <div class="button-row">
+      <a href="studymaterial.html"><button class="glass-btn">Study Materials</button></a>
+      <a href="market.html"><button class="neon-btn">Marketplace</button></a>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Student Resource Hub. All rights reserved.
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script>
+  particlesJS("particles-js", {
+    "particles": {
+      "number": { "value": 80 },
+      "color": { "value": "#ffffff" },
+      "shape": {
+        "type": "circle",
+        "stroke": { "width": 0, "color": "#000000" }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4
+      }
+    },
+    "interactivity": {
+      "events": {
+        "onhover": { "enable": true, "mode": "repulse" },
+        "onclick": { "enable": true, "mode": "push" }
+      },
+      "modes": {
+        "repulse": { "distance": 100 },
+        "push": { "particles_nb": 4 }
+      }
+    },
+    "retina_detect": true
+  });
+</script>
+
+  <script src="//code.tidio.co/vypnhemsxohrhlrtsbkgiblobskpjgvf.js" async></script>
+</body>
+</html>

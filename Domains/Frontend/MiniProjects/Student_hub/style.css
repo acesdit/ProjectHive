@@ -1,0 +1,221 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Navbar */
+  nav {
+    background-color: #1e1e1e;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #00ffcc;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Default button */
+  .btn {
+    width: 6.5em;
+    height: 2.3em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    color: black;
+  }
+  
+  .btn:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+  }
+  
+  .btn:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+  }
+  
+  /* Cart button */
+  .btn-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    position: relative;
+  }
+  
+  .btn-cart::after {
+    content: attr(data-quantity);
+    position: absolute;
+    font-size: 15px;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: .2s linear;
+    top: 115%;
+  }
+  
+  .icon-cart {
+    width: 24.38px;
+    height: 30.52px;
+    transition: .2s linear;
+  }
+  
+  .icon-cart path {
+    fill: rgb(240, 8, 8);
+    transition: .2s linear;
+  }
+  
+  .btn-cart:hover > .icon-cart {
+    transform: scale(1.2);
+  }
+  
+  .btn-cart:hover > .icon-cart path {
+    fill: rgb(186, 34, 233);
+  }
+  
+  .btn-cart:hover::after {
+    visibility: visible;
+    opacity: 1;
+    top: 105%;
+  }
+  
+  /* Body content */
+  .container {
+    text-align: center;
+    padding: 80px 20px 40px;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2em;
+    color: #cfcfcf;
+    margin-bottom: 40px;
+  }
+  
+  .button-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+  
+  /* Study Materials Button - Glass Effect */
+  .glass-btn {
+    padding: 15px 40px;
+    border: none;
+    font-size: 1.1em;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 30px rgba(0, 255, 204, 0.2);
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .glass-btn:hover {
+    background: rgba(0, 255, 204, 0.2);
+    transform: scale(1.05);
+  }
+  
+  /* Marketplace Button - Neon Border */
+  .neon-btn {
+    padding: 15px 40px;
+    font-size: 1.1em;
+    background: transparent;
+    color: #ff4081;
+    border: 2px solid #ff4081;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .neon-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #ff4081;
+    z-index: -1;
+    transition: 0.4s ease;
+  }
+  
+  .neon-btn:hover::before {
+    width: 100%;
+  }
+  
+  .neon-btn:hover {
+    color: black;
+  }
+  
+  #particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: #121212;
+  }
+  
+
+  /* Footer */
+  footer {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    color: #aaa;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Anchor links */
+  a {
+    text-decoration: none;
+  }
+  
