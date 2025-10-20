@@ -70,13 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
-**[@alisha1510](https://github.com/alisha1510)**
+**[@k4niz](https://github.com/k4niz)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 3 PRs across 3 domain(s)*
 
-*Domains: CompetitiveProgramming, Frontend*
+*Domains: AI-ML, AR-VR, FullStack*
 
 </div>
 
@@ -102,19 +102,51 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[@k4niz](https://github.com/k4niz)**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML, FullStack*
+*Domains: Frontend*
 
 </div>
 
 ---
 
 ### 🏅 Rank 7
+
+<div align="center">
+
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
+<img src="https://github.com/ananyaa0518.png" width="100" height="100" style="border-radius: 50%;" alt="ananyaa0518"/>
+
+**[@ananyaa0518](https://github.com/ananyaa0518)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -130,45 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
 
 **[@MeghPatel-007](https://github.com/MeghPatel-007)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 9
-
-<div align="center">
-
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
-
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 

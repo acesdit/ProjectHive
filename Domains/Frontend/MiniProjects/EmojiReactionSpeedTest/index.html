@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoji Reaction Speed Test</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="stats-header">
+      <div id="game-info">
+        <h2>Emoji Reaction Speed Test</h2>
+        <p>
+          Test your reaction speed by clicking on the emoji as soon as it
+          appears!
+        </p>
+      </div>
+
+      <div id="target-area">Target: <span id="target-display">❓</span></div>
+      <div id="stats">
+        Score: <span id="score-display">0</span> | Streak:
+        <span id="streak-display">0</span> (<span id="best-streak-display"
+          >Best: 0</span
+        >)
+      </div>
+      <div id="lives-combo">
+        Lives: <span id="lives-display">❤️ ❤️ ❤️</span>
+        <span id="combo-badge" style="display: none">1.5x</span>
+      </div>
+    </header>
+    <div id="timer-container">
+      <div id="timer-bar"></div>
+    </div>
+    <main id="game-main">
+      <div id="game-area"></div>
+    </main>
+    <div id="game-over-screen" style="display: none">
+      <h2>Game Over! 😭</h2>
+      <div id="final-stats">
+        <p>Final Score: <span id="final-score">0</span></p>
+        <p>Best Streak: <span id="final-best-streak">0</span></p>
+        <p>Avg. Reaction Time: <span id="final-avg-time">N/A</span></p>
+        <p>Accuracy: <span id="final-accuracy">N/A</span></p>
+      </div>
+      <button id="restart-button">Play Again</button>
+    </div>
+
+    <footer>
+      <div id="controls-bar">
+        <label for="difficulty-select">Difficulty:</label>
+        <select id="difficulty-select">
+          <option value="Easy">Easy</option>
+          <option value="Medium" selected>Medium</option>
+          <option value="Hard">Hard</option>
+        </select>
+        <button id="start-button">Start Game</button>
+      </div>
+      <p>Made by Ananyaa</p>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
