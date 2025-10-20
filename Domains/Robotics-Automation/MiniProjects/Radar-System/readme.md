@@ -79,8 +79,11 @@ Dist:   22 cm
 🌟 Features
 
 ✅ Real-time distance measurement
+
 ✅ Smooth servo sweep motion
+
 ✅ Clear LCD display output
+
 ✅ Simple and beginner-friendly project
 
 Author 
