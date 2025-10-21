@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food Delivery</title>
+    <style>
+      :root{
+        --bg:#f6f7fb;
+        --card:#fff;
+        --accent:#ff6b6b;
+        --accent-hover:#ff5252;
+        --muted:#6b7280;
+        --success:#10b981;
+        --shadow:rgba(17,24,39,0.08);
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;
+        background:linear-gradient(135deg, #f6f7fb 0%, #e9ecef 100%);
+        color:#111;
+      }
+      
+      /* Animations */
+      @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+      @keyframes slideIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+      @keyframes scaleIn{from{transform:scale(0.95);opacity:0}to{transform:scale(1);opacity:1}}
+      @keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.05)}}
+      @keyframes shimmer{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
+      
+      .topbar{
+        display:flex;
+        align-items:center;
+        gap:1rem;
+        padding:0.75rem 1.5rem;
+        background:linear-gradient(90deg,#fff 0%, #fefefe 100%);
+        box-shadow:0 2px 12px rgba(0,0,0,0.08);
+        position:sticky;
+        top:0;
+        z-index:10;
+        animation:slideIn 0.4s ease-out;
+      }
+      .brand{
+        font-weight:700;
+        font-size:1.4rem;
+        background:linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        background-clip:text;
+      }
+      .brand span{margin-left:0.25rem}
+      .search-wrap{flex:1;max-width:500px}
+      .search-wrap input{
+        width:100%;
+        padding:0.6rem 1rem;
+        border-radius:8px;
+        border:2px solid #e6e9ef;
+        transition:all 0.3s ease;
+        font-size:0.95rem;
+      }
+      .search-wrap input:focus{
+        outline:none;
+        border-color:var(--accent);
+        box-shadow:0 0 0 3px rgba(255,107,107,0.1);
+      }
+      .cart-btn{
+        background:linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+        color:#fff;
+        border:none;
+        padding:0.6rem 1rem;
+        border-radius:8px;
+        cursor:pointer;
+        font-weight:600;
+        transition:all 0.3s ease;
+        box-shadow:0 4px 12px rgba(255,107,107,0.3);
+      }
+      .cart-btn:hover{
+        transform:translateY(-2px);
+        box-shadow:0 6px 16px rgba(255,107,107,0.4);
+      }
+      .cart-btn:active{transform:translateY(0)}
+      
+      .app-grid{
+        display:grid;
+        grid-template-columns:260px 1fr 340px;
+        gap:1.5rem;
+        padding:1.5rem;
+        align-items:start;
+        animation:fadeIn 0.5s ease-out;
+      }
+      .sidebar{
+        background:var(--card);
+        padding:1.25rem;
+        border-radius:12px;
+        box-shadow:0 8px 24px var(--shadow);
+        animation:slideIn 0.5s ease-out;
+      }
+      .sidebar h3{margin-top:0;color:var(--accent);font-size:1.1rem}
+      .list{list-style:none;margin:0;padding:0}
+      .list li{
+        padding:0.7rem;
+        border-radius:8px;
+        cursor:pointer;
+        transition:all 0.3s ease;
+        margin-bottom:0.4rem;
+        animation:fadeIn 0.3s ease-out;
+      }
+      .list li:hover{
+        background:linear-gradient(90deg,#fbfbfc,#f9f9fb);
+        transform:translateX(4px);
+        box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      }
+      .list li.active{
+        background:linear-gradient(90deg,#fff7f7,#fff);
+        border-left:4px solid var(--accent);
+        transform:translateX(4px);
+      }
+      
+      .content{background:transparent}
+      .restaurant-header{
+        margin-bottom:1rem;
+        font-weight:700;
+        font-size:1.3rem;
+        animation:slideIn 0.4s ease-out;
+        color:#1f2937;
+      }
+      .menu{
+        display:grid;
+        grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+        gap:1.25rem;
+      }
+      .card{
+        background:var(--card);
+        padding:1rem;
+        border-radius:12px;
+        box-shadow:0 4px 16px var(--shadow);
+        display:flex;
+        flex-direction:column;
+        gap:0.6rem;
+        transition:all 0.3s ease;
+        animation:scaleIn 0.4s ease-out;
+        border:2px solid transparent;
+      }
+      .card:hover{
+        transform:translateY(-6px);
+        box-shadow:0 12px 28px rgba(17,24,39,0.15);
+        border-color:var(--accent);
+      }
+      .dish-title{font-weight:700;font-size:1.05rem;color:#1f2937}
+      .dish-desc{color:var(--muted);font-size:0.9rem;line-height:1.4}
+      .dish-price{font-weight:700;color:var(--success);font-size:1.1rem}
+      .dish-meta{display:flex;justify-content:space-between;align-items:center;margin-top:auto}
+      .btn{
+        background:linear-gradient(135deg, #eef2ff 0%, #e0e7ff 100%);
+        border:none;
+        padding:0.5rem 0.9rem;
+        border-radius:8px;
+        cursor:pointer;
+        font-weight:600;
+        transition:all 0.3s ease;
+        font-size:0.9rem;
+      }
+      .btn:hover{
+        background:linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
+        transform:scale(1.05);
+      }
+      .btn:active{transform:scale(0.98)}
+      .primary{
+        background:linear-gradient(135deg, var(--accent) 0%, var(--accent-hover) 100%);
+        color:#fff;
+        box-shadow:0 4px 12px rgba(255,107,107,0.25);
+      }
+      .primary:hover{
+        box-shadow:0 6px 16px rgba(255,107,107,0.35);
+      }
+      
+      .cart{
+        background:var(--card);
+        padding:1.25rem;
+        border-radius:12px;
+        box-shadow:0 8px 24px var(--shadow);
+        height:fit-content;
+        animation:slideIn 0.5s ease-out 0.1s backwards;
+      }
+      .cart.hidden{display:none}
+      .cart h3{color:var(--accent);margin-top:0}
+      .cart-items{max-height:450px;overflow:auto}
+      .cart-item{
+        display:flex;
+        justify-content:space-between;
+        padding:0.75rem 0;
+        border-bottom:1px dashed #eef0f3;
+        animation:fadeIn 0.3s ease-out;
+      }
+      .cart-item:last-child{border-bottom:none}
+      .cart-footer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin-top:1.25rem;
+        padding-top:1rem;
+        border-top:2px solid #f3f4f6;
+      }
+      .cart-footer > div:first-child{font-weight:700;font-size:1.2rem;color:#1f2937}
+      
+      .footer{
+        text-align:center;
+        padding:1.5rem;
+        color:var(--muted);
+        animation:fadeIn 1s ease-out 0.3s backwards;
+      }
+      .muted{color:var(--muted);font-size:0.85rem}
+      
+      .badge{
+        display:inline-block;
+        padding:0.2rem 0.5rem;
+        border-radius:6px;
+        font-size:0.75rem;
+        font-weight:600;
+        background:rgba(255,107,107,0.1);
+        color:var(--accent);
+        margin-left:0.5rem;
+      }
+      
+      @media (max-width:980px){
+        .app-grid{grid-template-columns:1fr}
+        .cart{display:none}
+        .topbar{padding:0.75rem 1rem}
+      }
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">Foodie<span>Express</span></div>
+      <div class="search-wrap">
+        <input id="search" placeholder="Search restaurants or dishes..." />
+      </div>
+      <button id="cartBtn" class="cart-btn">Cart (<span id="cartCount">0</span>)</button>
+    </header>
+
+    <main class="app-grid">
+      <aside class="sidebar">
+        <h3>Restaurants</h3>
+        <ul id="restaurantList" class="list"></ul>
+      </aside>
+
+      <section class="content">
+        <div id="restaurantHeader" class="restaurant-header">Select a restaurant</div>
+        <div id="menu" class="menu"></div>
+      </section>
+
+      <aside id="cart" class="cart hidden">
+        <h3>Your Cart</h3>
+        <div id="cartItems" class="cart-items"></div>
+        <div class="cart-footer">
+          <div>Total: $<span id="cartTotal">0.00</span></div>
+          <button id="checkoutBtn" class="primary">Checkout</button>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">Demo app — HTML / CSS / JS only</footer>
+
+    <script>
+      // Mock data - Expanded with more restaurants and dishes
+      const DATA = [
+        {
+          id:1,
+          name:'Pizza Palace',
+          cuisine:'Italian',
+          rating:4.8,
+          dishes:[
+            {id:11,name:'Margherita',desc:'Classic cheese & tomato with fresh basil',price:8.99},
+            {id:12,name:'Pepperoni',desc:'Spicy pepperoni with mozzarella',price:9.99},
+            {id:13,name:'Quattro Formaggi',desc:'Four cheese blend pizza',price:11.99},
+            {id:14,name:'Veggie Supreme',desc:'Fresh vegetables & herbs',price:10.49},
+            {id:15,name:'BBQ Chicken',desc:'Grilled chicken with BBQ sauce',price:12.99}
+          ]
+        },
+        {
+          id:2,
+          name:'Sushi Spot',
+          cuisine:'Japanese',
+          rating:4.9,
+          dishes:[
+            {id:21,name:'Salmon Roll',desc:'Fresh salmon with avocado',price:7.5},
+            {id:22,name:'Tuna Nigiri',desc:'Hand-pressed premium tuna',price:6.75},
+            {id:23,name:'California Roll',desc:'Crab, cucumber & avocado',price:6.99},
+            {id:24,name:'Dragon Roll',desc:'Eel, cucumber, topped with avocado',price:13.99},
+            {id:25,name:'Spicy Tuna Roll',desc:'Spicy tuna with crispy tempura',price:8.99},
+            {id:26,name:'Miso Soup',desc:'Traditional Japanese soup',price:3.5}
+          ]
+        },
+        {
+          id:3,
+          name:'Burger Barn',
+          cuisine:'American',
+          rating:4.6,
+          dishes:[
+            {id:31,name:'Classic Burger',desc:'Beef patty, lettuce, tomato',price:6.5},
+            {id:32,name:'Cheese Fries',desc:'Crispy fries with cheese sauce',price:3.5},
+            {id:33,name:'Double Bacon Burger',desc:'Two patties with crispy bacon',price:9.99},
+            {id:34,name:'Veggie Burger',desc:'Plant-based patty with fresh veggies',price:7.99},
+            {id:35,name:'Chicken Wings',desc:'Buffalo or BBQ sauce',price:8.49}
+          ]
+        },
+        {
+          id:4,
+          name:'Taco Fiesta',
+          cuisine:'Mexican',
+          rating:4.7,
+          dishes:[
+            {id:41,name:'Beef Tacos',desc:'Seasoned beef with salsa & guac',price:7.99},
+            {id:42,name:'Chicken Quesadilla',desc:'Grilled chicken & cheese',price:8.49},
+            {id:43,name:'Nachos Supreme',desc:'Loaded with cheese, beans, jalapeños',price:9.99},
+            {id:44,name:'Fish Tacos',desc:'Crispy fish with cabbage slaw',price:8.99},
+            {id:45,name:'Churros',desc:'Cinnamon sugar churros',price:4.99}
+          ]
+        },
+        {
+          id:5,
+          name:'Curry House',
+          cuisine:'Indian',
+          rating:4.8,
+          dishes:[
+            {id:51,name:'Butter Chicken',desc:'Creamy tomato curry with tender chicken',price:11.99},
+            {id:52,name:'Palak Paneer',desc:'Spinach curry with cottage cheese',price:10.49},
+            {id:53,name:'Biryani',desc:'Fragrant rice with spiced meat',price:12.99},
+            {id:54,name:'Naan Bread',desc:'Fresh garlic or plain naan',price:2.99},
+            {id:55,name:'Samosas',desc:'Crispy pastry with spiced filling',price:5.99}
+          ]
+        },
+        {
+          id:6,
+          name:'Noodle Bar',
+          cuisine:'Chinese',
+          rating:4.5,
+          dishes:[
+            {id:61,name:'Pad Thai',desc:'Stir-fried rice noodles',price:9.99},
+            {id:62,name:'Fried Rice',desc:'Egg fried rice with vegetables',price:7.99},
+            {id:63,name:'Spring Rolls',desc:'Crispy vegetable rolls',price:5.49},
+            {id:64,name:'Sweet & Sour Chicken',desc:'Crispy chicken in tangy sauce',price:10.99},
+            {id:65,name:'Wonton Soup',desc:'Pork wontons in clear broth',price:6.99}
+          ]
+        },
+        {
+          id:7,
+          name:'Salad Station',
+          cuisine:'Healthy',
+          rating:4.7,
+          dishes:[
+            {id:71,name:'Caesar Salad',desc:'Romaine, parmesan, croutons',price:8.99},
+            {id:72,name:'Greek Salad',desc:'Feta, olives, cucumber, tomato',price:9.49},
+            {id:73,name:'Quinoa Bowl',desc:'Quinoa with roasted vegetables',price:10.99},
+            {id:74,name:'Smoothie Bowl',desc:'Acai berry with fresh fruits',price:7.99},
+            {id:75,name:'Protein Box',desc:'Grilled chicken, eggs, veggies',price:11.49}
+          ]
+        }
+      ];
+
+      // App state
+      let state = {restaurants:DATA,selectedRestaurant:null,cart:{}};
+
+      // Elements
+      const $restaurantList = document.getElementById('restaurantList');
+      const $menu = document.getElementById('menu');
+      const $restaurantHeader = document.getElementById('restaurantHeader');
+      const $cart = document.getElementById('cart');
+      const $cartItems = document.getElementById('cartItems');
+      const $cartTotal = document.getElementById('cartTotal');
+      const $cartCount = document.getElementById('cartCount');
+      const $cartBtn = document.getElementById('cartBtn');
+      const $search = document.getElementById('search');
+
+      function renderRestaurants(filter=''){
+        $restaurantList.innerHTML='';
+        state.restaurants.filter(r=> (r.name+ ' '+r.cuisine).toLowerCase().includes(filter.toLowerCase())).forEach((r,idx)=>{
+          const li = document.createElement('li');
+          li.innerHTML = `
+            <div style="font-weight:600">${r.name}</div>
+            <div class="muted">${r.cuisine} <span class="badge">⭐ ${r.rating}</span></div>
+          `;
+          li.style.animationDelay = `${idx * 0.05}s`;
+          li.onclick = ()=>selectRestaurant(r.id, li);
+          if(state.selectedRestaurant && state.selectedRestaurant.id===r.id) li.classList.add('active');
+          $restaurantList.appendChild(li);
+        });
+      }
+
+      function selectRestaurant(id, el){
+        state.selectedRestaurant = state.restaurants.find(r=>r.id===id);
+        document.querySelectorAll('#restaurantList li').forEach(n=>n.classList.remove('active'));
+        if(el) el.classList.add('active');
+        $restaurantHeader.innerHTML = `${state.selectedRestaurant.name} <span class="muted">— ${state.selectedRestaurant.cuisine}</span>`;
+        renderMenu();
+      }
+
+      function renderMenu(){
+        $menu.innerHTML='';
+        if(!state.selectedRestaurant) return;
+        state.selectedRestaurant.dishes.forEach((d, idx)=>{
+          const card = document.createElement('div'); 
+          card.className='card';
+          card.style.animationDelay = `${idx * 0.05}s`;
+          
+          const title = document.createElement('div'); 
+          title.className='dish-title'; 
+          title.textContent=d.name;
+          
+          const desc = document.createElement('div'); 
+          desc.className='dish-desc'; 
+          desc.textContent=d.desc;
+          
+          const meta = document.createElement('div'); 
+          meta.className='dish-meta';
+          
+          const price = document.createElement('div'); 
+          price.className='dish-price';
+          price.textContent = '$'+d.price.toFixed(2);
+          
+          const add = document.createElement('button'); 
+          add.className='btn primary'; 
+          add.textContent='+ Add';
+          add.onclick = ()=>{
+            addToCart(d, state.selectedRestaurant);
+            add.textContent = '✓ Added';
+            setTimeout(()=>add.textContent='+ Add', 600);
+          };
+          
+          meta.appendChild(price); 
+          meta.appendChild(add);
+          card.appendChild(title); 
+          card.appendChild(desc); 
+          card.appendChild(meta);
+          $menu.appendChild(card);
+        });
+      }
+
+      function addToCart(dish, restaurant){
+        const key = restaurant.id + '|' + dish.id;
+        if(!state.cart[key]) state.cart[key] = {dish,restaurant,qty:0};
+        state.cart[key].qty += 1;
+        renderCart();
+      }
+
+      function removeFromCart(key){
+        if(!state.cart[key]) return;
+        state.cart[key].qty -=1;
+        if(state.cart[key].qty<=0) delete state.cart[key];
+        renderCart();
+      }
+
+      function renderCart(){
+        $cartItems.innerHTML='';
+        const items = Object.entries(state.cart);
+        let total = 0; let count =0;
+        items.forEach(([key,{dish,restaurant,qty}])=>{
+          const row = document.createElement('div'); 
+          row.className='cart-item';
+          
+          const left = document.createElement('div'); 
+          left.innerHTML = `<strong>${dish.name}</strong><div class="muted">${restaurant.name}</div>`;
+          
+          const right = document.createElement('div'); 
+          right.style.display='flex';
+          right.style.alignItems='center';
+          right.style.gap='0.5rem';
+          
+          const priceSpan = document.createElement('span');
+          priceSpan.textContent = `$${(dish.price*qty).toFixed(2)}`;
+          priceSpan.style.fontWeight = '600';
+          
+          const minusBtn = document.createElement('button');
+          minusBtn.className='btn';
+          minusBtn.textContent='−';
+          minusBtn.onclick = ()=>removeFromCart(key);
+          
+          const qtySpan = document.createElement('span');
+          qtySpan.textContent = qty;
+          qtySpan.style.minWidth='20px';
+          qtySpan.style.textAlign='center';
+          qtySpan.style.fontWeight='600';
+          
+          const plusBtn = document.createElement('button');
+          plusBtn.className='btn';
+          plusBtn.textContent='+';
+          plusBtn.onclick = ()=>{ state.cart[key].qty+=1; renderCart(); };
+          
+          right.appendChild(priceSpan);
+          right.appendChild(minusBtn);
+          right.appendChild(qtySpan);
+          right.appendChild(plusBtn);
+          
+          row.appendChild(left); 
+          row.appendChild(right); 
+          $cartItems.appendChild(row);
+          total += dish.price*qty; 
+          count += qty;
+        });
+        $cartTotal.textContent = total.toFixed(2);
+        $cartCount.textContent = count;
+      }
+
+      $cartBtn.onclick = ()=>{ $cart.classList.toggle('hidden'); };
+      $search.oninput = (e)=>{ renderRestaurants(e.target.value); };
+      
+      // Checkout button functionality
+      document.getElementById('checkoutBtn').onclick = ()=>{
+        if(Object.keys(state.cart).length === 0){
+          alert('Your cart is empty!');
+          return;
+        }
+        const total = $cartTotal.textContent;
+        alert(`Order confirmed! Total: $${total}\n\nThank you for ordering with FoodieExpress! 🎉`);
+        state.cart = {};
+        renderCart();
+      };
+
+      // Initialize
+      renderRestaurants();
+      // Select first by default
+      if(DATA.length) selectRestaurant(DATA[0].id);
+    </script>
+  </body>
+</html>
