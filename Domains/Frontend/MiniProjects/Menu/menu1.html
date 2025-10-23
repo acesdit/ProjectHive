@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+    }
+
+    /* Section Title */
+    .menu-section {
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .menu-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .menu-subtitle {
+      font-size: 1rem;
+      color: #64748b;
+      margin-top: 5px;
+    }
+
+    /* Menu Cards */
+    .menu-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+      padding: 0 40px;
+    }
+
+    .menu-card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s ease;
+    }
+
+    .menu-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .menu-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .menu-card h2 {
+      font-size: 1.25rem;
+      margin: 15px;
+      color: #0f172a;
+    }
+
+    .menu-card p {
+      font-size: 0.95rem;
+      color: #475569;
+      margin: 0 15px 10px;
+    }
+
+    .price {
+      display: inline-block;
+      background: #38bdf8;
+      color: white;
+      font-weight: 600;
+      margin: 10px 15px 15px;
+      padding: 6px 12px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="menu-section">
+    <h1 class="menu-title"> GrandMama's</h1>
+    <p class="menu-subtitle">Taste the flavor of freshness</p>
+
+    <div class="menu-container">
+      <!-- Card 1 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1606756790138-2586cdb63a9d" alt="Pizza" />
+        <h2>Margherita Pizza</h2>
+        <p>Classic cheese pizza topped with fresh basil and tomato sauce.</p>
+        <span class="price">₹299</span>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="Burger" />
+        <h2>Cheese Burger</h2>
+        <p>Juicy beef patty with melted cheddar, lettuce, and crispy onions.</p>
+        <span class="price">₹249</span>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1604908177522-04031f69bb1b" alt="Pasta" />
+        <h2>Alfredo Pasta</h2>
+        <p>Creamy white sauce pasta loaded with mushrooms and parmesan.</p>
+        <span class="price">₹279</span>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="menu-card">
+        <img src="https://images.unsplash.com/photo-1562967916-eb82221dfb36" alt="Salad" />
+        <h2>Caesar Salad</h2>
+        <p>Fresh lettuce, croutons, and parmesan tossed in creamy dressing.</p>
+        <span class="price">₹199</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
