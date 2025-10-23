@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🎧 Music Playlist Manager</title>
+<style>
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #1e1e2f, #252540);
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    h1 {
+        margin-top: 30px;
+        color: #ffd369;
+    }
+
+    .container {
+        width: 80%;
+        margin: 20px auto;
+        background: #2f2f48;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    input, button {
+        padding: 10px;
+        margin: 5px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+    }
+
+    input {
+        width: 200px;
+    }
+
+    button {
+        cursor: pointer;
+        background: #ffd369;
+        color: #1e1e2f;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        background: #fcbf49;
+    }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 12px;
+        border-bottom: 1px solid #444;
+    }
+
+    th {
+        background-color: #3a3a5d;
+    }
+
+    tr:hover {
+        background-color: #3f3f60;
+    }
+
+    .footer {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #aaa;
+    }
+</style>
+</head>
+<body>
+    <h1>🎶 Music Playlist Management</h1>
+
+    <div class="container">
+        <div>
+            <input type="text" id="title" placeholder="Song Title">
+            <input type="text" id="artist" placeholder="Artist Name">
+            <input type="number" id="duration" placeholder="Duration (sec)">
+            <button onclick="addSong()">Add Song</button>
+        </div>
+
+        <div>
+            <input type="text" id="searchTitle" placeholder="Search Song">
+            <button onclick="searchSong()">Search</button>
+        </div>
+
+        <div>
+            <button onclick="sortByTitle()">Sort by Title</button>
+            <button onclick="sortByDuration()">Sort by Duration</button>
+            <button onclick="displayPlaylist()">Show Playlist</button>
+        </div>
+
+        <table id="playlistTable">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Artist</th>
+                    <th>Duration (s)</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <p class="footer">🎧 Developed using HTML, CSS & JS</p>
+    </div>
+
+<script>
+    // Store songs in an array
+    let playlist = [];
+
+    function addSong() {
+        const title = document.getElementById('title').value.trim();
+        const artist = document.getElementById('artist').value.trim();
+        const duration = parseInt(document.getElementById('duration').value);
+
+        if (!title || !artist || isNaN(duration)) {
+            alert("⚠️ Please fill all fields correctly!");
+            return;
+        }
+
+        playlist.push({ title, artist, duration });
+        alert(`✅ '${title}' added to playlist.`);
+        displayPlaylist();
+
+        // Clear inputs
+        document.getElementById('title').value = "";
+        document.getElementById('artist').value = "";
+        document.getElementById('duration').value = "";
+    }
+
+    function displayPlaylist() {
+        const tbody = document.querySelector('#playlistTable tbody');
+        tbody.innerHTML = "";
+
+        playlist.forEach((song, index) => {
+            const row = `<tr>
+                <td>${index + 1}</td>
+                <td>${song.title}</td>
+                <td>${song.artist}</td>
+                <td>${song.duration}</td>
+            </tr>`;
+            tbody.innerHTML += row;
+        });
+    }
+
+    function searchSong() {
+        const searchTitle = document.getElementById('searchTitle').value.toLowerCase();
+        const result = playlist.find(song => song.title.toLowerCase() === searchTitle);
+
+        if (result) {
+            alert(`✅ Found: ${result.title} by ${result.artist} (${result.duration}s)`);
+        } else {
+            alert("❌ Song not found!");
+        }
+    }
+
+    function sortByTitle() {
+        playlist.sort((a, b) => a.title.localeCompare(b.title));
+        alert("✅ Sorted by title!");
+        displayPlaylist();
+    }
+
+    function sortByDuration() {
+        playlist.sort((a, b) => a.duration - b.duration);
+        alert("✅ Sorted by duration!");
+        displayPlaylist();
+    }
+</script>
+</body>
+</html>
