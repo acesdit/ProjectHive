@@ -1,0 +1,17 @@
+[package]
+name = "rust-http-server"
+version = "0.1.0"
+edition = "2024"
+authors = ["AksharGoyal"]
+description = "A minimal, dependency-free HTTP file server implemented in Rust for learning purposes."
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/your-username/rust-http-server"
+homepage = "https://github.com/your-username/rust-http-server"
+keywords = ["http", "server", "rust"]
+categories = ["network-programming", "command-line-utilities"]
+
+[dependencies]
+
+[lints.rust]
+unused = "allow"
