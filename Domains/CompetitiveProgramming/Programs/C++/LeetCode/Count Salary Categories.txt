@@ -1,0 +1,63 @@
+/*
+Problem: Count Salary Categories
+Platform: LeetCode
+Problem Code: 1907
+Difficulty: Easy
+Link: https://leetcode.com/problems/count-salary-categories/
+
+Problem Statement:
+Given a table Accounts with account_id and income columns, 
+write a query to calculate the number of accounts for each salary category:
+- "Low Salary": income < 20000
+- "Average Salary": income between 20000 and 50000 (inclusive)
+- "High Salary": income > 50000
+
+Return a table with all three categories, even if their count is 0.
+
+Example:
+Input:
++------------+--------+
+| account_id | income |
++------------+--------+
+| 3          | 108939 |
+| 2          | 12747  |
+| 8          | 87709  |
+| 6          | 91796  |
++------------+--------+
+Output:
++----------------+----------------+
+| category       | accounts_count |
++----------------+----------------+
+| Low Salary     | 1              |
+| Average Salary | 0              |
+| High Salary    | 3              |
++----------------+----------------+
+
+Approach:
+Use three SELECT statements (one for each category) and combine them using UNION ALL.
+
+Contributor: RudraDarwey
+*/
+
+
+SELECT 
+    'Low Salary' AS category,
+    COUNT(*) AS accounts_count
+FROM Accounts
+WHERE income < 20000
+
+UNION ALL
+
+SELECT 
+    'Average Salary' AS category,
+    COUNT(*) AS accounts_count
+FROM Accounts
+WHERE income BETWEEN 20000 AND 50000
+
+UNION ALL
+
+SELECT 
+    'High Salary' AS category,
+    COUNT(*) AS accounts_count
+FROM Accounts
+WHERE income > 50000;
