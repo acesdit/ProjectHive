@@ -1,0 +1,7 @@
+# VS Code settings
+.vscode/
+
+# Live Server / IDE temp files
+*.bak
+# macOS temporary files
+.DS_Store
