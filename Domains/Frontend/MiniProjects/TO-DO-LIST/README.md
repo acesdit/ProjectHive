@@ -1,5 +1,7 @@
 # To-Do-List App
 
+**Contributor:** YourGitHubUsername 👈 **(MANDATORY TAG for Hacktoberfest credit)**
+
 ## Description
 
 This is a clean, classic **To-Do List application** built using **HTML, CSS, and vanilla JavaScript**.
@@ -12,6 +14,10 @@ It allows users to manage their daily tasks efficiently:
 
 This project is an excellent example of basic DOM manipulation and event handling in pure JavaScript.
 
+## 🖼️ Screenshots
+![alt text](image.png)
+
+
 ## How to Run
 
 1.  **Clone the repository.**
@@ -23,3 +29,6 @@ This project is an excellent example of basic DOM manipulation and event handlin
 * HTML5 (Structure)
 * CSS3 (Styling, including responsiveness)
 * JavaScript (Core application logic and Local Storage management)
+
+
+
