@@ -1,7 +1,5 @@
-
 import duckdb
 import os
-import pandas as pd
 
 def load_csv_to_duckdb(csv_path: str, duckdb_path: str, table_name: str = 'nyc_taxi_trips') -> str:
     """Load a CSV into a DuckDB database file."""
@@ -9,16 +7,16 @@ def load_csv_to_duckdb(csv_path: str, duckdb_path: str, table_name: str = 'nyc_t
     print(f"Loading {csv_path} into DuckDB at {duckdb_path} (table: {table_name}) ...")
     con = duckdb.connect(duckdb_path)
     # create or replace table by reading csv
-    con.execute("CREATE OR REPLACE TABLE {} AS SELECT * FROM read_csv_auto('{}') limit 0".format(table_name, csv_path))
-    con.execute("INSERT INTO {} SELECT * FROM read_csv_auto('{}')".format(table_name, csv_path))
+    con.execute(f"CREATE OR REPLACE TABLE {table_name} AS SELECT * FROM read_csv_auto('{csv_path}') limit 0")
+    con.execute(f"INSERT INTO {table_name} SELECT * FROM read_csv_auto('{csv_path}')")
 
     # simple index-like optimization: run ANALYZE
     try:
         con.execute(f"ANALYZE {table_name}")
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"Warning: ANALYZE failed with error: {e}")
     con.close()
-    print(f"Loaded into DuckDB: {duckdb_path}")
+    print(f"Loaded data {csv_path} into DuckDB: {duckdb_path}")
     return duckdb_path
 
 

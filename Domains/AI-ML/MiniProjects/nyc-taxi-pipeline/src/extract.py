@@ -42,8 +42,8 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     if args.year > year:
-        raise Exception("Year should not exceed the current year!")
+        raise ValueError("Year should not exceed the current year!")
     if args.month >= month:
-        raise Exception(f"Complete {args.month}-{args.year} data is yet to be collected")
+        raise ValueError(f"Complete {args.month}-{args.year} data is yet to be collected")
 
     extract_data(args.year, args.month)

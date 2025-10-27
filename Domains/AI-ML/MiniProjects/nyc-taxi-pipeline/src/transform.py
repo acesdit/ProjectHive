@@ -32,6 +32,7 @@ def transform_parquet_to_csv(parquet_path: str, csv_path: str) -> str:
 if __name__ == '__main__':
     import os
     for _, _, filenames in os.walk('./data/raw'):
+        print(filenames)
         for filename in filenames:
             new_filename = filename.split('.')[0] + '_cleaned.csv'
             transform_parquet_to_csv(f'data/raw/{filename}', f'data/processed/{new_filename}')

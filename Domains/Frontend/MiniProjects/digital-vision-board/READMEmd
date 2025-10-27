@@ -1,0 +1,45 @@
+**Contributor:** supritimishra
+
+---
+# 🌸 Digital Vision Board 🌸
+
+A **personalized, drag-and-drop web app** that lets you visualize your dreams, goals, and inspirations — all in one interactive space.  
+You can **add notes, quotes, or images**, arrange them freely, save your layout, and even export your entire board as an image.  
+
+---
+
+
+
+---
+## ✨ Features
+
+- 📝 Add text notes or motivational quotes  
+- 🖼️ Add inspirational images via URL  
+- 🎯 Drag & drop items freely around the board  
+- ❌ Delete notes or images anytime  
+- 💾 Auto-save board layout using `localStorage`  
+- 📸 Export your vision board as a PNG image using `html2canvas`  
+- 💫 Aesthetic pastel grid layout with hover animations  
+- 📱 Fully responsive with floating “+” button for mobile  
+
+---
+
+## 🧠 Tech Stack
+
+**HTML5** 
+**CSS3** 
+**JavaScript (ES6)** 
+**html2canvas** 
+**LocalStorage API** 
+
+---
+
+## 🧩 How It Works
+
+1. **Add** notes or image URLs to the vision board.  
+2. **Drag** and rearrange items as you like.  
+3. **Delete** unwanted elements anytime.  
+4. **Save** your board (auto-saves after changes).  
+5. **Export** it as a PNG snapshot to keep or share!
+
+

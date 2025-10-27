@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Vision Board</title>
+
+  <!-- ================= CSS STYLES ================= -->
+  <style>
+    /* Basic resets and typography */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #f6f5fa;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-bottom: 60px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      margin-top: 25px;
+      font-size: 2rem;
+      color: #5b5f97;
+      text-align: center;
+    }
+
+    /* Control bar styling */
+    .controls {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .controls button {
+      background: #a7c7e7;
+      color: #fff;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .controls button:hover {
+      background: #86b3dd;
+      transform: scale(1.05);
+    }
+
+    /* Board grid */
+    #board {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      width: 90%;
+      max-width: 1100px;
+      padding: 10px;
+      transition: all 0.3s;
+    }
+
+    /* Individual vision item */
+    .item {
+      background: #fff;
+      border-radius: 12px;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+      cursor: grab;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .item:hover {
+      transform: scale(1.04);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .item img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 8px;
+    }
+
+    .item p {
+      font-size: 15px;
+      color: #333;
+      word-break: break-word;
+      padding: 5px;
+    }
+
+    /* Delete button */
+    .delete {
+      position: absolute;
+      top: 6px;
+      right: 6px;
+      background: #ff7b7b;
+      border: none;
+      color: #fff;
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .delete:hover {
+      background: #ff5b5b;
+    }
+
+    /* Floating add button (for mobile) */
+    .floating-add {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 55px;
+      height: 55px;
+      background: #a7c7e7;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 28px;
+      cursor: pointer;
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+      display: none;
+      transition: background 0.3s;
+      z-index: 50;
+    }
+
+    .floating-add:hover {
+      background: #7daee1;
+    }
+
+    @media (max-width: 700px) {
+      .controls {
+        display: none;
+      }
+
+      .floating-add {
+        display: block;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🌸 Digital Vision Board 🌸</h1>
+
+  <!-- ===== Control Buttons ===== -->
+  <div class="controls">
+    <button onclick="addNote()">Add Note</button>
+    <button onclick="addImage()">Add Image</button>
+    <button onclick="saveBoard()">💾 Save Board</button>
+    <button onclick="clearBoard()">🧹 Clear</button>
+    <button onclick="exportBoard()">📸 Export as Image</button>
+  </div>
+
+  <button class="floating-add" onclick="showAddMenu()">+</button>
+
+  <!-- ===== Vision Board ===== -->
+  <div id="board"></div>
+
+  <!-- html2canvas for exporting -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
+  <!-- ================= SCRIPT SECTION ================= -->
+  <script>
+    const board = document.getElementById("board");
+    let dragItem = null;
+
+    /* ------- Create item element ------- */
+    function createItem(content, type) {
+      const div = document.createElement("div");
+      div.className = "item";
+      div.draggable = true;
+
+      div.innerHTML = `
+        ${type === "img" ? `<img src="${content}" alt="vision-img">` : `<p>${content}</p>`}
+        <button class="delete" title="Delete" onclick="this.parentElement.remove(); saveBoard();">×</button>
+      `;
+
+      addDragEvents(div);
+      board.appendChild(div);
+      saveBoard();
+    }
+
+    /* ------- Add new text note ------- */
+    function addNote() {
+      const text = prompt("Enter a note or quote:");
+      if (text) createItem(text, "text");
+    }
+
+    /* ------- Add new image ------- */
+    function addImage() {
+      const url = prompt("Enter an image URL:");
+      if (url) createItem(url, "img");
+    }
+
+    /* ------- Clear board ------- */
+    function clearBoard() {
+      if (confirm("Are you sure you want to clear your board?")) {
+        board.innerHTML = "";
+        localStorage.removeItem("visionBoard");
+      }
+    }
+
+    /* ------- Save current layout ------- */
+    function saveBoard() {
+      localStorage.setItem("visionBoard", board.innerHTML);
+    }
+
+    /* ------- Load saved layout ------- */
+    function loadBoard() {
+      const saved = localStorage.getItem("visionBoard");
+      if (saved) {
+        board.innerHTML = saved;
+        board.querySelectorAll(".item").forEach(addDragEvents);
+      }
+    }
+
+    /* ------- Add drag & drop events ------- */
+    function addDragEvents(el) {
+      el.addEventListener("dragstart", () => (dragItem = el));
+      el.addEventListener("dragover", (e) => e.preventDefault());
+      el.addEventListener("drop", () => {
+        if (dragItem && dragItem !== el) {
+          board.insertBefore(dragItem, el);
+          saveBoard();
+        }
+      });
+    }
+
+    /* ------- Export board as image ------- */
+    function exportBoard() {
+      html2canvas(board, { scale: 2 }).then((canvas) => {
+        const link = document.createElement("a");
+        link.download = "digital_vision_board.png";
+        link.href = canvas.toDataURL();
+        link.click();
+      });
+    }
+
+    /* ------- Mobile Floating Button Menu ------- */
+    function showAddMenu() {
+      const choice = prompt("Type:\n1. Add Note\n2. Add Image");
+      if (choice === "1") addNote();
+      else if (choice === "2") addImage();
+    }
+
+    /* ------- Initialize ------- */
+    loadBoard();
+  </script>
+</body>
+</html>

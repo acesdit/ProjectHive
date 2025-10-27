@@ -6,8 +6,7 @@
 
 ## 📦 What's Included
 
-This is a modern, production-ready starter template for building React applications with TypeScript and Vite. It comes pre-configured with essential tools and best practices to help you start developing immediately.
-
+This is a modern, production-ready starter template for building React applications with TypeScript and Vite. It comes pre-configured with essential tools and best practices to help you start developing immediately
 ### ✨ Features
 
 - ⚡ **Vite** - Lightning-fast build tool and dev server

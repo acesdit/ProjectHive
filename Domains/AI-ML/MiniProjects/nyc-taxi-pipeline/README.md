@@ -1,13 +1,26 @@
-
 # NYC Taxi Data Pipeline (Beginner)
 
-This project is a beginner-friendly data engineering pipeline that demonstrates:
-- Environment management with `uv`
-- Extraction of an open dataset (NYC Yellow Taxi Parquet)
-- Transformation with `pandas`
-- Storage and fast analytics with `duckdb`
-- Orchestration with `Prefect`
-- Simple testing with `pytest`
+**Contributor:** AksharGoyal
+
+## Overview
+This project demonstrates a small, production-like ETL pipeline for NYC Yellow Taxi trip data. It downloads monthly parquet files, performs light cleaning/transformation, and loads the cleaned CSV into a DuckDB file. The pipeline is orchestrated with Prefect and organized into modular extract / transform / load tasks so components can be reused or tested independently.  
+
+## Tech stack
+- Python >=3.12
+- Prefect (Orchestration framework used to define tasks and flows, handle retries, caching, and logging)
+- pyarrow / fastparquet (parquet engine)
+- pandas (handling csv operations)
+- DuckDB
+
+## Features
+- Modular ETL split into extract, transform, and load components.
+- Prefect-based orchestration with retries, basic caching, and structured logging.
+- Downloads monthly NYC Yellow Taxi parquet files from the public data CDN.
+- Light cleaning and column selection to produce compact CSVs.
+- Stores processed data in a DuckDB file for fast local analytics.
+- Simple CLI entrypoints for running single-month or multi-month jobs.
+- Minimal dependencies to keep the pipeline lightweight and portable.
+
 
 ## Structure
 ```
@@ -15,14 +28,13 @@ nyc-taxi-pipeline/
 ├── data/
 │   ├── raw/
 │   └── processed/
+│   └── nyc_taxi.duckdb
 ├── src/
 │   ├── __init__.py
 │   ├── extract.py
 │   ├── transform.py
 │   ├── load.py
 │   └── pipeline.py
-├── tests/
-│   └── test_pipeline.py
 ├── pyproject.toml
 ├── uv.lock   # created by uv when you run uv sync / uv add
 ├── README.md
@@ -30,23 +42,16 @@ nyc-taxi-pipeline/
 ```
 
 ## Quickstart (using `uv`)
-```bash
-# Initialize project (if you haven't already)
-uv init nyc-taxi-pipeline
-cd nyc-taxi-pipeline
 
-# Add dependencies
-uv add pandas requests duckdb prefect sqlalchemy pytest --dev
-# or add individual packages as needed; uv will create pyproject.toml and uv.lock
-
-# Run pipeline locally (Prefect's local flow runner)
-uv run python -m src.pipeline
-
-# Run tests
-uv run pytest
+1. Initialize the project via uv
+```sh
+uv sync`
 ```
-
-## Notes
-- The `extract` step downloads a Parquet file from a public CDN (NYC data). If you prefer, you can download manually into `data/raw/`.
-- `duckdb` is used for storage and quick analytical queries; the pipeline writes a DuckDB file at `data/nyc_taxi.duckdb`.
-- Prefect orchestrates the steps: extract -> transform -> load. For production, consider Prefect Cloud / Prefect Orion deployment.
+2. Run the following command to start data orchestration.
+```sh
+uv run python -m src.pipeline
+```
+3. If you would like, you can provide your year and month(s) separated by commas.
+```sh
+uv run python -m src.pipeline --year 2025 --month 7,8,9
+```
