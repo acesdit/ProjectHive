@@ -1,3 +1,9 @@
+# Secrets/Configuration
+.env
+
+# Dependencies
+/node_modules
+
 # VS Code settings
 .vscode/
 
