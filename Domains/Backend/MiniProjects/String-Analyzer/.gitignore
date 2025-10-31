@@ -1,0 +1,10 @@
+# dependencies
+node_modules/
+
+# environment
+.env
+
+# optional common ignores
+.DS_Store
+npm-debug.log
+.vscode/
