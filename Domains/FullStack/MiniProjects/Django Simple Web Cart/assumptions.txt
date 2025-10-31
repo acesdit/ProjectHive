@@ -1,0 +1,7 @@
+Disclaimer: Mini project made from fresh download Django framework, not modified ex-personal project
+
+1. The product count is fixed: 3 products
+2. Summary Page converted to popup panel.
+3. History Page shown by loggedIn User.
+4. No need to make "add to cart button", it alrdy automatically added to cart when user input the product count
+5. Newly created user able to place order

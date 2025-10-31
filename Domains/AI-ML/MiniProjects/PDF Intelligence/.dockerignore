@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+local_model/
+nltk_data/
+test_pdfs/*.pdf
+output/*.json
+!test_pdfs/SouthofFranceCities.pdf
+!test_pdfs/SouthofFranceCuisine.pdf
+!test_pdfs/SouthofFranceHistory.pdf
+!test_pdfs/SouthofFranceRestaurantsandHotels.pdf

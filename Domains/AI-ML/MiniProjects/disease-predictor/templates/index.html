@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Disease Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Disease Predictor</h1>
+        <h1><span style="color:#218838">Put data only form given sets:</span></h1>
+        <h1>
+            [fever, cough, headache, body ache, weakness, 
+            shortness of breath, sore throat, runny nose, 
+            nausea, vomiting, chills, muscle pain]</h1>
+        <form id="predictForm">
+            <label for="symptoms">Enter Symptoms (comma separated):</label>
+            <input type="text" id="symptoms" name="symptoms" required>
+            <button type="submit">Predict Disease</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

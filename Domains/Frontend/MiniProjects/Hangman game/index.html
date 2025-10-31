@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🎯 Hangman Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>🎯 Hangman Game</h1>
+
+  <div class="game-container">
+    <canvas id="hangmanCanvas" width="200" height="250"></canvas>
+
+    <div class="word" id="word"></div>
+    <div class="wrong-letters-container">
+      <p>Wrong Letters:</p>
+      <span id="wrong-letters"></span>
+    </div>
+
+    <div class="keyboard" id="keyboard"></div>
+  </div>
+
+  <div class="popup-container" id="popup-container">
+    <div class="popup">
+      <h2 id="final-message"></h2>
+      <button id="play-button">Play Again</button>
+    </div>
+  </div>
+
+  <footer>Made with ❤️ </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

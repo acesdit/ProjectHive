@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+body{
+    background-color:#000000;
+    text-align: center;
+    color: white;
+}
+h1{
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 8px aquamarine;
+    background-color:#2B2D42;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5vmin;    
+}
+.box{
+    border-radius: 0.6rem;
+    height: 18vmin;
+    width: 18vmin;
+    border: 1px solid beige;
+    color: maroon;
+    padding: 10px;
+    
+    font-size: 9vmin;
+    background-color:#8D99AE;
+}
+#reset{
+    border-radius: 0.6rem;
+    padding: 0.95rem;
+    color: white;
+    border: 1px solid aquamarine;
+    font-size: 3.5vmin;
+    border-radius: 2vmin;
+    background-color:#2B2D42;
+}
+.msg-container{
+    color: white;
+    background-color: black;
+    margin: 5vmin;
+    height: 100vh;
+}
+#btn{
+    margin-top: 40vmin;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    color: white;
+    border: 2px solid aquamarine;
+    font-size: 4vmin;
+    border-radius: 2vmin;
+    background-color:#2B2D42;
+}
+#winner{
+    margin: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 8px aquamarine;
+    background-color:#2B2D42;
+}
+.hide{
+    display: none;
+}
+.x{
+    color: maroon;
+}
+.o{
+    color: gold;
+}

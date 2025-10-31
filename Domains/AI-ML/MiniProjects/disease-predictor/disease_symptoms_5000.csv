@@ -1,0 +1,5001 @@
+symptoms,disease
+"runny nose,muscle pain,body ache",Malaria
+"runny nose,shortness of breath,vomiting",COVID-19
+"shortness of breath,body ache,muscle pain",COVID-19
+"vomiting,muscle pain,shortness of breath",Malaria
+"chills,weakness,nausea",Malaria
+"vomiting,cough,sore throat",Malaria
+"chills,fever,headache",Flu
+"body ache,weakness,shortness of breath",Malaria
+"runny nose,chills,vomiting",Malaria
+"fever,muscle pain,runny nose",Flu
+"vomiting,chills,fever",Flu
+"headache,sore throat,vomiting",Malaria
+"chills,cough,fever",Flu
+"body ache,weakness,vomiting",Malaria
+"vomiting,body ache,headache",Malaria
+"body ache,cough,shortness of breath",COVID-19
+"chills,weakness,shortness of breath",COVID-19
+"chills,weakness,body ache",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"headache,weakness,cough",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"fever,muscle pain,runny nose",Flu
+"headache,fever,runny nose",Flu
+"vomiting,weakness,chills",Malaria
+"weakness,fever,muscle pain",Flu
+"body ache,sore throat,fever",Malaria
+"shortness of breath,runny nose,vomiting",COVID-19
+"runny nose,vomiting,chills",Malaria
+"sore throat,body ache,fever",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"muscle pain,body ache,headache",Flu
+"nausea,weakness,chills",Malaria
+"fever,headache,sore throat",Flu
+"sore throat,fever,shortness of breath",COVID-19
+"chills,body ache,nausea",Malaria
+"runny nose,fever,vomiting",Malaria
+"body ache,fever,runny nose",Malaria
+"shortness of breath,headache,weakness",COVID-19
+"cough,weakness,body ache",Malaria
+"nausea,vomiting,chills",Malaria
+"cough,chills,muscle pain",Flu
+"nausea,chills,shortness of breath",COVID-19
+"fever,cough,chills",Flu
+"body ache,vomiting,runny nose",Malaria
+"weakness,runny nose,cough",Malaria
+"shortness of breath,fever,headache",Flu
+"body ache,sore throat,cough",Malaria
+"shortness of breath,sore throat,fever",COVID-19
+"nausea,headache,muscle pain",Flu
+"shortness of breath,weakness,chills",COVID-19
+"sore throat,chills,weakness",Malaria
+"sore throat,nausea,runny nose",Allergy
+"runny nose,muscle pain,chills",Flu
+"chills,nausea,muscle pain",Flu
+"weakness,cough,chills",Malaria
+"weakness,sore throat,muscle pain",Malaria
+"headache,nausea,vomiting",Malaria
+"headache,muscle pain,runny nose",Flu
+"sore throat,shortness of breath,runny nose",COVID-19
+"headache,shortness of breath,vomiting",COVID-19
+"headache,shortness of breath,muscle pain",Flu
+"runny nose,fever,shortness of breath",COVID-19
+"nausea,muscle pain,weakness",Malaria
+"sore throat,body ache,headache",Malaria
+"muscle pain,vomiting,weakness",Malaria
+"headache,body ache,nausea",Malaria
+"runny nose,body ache,cough",Malaria
+"vomiting,runny nose,chills",Malaria
+"sore throat,chills,weakness",Malaria
+"sore throat,cough,body ache",Malaria
+"fever,nausea,cough",COVID-19
+"cough,runny nose,sore throat",COVID-19
+"shortness of breath,cough,chills",COVID-19
+"muscle pain,headache,chills",Flu
+"fever,shortness of breath,body ache",COVID-19
+"weakness,chills,runny nose",Allergy
+"sore throat,weakness,muscle pain",Malaria
+"fever,headache,weakness",Flu
+"muscle pain,cough,headache",Flu
+"headache,shortness of breath,muscle pain",Flu
+"body ache,chills,nausea",Malaria
+"vomiting,runny nose,nausea",Malaria
+"headache,muscle pain,shortness of breath",Flu
+"weakness,shortness of breath,sore throat",COVID-19
+"vomiting,fever,nausea",Malaria
+"runny nose,cough,chills",COVID-19
+"runny nose,sore throat,weakness",Malaria
+"chills,vomiting,body ache",Malaria
+"body ache,fever,sore throat",Malaria
+"weakness,cough,chills",Malaria
+"chills,vomiting,fever",Flu
+"headache,nausea,cough",COVID-19
+"nausea,shortness of breath,weakness",Malaria
+"nausea,cough,weakness",Malaria
+"weakness,chills,runny nose",Allergy
+"body ache,weakness,chills",Malaria
+"fever,vomiting,cough",Malaria
+"chills,fever,runny nose",Flu
+"shortness of breath,cough,body ache",COVID-19
+"vomiting,runny nose,headache",Malaria
+"vomiting,muscle pain,sore throat",Malaria
+"nausea,chills,sore throat",Flu
+"vomiting,headache,fever",Flu
+"nausea,chills,body ache",Malaria
+"headache,chills,shortness of breath",Flu
+"weakness,nausea,fever",Malaria
+"fever,runny nose,nausea",Allergy
+"headache,shortness of breath,cough",COVID-19
+"fever,vomiting,body ache",Malaria
+"chills,vomiting,body ache",Malaria
+"shortness of breath,sore throat,body ache",COVID-19
+"body ache,weakness,chills",Malaria
+"headache,vomiting,shortness of breath",Malaria
+"weakness,fever,cough",Malaria
+"muscle pain,sore throat,headache",Flu
+"muscle pain,sore throat,body ache",Malaria
+"muscle pain,chills,shortness of breath",Flu
+"vomiting,shortness of breath,chills",Malaria
+"sore throat,muscle pain,shortness of breath",COVID-19
+"nausea,headache,cough",COVID-19
+"fever,chills,vomiting",Flu
+"sore throat,fever,body ache",Malaria
+"vomiting,nausea,body ache",Malaria
+"chills,muscle pain,nausea",Flu
+"vomiting,weakness,sore throat",Malaria
+"fever,cough,vomiting",Malaria
+"vomiting,sore throat,body ache",Malaria
+"shortness of breath,sore throat,runny nose",COVID-19
+"cough,muscle pain,chills",Flu
+"cough,sore throat,nausea",COVID-19
+"body ache,sore throat,cough",Malaria
+"chills,fever,cough",Flu
+"nausea,sore throat,runny nose",Allergy
+"shortness of breath,chills,runny nose",COVID-19
+"runny nose,body ache,headache",Malaria
+"weakness,sore throat,muscle pain",Malaria
+"sore throat,fever,nausea",Flu
+"muscle pain,runny nose,weakness",Flu
+"body ache,runny nose,chills",Malaria
+"runny nose,cough,fever",COVID-19
+"sore throat,cough,weakness",COVID-19
+"fever,runny nose,muscle pain",Flu
+"weakness,chills,headache",Flu
+"cough,fever,vomiting",Malaria
+"sore throat,fever,muscle pain",Flu
+"cough,fever,chills",Flu
+"vomiting,shortness of breath,body ache",Malaria
+"vomiting,sore throat,nausea",Malaria
+"nausea,runny nose,shortness of breath",COVID-19
+"nausea,vomiting,headache",Malaria
+"runny nose,nausea,headache",Flu
+"vomiting,nausea,runny nose",Malaria
+"weakness,body ache,runny nose",Malaria
+"body ache,vomiting,runny nose",Malaria
+"runny nose,body ache,fever",Malaria
+"shortness of breath,muscle pain,headache",Flu
+"vomiting,cough,weakness",Malaria
+"body ache,weakness,cough",Malaria
+"vomiting,weakness,headache",Malaria
+"nausea,vomiting,runny nose",Malaria
+"cough,sore throat,fever",COVID-19
+"body ache,fever,chills",Flu
+"headache,shortness of breath,chills",Flu
+"chills,vomiting,sore throat",Malaria
+"sore throat,body ache,cough",Malaria
+"nausea,fever,runny nose",Allergy
+"shortness of breath,muscle pain,vomiting",COVID-19
+"headache,vomiting,shortness of breath",Malaria
+"shortness of breath,chills,runny nose",COVID-19
+"runny nose,headache,sore throat",Flu
+"fever,headache,weakness",Flu
+"runny nose,chills,sore throat",Flu
+"runny nose,nausea,sore throat",Allergy
+"sore throat,fever,chills",Flu
+"vomiting,cough,shortness of breath",COVID-19
+"shortness of breath,nausea,body ache",Malaria
+"shortness of breath,cough,chills",COVID-19
+"fever,sore throat,body ache",Malaria
+"muscle pain,nausea,headache",Flu
+"runny nose,nausea,fever",Allergy
+"runny nose,muscle pain,chills",Flu
+"chills,cough,weakness",COVID-19
+"nausea,runny nose,cough",COVID-19
+"headache,sore throat,vomiting",Malaria
+"muscle pain,cough,weakness",Flu
+"chills,sore throat,vomiting",Malaria
+"sore throat,cough,headache",COVID-19
+"weakness,chills,nausea",Malaria
+"body ache,sore throat,vomiting",Malaria
+"nausea,fever,runny nose",Allergy
+"headache,cough,chills",Flu
+"cough,runny nose,vomiting",Malaria
+"nausea,headache,muscle pain",Flu
+"body ache,runny nose,headache",Malaria
+"headache,cough,weakness",COVID-19
+"weakness,body ache,chills",Malaria
+"nausea,runny nose,muscle pain",Flu
+"cough,shortness of breath,vomiting",COVID-19
+"weakness,shortness of breath,fever",COVID-19
+"runny nose,fever,headache",Flu
+"cough,nausea,shortness of breath",COVID-19
+"fever,chills,body ache",Flu
+"nausea,vomiting,cough",Malaria
+"chills,headache,muscle pain",Flu
+"sore throat,nausea,runny nose",Allergy
+"headache,weakness,chills",Flu
+"fever,weakness,headache",Flu
+"weakness,fever,vomiting",Malaria
+"chills,sore throat,nausea",Flu
+"shortness of breath,runny nose,fever",COVID-19
+"chills,runny nose,weakness",Allergy
+"fever,muscle pain,shortness of breath",Flu
+"cough,shortness of breath,nausea",COVID-19
+"muscle pain,cough,nausea",Flu
+"sore throat,shortness of breath,vomiting",COVID-19
+"vomiting,cough,fever",Malaria
+"vomiting,runny nose,weakness",Malaria
+"weakness,shortness of breath,fever",COVID-19
+"weakness,cough,runny nose",Malaria
+"sore throat,muscle pain,chills",Flu
+"fever,headache,vomiting",Flu
+"vomiting,shortness of breath,headache",Malaria
+"sore throat,chills,cough",COVID-19
+"weakness,fever,muscle pain",Flu
+"runny nose,weakness,fever",Malaria
+"vomiting,body ache,muscle pain",Malaria
+"shortness of breath,body ache,nausea",Malaria
+"body ache,sore throat,fever",Malaria
+"weakness,chills,muscle pain",Flu
+"sore throat,vomiting,headache",Malaria
+"sore throat,fever,muscle pain",Flu
+"fever,nausea,weakness",Malaria
+"fever,body ache,nausea",Malaria
+"chills,cough,vomiting",Malaria
+"muscle pain,weakness,chills",Flu
+"muscle pain,runny nose,sore throat",Flu
+"headache,runny nose,nausea",Allergy
+"headache,vomiting,chills",Flu
+"headache,runny nose,nausea",Allergy
+"weakness,sore throat,muscle pain",Malaria
+"vomiting,shortness of breath,muscle pain",Malaria
+"runny nose,body ache,chills",Malaria
+"weakness,muscle pain,headache",Flu
+"runny nose,vomiting,muscle pain",Malaria
+"weakness,body ache,headache",Malaria
+"runny nose,weakness,muscle pain",Malaria
+"shortness of breath,sore throat,fever",COVID-19
+"runny nose,fever,muscle pain",Flu
+"chills,muscle pain,headache",Flu
+"body ache,muscle pain,weakness",Malaria
+"muscle pain,weakness,headache",Flu
+"chills,body ache,muscle pain",Flu
+"headache,chills,weakness",Flu
+"sore throat,shortness of breath,headache",COVID-19
+"runny nose,nausea,weakness",Malaria
+"nausea,fever,weakness",Malaria
+"headache,cough,weakness",COVID-19
+"cough,muscle pain,weakness",COVID-19
+"nausea,shortness of breath,chills",COVID-19
+"nausea,shortness of breath,muscle pain",COVID-19
+"sore throat,headache,weakness",Malaria
+"vomiting,body ache,weakness",Malaria
+"muscle pain,weakness,chills",Flu
+"fever,nausea,body ache",Malaria
+"cough,fever,runny nose",COVID-19
+"headache,runny nose,weakness",Allergy
+"nausea,runny nose,fever",Allergy
+"body ache,nausea,vomiting",Malaria
+"shortness of breath,runny nose,nausea",COVID-19
+"runny nose,sore throat,vomiting",Malaria
+"vomiting,shortness of breath,chills",Malaria
+"vomiting,chills,muscle pain",Flu
+"body ache,headache,vomiting",Malaria
+"nausea,weakness,cough",Malaria
+"chills,muscle pain,vomiting",Flu
+"runny nose,muscle pain,shortness of breath",COVID-19
+"shortness of breath,vomiting,fever",COVID-19
+"headache,nausea,muscle pain",Flu
+"sore throat,cough,muscle pain",COVID-19
+"body ache,sore throat,runny nose",Malaria
+"sore throat,nausea,cough",COVID-19
+"sore throat,body ache,weakness",Malaria
+"vomiting,headache,chills",Flu
+"sore throat,runny nose,cough",COVID-19
+"body ache,nausea,muscle pain",Malaria
+"shortness of breath,fever,chills",Flu
+"muscle pain,body ache,nausea",Malaria
+"body ache,fever,cough",Malaria
+"nausea,shortness of breath,weakness",Malaria
+"sore throat,vomiting,chills",Malaria
+"shortness of breath,runny nose,cough",COVID-19
+"cough,sore throat,headache",COVID-19
+"vomiting,muscle pain,runny nose",Malaria
+"vomiting,chills,shortness of breath",Malaria
+"chills,weakness,body ache",Malaria
+"shortness of breath,weakness,fever",COVID-19
+"shortness of breath,sore throat,muscle pain",COVID-19
+"body ache,sore throat,cough",Malaria
+"cough,weakness,fever",COVID-19
+"muscle pain,shortness of breath,body ache",COVID-19
+"weakness,shortness of breath,muscle pain",COVID-19
+"chills,runny nose,fever",Flu
+"cough,nausea,body ache",Malaria
+"sore throat,fever,body ache",Malaria
+"chills,fever,runny nose",Flu
+"body ache,headache,weakness",Malaria
+"weakness,cough,muscle pain",Malaria
+"body ache,vomiting,cough",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"shortness of breath,muscle pain,chills",Flu
+"headache,vomiting,runny nose",Malaria
+"muscle pain,body ache,shortness of breath",Malaria
+"body ache,vomiting,headache",Malaria
+"runny nose,headache,weakness",Flu
+"cough,chills,nausea",COVID-19
+"cough,fever,body ache",Malaria
+"shortness of breath,weakness,body ache",Malaria
+"muscle pain,headache,runny nose",Flu
+"sore throat,nausea,fever",Flu
+"headache,body ache,fever",Flu
+"nausea,vomiting,muscle pain",Malaria
+"nausea,vomiting,weakness",Malaria
+"runny nose,chills,sore throat",Flu
+"weakness,headache,shortness of breath",COVID-19
+"body ache,vomiting,fever",Malaria
+"body ache,weakness,muscle pain",Malaria
+"chills,shortness of breath,vomiting",COVID-19
+"weakness,cough,vomiting",Malaria
+"chills,vomiting,fever",Flu
+"vomiting,cough,muscle pain",Malaria
+"shortness of breath,chills,muscle pain",Flu
+"runny nose,body ache,nausea",Malaria
+"chills,fever,runny nose",Flu
+"sore throat,shortness of breath,headache",COVID-19
+"headache,shortness of breath,cough",COVID-19
+"muscle pain,headache,shortness of breath",Flu
+"weakness,muscle pain,cough",Malaria
+"body ache,sore throat,chills",Malaria
+"body ache,nausea,weakness",Malaria
+"nausea,headache,weakness",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"weakness,shortness of breath,chills",COVID-19
+"cough,headache,nausea",COVID-19
+"muscle pain,body ache,chills",Flu
+"weakness,sore throat,vomiting",Malaria
+"chills,muscle pain,fever",Flu
+"body ache,weakness,runny nose",Malaria
+"weakness,fever,chills",Flu
+"nausea,body ache,muscle pain",Malaria
+"nausea,vomiting,body ache",Malaria
+"fever,headache,chills",Flu
+"body ache,muscle pain,fever",Flu
+"nausea,shortness of breath,chills",COVID-19
+"nausea,headache,weakness",Malaria
+"chills,weakness,sore throat",Malaria
+"nausea,chills,shortness of breath",COVID-19
+"chills,headache,body ache",Flu
+"chills,muscle pain,weakness",Flu
+"vomiting,headache,cough",Malaria
+"vomiting,nausea,fever",Malaria
+"cough,headache,runny nose",Allergy
+"body ache,sore throat,runny nose",Malaria
+"shortness of breath,headache,vomiting",COVID-19
+"chills,weakness,fever",Flu
+"chills,headache,vomiting",Flu
+"body ache,sore throat,shortness of breath",Malaria
+"runny nose,vomiting,body ache",Malaria
+"weakness,fever,body ache",Malaria
+"body ache,runny nose,weakness",Malaria
+"headache,sore throat,runny nose",Allergy
+"shortness of breath,nausea,runny nose",COVID-19
+"headache,runny nose,cough",Allergy
+"weakness,sore throat,body ache",Malaria
+"fever,sore throat,runny nose",Cold
+"weakness,cough,nausea",Malaria
+"muscle pain,nausea,shortness of breath",COVID-19
+"chills,runny nose,muscle pain",Flu
+"body ache,fever,weakness",Malaria
+"runny nose,vomiting,muscle pain",Malaria
+"chills,runny nose,vomiting",Allergy
+"runny nose,nausea,chills",Flu
+"headache,chills,shortness of breath",Flu
+"headache,vomiting,nausea",Malaria
+"runny nose,headache,shortness of breath",Flu
+"chills,cough,headache",Flu
+"headache,weakness,runny nose",Allergy
+"body ache,shortness of breath,runny nose",Malaria
+"chills,nausea,vomiting",Malaria
+"headache,chills,weakness",Flu
+"nausea,body ache,chills",Malaria
+"runny nose,nausea,weakness",Malaria
+"chills,fever,cough",Flu
+"body ache,fever,headache",Flu
+"headache,chills,sore throat",Flu
+"fever,weakness,cough",Malaria
+"vomiting,weakness,headache",Malaria
+"muscle pain,cough,weakness",Flu
+"sore throat,body ache,shortness of breath",Malaria
+"shortness of breath,runny nose,fever",COVID-19
+"sore throat,muscle pain,nausea",Flu
+"runny nose,muscle pain,chills",Flu
+"muscle pain,shortness of breath,fever",Flu
+"runny nose,cough,sore throat",COVID-19
+"cough,nausea,fever",COVID-19
+"muscle pain,sore throat,vomiting",Malaria
+"runny nose,fever,chills",Flu
+"body ache,chills,fever",Flu
+"weakness,nausea,sore throat",Malaria
+"muscle pain,shortness of breath,headache",Flu
+"cough,body ache,weakness",Malaria
+"muscle pain,runny nose,nausea",Flu
+"fever,vomiting,cough",Malaria
+"headache,sore throat,nausea",Flu
+"runny nose,shortness of breath,cough",COVID-19
+"chills,runny nose,nausea",Allergy
+"weakness,chills,fever",Flu
+"weakness,shortness of breath,nausea",Malaria
+"headache,sore throat,vomiting",Malaria
+"shortness of breath,muscle pain,nausea",COVID-19
+"chills,shortness of breath,sore throat",COVID-19
+"weakness,cough,sore throat",Malaria
+"cough,body ache,shortness of breath",COVID-19
+"muscle pain,chills,cough",Flu
+"vomiting,cough,runny nose",Malaria
+"nausea,cough,muscle pain",COVID-19
+"headache,chills,vomiting",Flu
+"runny nose,sore throat,vomiting",Malaria
+"headache,vomiting,chills",Flu
+"cough,weakness,vomiting",Malaria
+"body ache,sore throat,runny nose",Malaria
+"headache,shortness of breath,cough",COVID-19
+"nausea,chills,vomiting",Malaria
+"sore throat,headache,vomiting",Malaria
+"nausea,headache,body ache",Malaria
+"nausea,sore throat,fever",Flu
+"sore throat,body ache,muscle pain",Malaria
+"shortness of breath,body ache,headache",COVID-19
+"cough,sore throat,headache",COVID-19
+"fever,muscle pain,vomiting",Flu
+"cough,body ache,nausea",Malaria
+"sore throat,body ache,vomiting",Malaria
+"chills,vomiting,cough",Malaria
+"cough,vomiting,chills",Malaria
+"fever,headache,muscle pain",Flu
+"runny nose,shortness of breath,sore throat",COVID-19
+"weakness,headache,fever",Flu
+"sore throat,runny nose,fever",Allergy
+"sore throat,headache,nausea",Flu
+"nausea,vomiting,chills",Malaria
+"headache,muscle pain,fever",Flu
+"fever,headache,shortness of breath",Flu
+"shortness of breath,muscle pain,vomiting",COVID-19
+"headache,vomiting,shortness of breath",Malaria
+"cough,headache,nausea",COVID-19
+"vomiting,fever,cough",Malaria
+"runny nose,weakness,headache",Flu
+"runny nose,chills,nausea",Flu
+"fever,nausea,weakness",Malaria
+"vomiting,nausea,body ache",Malaria
+"body ache,cough,fever",Malaria
+"body ache,runny nose,headache",Malaria
+"weakness,runny nose,muscle pain",Malaria
+"nausea,cough,vomiting",Malaria
+"nausea,headache,body ache",Malaria
+"nausea,sore throat,body ache",Malaria
+"vomiting,body ache,shortness of breath",Malaria
+"headache,nausea,vomiting",Malaria
+"chills,runny nose,shortness of breath",Allergy
+"weakness,chills,vomiting",Malaria
+"chills,nausea,weakness",Malaria
+"body ache,cough,shortness of breath",COVID-19
+"nausea,cough,fever",COVID-19
+"headache,muscle pain,body ache",Flu
+"chills,weakness,sore throat",Malaria
+"runny nose,shortness of breath,fever",COVID-19
+"fever,headache,muscle pain",Flu
+"cough,vomiting,headache",Malaria
+"fever,nausea,cough",COVID-19
+"body ache,weakness,fever",Malaria
+"fever,vomiting,runny nose",Malaria
+"fever,chills,nausea",Flu
+"fever,sore throat,runny nose",Cold
+"vomiting,cough,nausea",Malaria
+"chills,shortness of breath,nausea",COVID-19
+"headache,cough,chills",Flu
+"body ache,chills,weakness",Malaria
+"runny nose,nausea,cough",COVID-19
+"sore throat,body ache,vomiting",Malaria
+"vomiting,body ache,fever",Malaria
+"sore throat,muscle pain,runny nose",Flu
+"chills,cough,sore throat",COVID-19
+"body ache,headache,cough",Malaria
+"fever,sore throat,cough",COVID-19
+"headache,body ache,sore throat",Malaria
+"muscle pain,cough,vomiting",Malaria
+"chills,sore throat,shortness of breath",COVID-19
+"muscle pain,chills,headache",Flu
+"muscle pain,chills,weakness",Flu
+"headache,sore throat,muscle pain",Flu
+"runny nose,weakness,headache",Flu
+"muscle pain,sore throat,fever",Flu
+"sore throat,runny nose,fever",Allergy
+"sore throat,runny nose,headache",Flu
+"cough,shortness of breath,nausea",COVID-19
+"weakness,runny nose,cough",Malaria
+"runny nose,fever,body ache",Malaria
+"muscle pain,weakness,nausea",Malaria
+"weakness,cough,nausea",Malaria
+"chills,muscle pain,fever",Flu
+"nausea,sore throat,fever",Flu
+"fever,sore throat,vomiting",Malaria
+"runny nose,vomiting,body ache",Malaria
+"nausea,body ache,chills",Malaria
+"body ache,fever,weakness",Malaria
+"cough,sore throat,body ache",Malaria
+"headache,weakness,chills",Flu
+"headache,shortness of breath,chills",Flu
+"shortness of breath,cough,sore throat",COVID-19
+"cough,vomiting,runny nose",Malaria
+"shortness of breath,cough,weakness",COVID-19
+"sore throat,vomiting,muscle pain",Malaria
+"muscle pain,weakness,runny nose",Flu
+"nausea,fever,body ache",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"chills,sore throat,nausea",Flu
+"nausea,sore throat,weakness",Malaria
+"headache,muscle pain,nausea",Flu
+"body ache,weakness,sore throat",Malaria
+"weakness,chills,vomiting",Malaria
+"body ache,weakness,muscle pain",Malaria
+"nausea,fever,body ache",Malaria
+"headache,sore throat,runny nose",Allergy
+"weakness,chills,runny nose",Allergy
+"shortness of breath,sore throat,vomiting",COVID-19
+"sore throat,headache,muscle pain",Flu
+"muscle pain,vomiting,weakness",Malaria
+"shortness of breath,chills,vomiting",COVID-19
+"chills,headache,fever",Flu
+"body ache,weakness,chills",Malaria
+"body ache,sore throat,chills",Malaria
+"shortness of breath,cough,weakness",COVID-19
+"shortness of breath,cough,muscle pain",COVID-19
+"muscle pain,body ache,vomiting",Malaria
+"sore throat,runny nose,muscle pain",Flu
+"weakness,cough,chills",Malaria
+"muscle pain,chills,nausea",Flu
+"fever,weakness,runny nose",Malaria
+"weakness,chills,vomiting",Malaria
+"chills,nausea,weakness",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"runny nose,nausea,weakness",Malaria
+"runny nose,fever,nausea",Allergy
+"shortness of breath,fever,sore throat",COVID-19
+"muscle pain,headache,nausea",Flu
+"nausea,shortness of breath,fever",COVID-19
+"sore throat,shortness of breath,chills",COVID-19
+"sore throat,chills,shortness of breath",COVID-19
+"weakness,muscle pain,body ache",Malaria
+"shortness of breath,body ache,sore throat",COVID-19
+"headache,weakness,fever",Flu
+"nausea,body ache,fever",Malaria
+"sore throat,headache,muscle pain",Flu
+"runny nose,nausea,muscle pain",Flu
+"fever,body ache,runny nose",Malaria
+"vomiting,fever,weakness",Malaria
+"body ache,muscle pain,vomiting",Malaria
+"chills,cough,shortness of breath",COVID-19
+"runny nose,weakness,body ache",Malaria
+"runny nose,chills,sore throat",Flu
+"body ache,chills,nausea",Malaria
+"nausea,headache,cough",COVID-19
+"weakness,chills,fever",Flu
+"headache,shortness of breath,weakness",COVID-19
+"cough,fever,body ache",Malaria
+"nausea,headache,runny nose",Allergy
+"body ache,vomiting,cough",Malaria
+"sore throat,weakness,vomiting",Malaria
+"runny nose,shortness of breath,cough",COVID-19
+"shortness of breath,headache,runny nose",COVID-19
+"cough,fever,chills",Flu
+"cough,muscle pain,sore throat",COVID-19
+"headache,runny nose,muscle pain",Flu
+"sore throat,shortness of breath,weakness",COVID-19
+"cough,body ache,weakness",Malaria
+"weakness,shortness of breath,sore throat",COVID-19
+"muscle pain,fever,weakness",Flu
+"shortness of breath,body ache,chills",COVID-19
+"nausea,muscle pain,weakness",Malaria
+"muscle pain,shortness of breath,vomiting",COVID-19
+"cough,sore throat,shortness of breath",COVID-19
+"runny nose,vomiting,nausea",Malaria
+"cough,weakness,chills",COVID-19
+"chills,cough,headache",Flu
+"sore throat,body ache,chills",Malaria
+"sore throat,vomiting,fever",Malaria
+"runny nose,cough,weakness",COVID-19
+"muscle pain,weakness,nausea",Malaria
+"weakness,runny nose,chills",Malaria
+"chills,headache,cough",Flu
+"body ache,fever,headache",Flu
+"chills,body ache,runny nose",Malaria
+"fever,vomiting,body ache",Malaria
+"fever,chills,cough",Flu
+"fever,nausea,headache",Flu
+"runny nose,fever,sore throat",Cold
+"vomiting,fever,sore throat",Malaria
+"nausea,chills,weakness",Malaria
+"nausea,sore throat,chills",Flu
+"chills,vomiting,fever",Flu
+"weakness,chills,shortness of breath",COVID-19
+"weakness,chills,headache",Flu
+"body ache,muscle pain,headache",Flu
+"nausea,cough,fever",COVID-19
+"shortness of breath,weakness,nausea",Malaria
+"shortness of breath,sore throat,weakness",COVID-19
+"headache,runny nose,fever",Flu
+"chills,nausea,headache",Flu
+"cough,weakness,fever",COVID-19
+"sore throat,shortness of breath,body ache",COVID-19
+"headache,weakness,fever",Flu
+"vomiting,runny nose,sore throat",Malaria
+"vomiting,cough,shortness of breath",COVID-19
+"weakness,fever,vomiting",Malaria
+"headache,runny nose,cough",Allergy
+"cough,headache,vomiting",Malaria
+"shortness of breath,sore throat,fever",COVID-19
+"weakness,muscle pain,nausea",Malaria
+"body ache,sore throat,cough",Malaria
+"headache,body ache,chills",Flu
+"runny nose,fever,muscle pain",Flu
+"vomiting,body ache,shortness of breath",Malaria
+"cough,muscle pain,runny nose",COVID-19
+"shortness of breath,weakness,runny nose",COVID-19
+"cough,muscle pain,nausea",COVID-19
+"runny nose,body ache,muscle pain",Malaria
+"runny nose,cough,sore throat",COVID-19
+"nausea,sore throat,body ache",Malaria
+"sore throat,weakness,runny nose",Malaria
+"shortness of breath,chills,cough",COVID-19
+"shortness of breath,weakness,headache",COVID-19
+"body ache,fever,cough",Malaria
+"fever,cough,weakness",COVID-19
+"chills,shortness of breath,headache",Flu
+"muscle pain,nausea,cough",Flu
+"fever,headache,shortness of breath",Flu
+"headache,sore throat,body ache",Malaria
+"headache,fever,sore throat",Flu
+"shortness of breath,chills,body ache",COVID-19
+"fever,cough,headache",Flu
+"shortness of breath,headache,nausea",COVID-19
+"weakness,chills,body ache",Malaria
+"headache,weakness,sore throat",Malaria
+"muscle pain,vomiting,weakness",Malaria
+"vomiting,chills,sore throat",Malaria
+"weakness,headache,vomiting",Malaria
+"weakness,fever,body ache",Malaria
+"headache,chills,runny nose",Flu
+"nausea,headache,muscle pain",Flu
+"runny nose,fever,headache",Flu
+"weakness,runny nose,fever",Malaria
+"nausea,weakness,muscle pain",Malaria
+"nausea,fever,chills",Flu
+"vomiting,chills,body ache",Malaria
+"body ache,muscle pain,sore throat",Malaria
+"chills,sore throat,muscle pain",Flu
+"fever,shortness of breath,nausea",COVID-19
+"chills,runny nose,cough",Allergy
+"runny nose,muscle pain,chills",Flu
+"fever,chills,sore throat",Flu
+"runny nose,weakness,nausea",Malaria
+"headache,muscle pain,weakness",Flu
+"headache,muscle pain,chills",Flu
+"cough,vomiting,shortness of breath",COVID-19
+"vomiting,chills,fever",Flu
+"chills,shortness of breath,body ache",COVID-19
+"vomiting,weakness,body ache",Malaria
+"nausea,body ache,fever",Malaria
+"fever,runny nose,sore throat",Cold
+"headache,muscle pain,fever",Flu
+"chills,weakness,shortness of breath",COVID-19
+"fever,muscle pain,headache",Flu
+"headache,chills,sore throat",Flu
+"headache,chills,body ache",Flu
+"vomiting,weakness,cough",Malaria
+"cough,nausea,headache",COVID-19
+"chills,body ache,weakness",Malaria
+"cough,muscle pain,headache",Flu
+"vomiting,fever,chills",Flu
+"nausea,fever,cough",COVID-19
+"weakness,cough,sore throat",Malaria
+"nausea,headache,fever",Flu
+"runny nose,shortness of breath,weakness",COVID-19
+"cough,headache,sore throat",COVID-19
+"cough,body ache,fever",Malaria
+"headache,cough,chills",Flu
+"vomiting,nausea,muscle pain",Malaria
+"headache,cough,weakness",COVID-19
+"nausea,runny nose,shortness of breath",COVID-19
+"shortness of breath,muscle pain,vomiting",COVID-19
+"vomiting,headache,weakness",Malaria
+"fever,nausea,muscle pain",Flu
+"shortness of breath,chills,runny nose",COVID-19
+"sore throat,fever,runny nose",Allergy
+"shortness of breath,chills,fever",Flu
+"vomiting,fever,chills",Flu
+"runny nose,muscle pain,vomiting",Malaria
+"runny nose,cough,weakness",COVID-19
+"cough,runny nose,vomiting",Malaria
+"shortness of breath,muscle pain,runny nose",COVID-19
+"fever,cough,shortness of breath",COVID-19
+"headache,body ache,runny nose",Malaria
+"chills,weakness,body ache",Malaria
+"fever,muscle pain,sore throat",Flu
+"fever,shortness of breath,muscle pain",Flu
+"runny nose,vomiting,headache",Malaria
+"cough,vomiting,shortness of breath",COVID-19
+"headache,body ache,weakness",Malaria
+"runny nose,fever,headache",Flu
+"weakness,chills,runny nose",Allergy
+"runny nose,headache,cough",Flu
+"cough,body ache,nausea",Malaria
+"cough,fever,shortness of breath",COVID-19
+"runny nose,muscle pain,fever",Flu
+"chills,vomiting,body ache",Malaria
+"muscle pain,cough,weakness",Flu
+"body ache,shortness of breath,weakness",Malaria
+"headache,fever,cough",Flu
+"runny nose,shortness of breath,vomiting",COVID-19
+"nausea,cough,fever",COVID-19
+"chills,muscle pain,vomiting",Flu
+"runny nose,vomiting,nausea",Malaria
+"vomiting,body ache,shortness of breath",Malaria
+"cough,runny nose,body ache",Malaria
+"fever,body ache,sore throat",Malaria
+"chills,nausea,body ache",Malaria
+"weakness,nausea,chills",Malaria
+"body ache,cough,muscle pain",Malaria
+"headache,shortness of breath,sore throat",COVID-19
+"body ache,fever,headache",Flu
+"headache,runny nose,body ache",Allergy
+"fever,body ache,cough",Malaria
+"fever,weakness,shortness of breath",COVID-19
+"sore throat,muscle pain,runny nose",Flu
+"headache,shortness of breath,sore throat",COVID-19
+"body ache,vomiting,sore throat",Malaria
+"weakness,sore throat,chills",Malaria
+"nausea,runny nose,weakness",Malaria
+"muscle pain,body ache,shortness of breath",Malaria
+"runny nose,headache,chills",Flu
+"fever,vomiting,headache",Flu
+"fever,headache,muscle pain",Flu
+"headache,cough,muscle pain",Flu
+"shortness of breath,cough,vomiting",COVID-19
+"weakness,body ache,muscle pain",Malaria
+"cough,shortness of breath,vomiting",COVID-19
+"muscle pain,cough,vomiting",Malaria
+"shortness of breath,muscle pain,nausea",COVID-19
+"vomiting,muscle pain,headache",Flu
+"shortness of breath,sore throat,muscle pain",COVID-19
+"runny nose,sore throat,cough",COVID-19
+"weakness,fever,cough",Malaria
+"headache,vomiting,fever",Flu
+"body ache,fever,cough",Malaria
+"vomiting,runny nose,chills",Malaria
+"body ache,runny nose,headache",Malaria
+"runny nose,sore throat,headache",Flu
+"fever,weakness,muscle pain",Flu
+"headache,body ache,weakness",Malaria
+"runny nose,weakness,shortness of breath",COVID-19
+"shortness of breath,sore throat,weakness",COVID-19
+"nausea,sore throat,weakness",Malaria
+"runny nose,nausea,muscle pain",Flu
+"body ache,fever,sore throat",Malaria
+"runny nose,cough,muscle pain",COVID-19
+"weakness,runny nose,body ache",Malaria
+"vomiting,weakness,body ache",Malaria
+"nausea,headache,sore throat",Flu
+"nausea,headache,muscle pain",Flu
+"nausea,chills,headache",Flu
+"headache,weakness,chills",Flu
+"body ache,shortness of breath,cough",COVID-19
+"nausea,headache,cough",COVID-19
+"sore throat,body ache,chills",Malaria
+"fever,shortness of breath,muscle pain",Flu
+"headache,shortness of breath,weakness",COVID-19
+"cough,weakness,vomiting",Malaria
+"muscle pain,weakness,fever",Flu
+"shortness of breath,cough,chills",COVID-19
+"fever,weakness,shortness of breath",COVID-19
+"vomiting,cough,shortness of breath",COVID-19
+"sore throat,cough,weakness",COVID-19
+"shortness of breath,body ache,weakness",Malaria
+"fever,vomiting,cough",Malaria
+"chills,weakness,cough",Malaria
+"chills,fever,vomiting",Flu
+"muscle pain,chills,fever",Flu
+"runny nose,sore throat,weakness",Malaria
+"runny nose,body ache,vomiting",Malaria
+"nausea,body ache,sore throat",Malaria
+"body ache,nausea,shortness of breath",Malaria
+"chills,nausea,weakness",Malaria
+"fever,runny nose,vomiting",Malaria
+"fever,headache,runny nose",Flu
+"fever,chills,cough",Flu
+"vomiting,cough,body ache",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"sore throat,cough,shortness of breath",COVID-19
+"weakness,muscle pain,headache",Flu
+"runny nose,nausea,body ache",Malaria
+"runny nose,weakness,body ache",Malaria
+"body ache,vomiting,weakness",Malaria
+"chills,cough,shortness of breath",COVID-19
+"runny nose,body ache,cough",Malaria
+"cough,body ache,nausea",Malaria
+"chills,sore throat,muscle pain",Flu
+"sore throat,muscle pain,headache",Flu
+"sore throat,weakness,headache",Malaria
+"sore throat,muscle pain,nausea",Flu
+"sore throat,cough,headache",COVID-19
+"body ache,runny nose,shortness of breath",Malaria
+"chills,vomiting,sore throat",Malaria
+"fever,runny nose,muscle pain",Flu
+"shortness of breath,body ache,sore throat",COVID-19
+"shortness of breath,body ache,fever",COVID-19
+"vomiting,nausea,body ache",Malaria
+"fever,headache,vomiting",Flu
+"shortness of breath,chills,fever",Flu
+"sore throat,nausea,vomiting",Malaria
+"vomiting,nausea,shortness of breath",Malaria
+"weakness,sore throat,cough",Malaria
+"muscle pain,weakness,vomiting",Malaria
+"fever,muscle pain,runny nose",Flu
+"vomiting,cough,chills",Malaria
+"nausea,cough,vomiting",Malaria
+"nausea,cough,shortness of breath",COVID-19
+"vomiting,shortness of breath,cough",COVID-19
+"vomiting,fever,body ache",Malaria
+"weakness,body ache,cough",Malaria
+"fever,weakness,nausea",Malaria
+"muscle pain,shortness of breath,nausea",COVID-19
+"fever,headache,weakness",Flu
+"runny nose,chills,weakness",Malaria
+"body ache,muscle pain,sore throat",Malaria
+"headache,shortness of breath,chills",Flu
+"vomiting,weakness,fever",Malaria
+"runny nose,sore throat,body ache",Malaria
+"shortness of breath,fever,nausea",COVID-19
+"sore throat,cough,headache",COVID-19
+"body ache,cough,vomiting",Malaria
+"cough,weakness,sore throat",COVID-19
+"chills,sore throat,weakness",Malaria
+"body ache,runny nose,sore throat",Malaria
+"chills,shortness of breath,muscle pain",Flu
+"cough,shortness of breath,body ache",COVID-19
+"shortness of breath,sore throat,body ache",COVID-19
+"runny nose,sore throat,muscle pain",Flu
+"weakness,muscle pain,cough",Malaria
+"fever,vomiting,weakness",Malaria
+"sore throat,body ache,vomiting",Malaria
+"nausea,weakness,chills",Malaria
+"weakness,shortness of breath,chills",COVID-19
+"fever,shortness of breath,chills",Flu
+"weakness,nausea,sore throat",Malaria
+"chills,runny nose,vomiting",Allergy
+"sore throat,vomiting,chills",Malaria
+"body ache,fever,weakness",Malaria
+"headache,muscle pain,cough",Flu
+"muscle pain,chills,nausea",Flu
+"shortness of breath,sore throat,muscle pain",COVID-19
+"weakness,chills,nausea",Malaria
+"nausea,fever,vomiting",Malaria
+"headache,cough,runny nose",Allergy
+"muscle pain,shortness of breath,nausea",COVID-19
+"nausea,cough,fever",COVID-19
+"fever,runny nose,headache",Flu
+"shortness of breath,runny nose,chills",COVID-19
+"runny nose,chills,cough",COVID-19
+"cough,fever,chills",Flu
+"chills,headache,vomiting",Flu
+"vomiting,weakness,muscle pain",Malaria
+"runny nose,fever,chills",Flu
+"nausea,shortness of breath,weakness",Malaria
+"vomiting,muscle pain,cough",Malaria
+"runny nose,chills,weakness",Malaria
+"shortness of breath,fever,sore throat",COVID-19
+"runny nose,chills,vomiting",Malaria
+"muscle pain,headache,nausea",Flu
+"nausea,runny nose,vomiting",Malaria
+"cough,weakness,muscle pain",COVID-19
+"nausea,headache,shortness of breath",COVID-19
+"body ache,weakness,muscle pain",Malaria
+"fever,vomiting,nausea",Malaria
+"body ache,muscle pain,nausea",Malaria
+"chills,fever,shortness of breath",Flu
+"fever,chills,nausea",Flu
+"headache,fever,weakness",Flu
+"runny nose,body ache,chills",Malaria
+"muscle pain,headache,nausea",Flu
+"chills,cough,muscle pain",Flu
+"shortness of breath,headache,cough",COVID-19
+"sore throat,body ache,vomiting",Malaria
+"body ache,fever,vomiting",Malaria
+"muscle pain,vomiting,weakness",Malaria
+"headache,cough,fever",Flu
+"cough,fever,runny nose",COVID-19
+"muscle pain,nausea,vomiting",Malaria
+"headache,vomiting,fever",Flu
+"vomiting,sore throat,nausea",Malaria
+"muscle pain,weakness,chills",Flu
+"sore throat,muscle pain,fever",Flu
+"sore throat,body ache,headache",Malaria
+"body ache,shortness of breath,cough",COVID-19
+"headache,sore throat,weakness",Malaria
+"cough,chills,nausea",COVID-19
+"nausea,body ache,muscle pain",Malaria
+"fever,sore throat,chills",Flu
+"body ache,nausea,cough",Malaria
+"nausea,headache,shortness of breath",COVID-19
+"body ache,headache,runny nose",Malaria
+"body ache,weakness,headache",Malaria
+"fever,shortness of breath,nausea",COVID-19
+"weakness,sore throat,cough",Malaria
+"weakness,muscle pain,headache",Flu
+"weakness,muscle pain,body ache",Malaria
+"muscle pain,shortness of breath,fever",Flu
+"headache,shortness of breath,fever",Flu
+"body ache,weakness,cough",Malaria
+"fever,cough,runny nose",COVID-19
+"muscle pain,sore throat,chills",Flu
+"shortness of breath,headache,runny nose",COVID-19
+"cough,weakness,sore throat",COVID-19
+"vomiting,cough,muscle pain",Malaria
+"muscle pain,nausea,sore throat",Flu
+"muscle pain,cough,chills",Flu
+"runny nose,headache,body ache",Flu
+"nausea,headache,weakness",Malaria
+"sore throat,cough,chills",COVID-19
+"headache,muscle pain,fever",Flu
+"cough,chills,muscle pain",Flu
+"sore throat,chills,body ache",Malaria
+"vomiting,nausea,weakness",Malaria
+"chills,shortness of breath,cough",COVID-19
+"sore throat,nausea,weakness",Malaria
+"runny nose,headache,weakness",Flu
+"body ache,weakness,chills",Malaria
+"chills,shortness of breath,weakness",COVID-19
+"runny nose,vomiting,nausea",Malaria
+"chills,cough,shortness of breath",COVID-19
+"runny nose,chills,vomiting",Malaria
+"sore throat,vomiting,shortness of breath",Malaria
+"fever,sore throat,headache",Flu
+"body ache,fever,vomiting",Malaria
+"muscle pain,fever,body ache",Flu
+"weakness,vomiting,muscle pain",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"sore throat,body ache,nausea",Malaria
+"body ache,fever,muscle pain",Flu
+"muscle pain,body ache,weakness",Malaria
+"headache,muscle pain,nausea",Flu
+"chills,sore throat,fever",Flu
+"fever,weakness,chills",Flu
+"body ache,muscle pain,nausea",Malaria
+"runny nose,shortness of breath,muscle pain",COVID-19
+"muscle pain,body ache,runny nose",Malaria
+"muscle pain,runny nose,cough",Flu
+"sore throat,headache,vomiting",Malaria
+"headache,muscle pain,body ache",Flu
+"vomiting,sore throat,cough",Malaria
+"fever,sore throat,body ache",Malaria
+"body ache,sore throat,runny nose",Malaria
+"vomiting,runny nose,shortness of breath",Malaria
+"vomiting,weakness,body ache",Malaria
+"chills,sore throat,fever",Flu
+"muscle pain,chills,vomiting",Flu
+"chills,fever,shortness of breath",Flu
+"fever,runny nose,vomiting",Malaria
+"weakness,headache,fever",Flu
+"vomiting,weakness,cough",Malaria
+"body ache,chills,fever",Flu
+"body ache,runny nose,cough",Malaria
+"muscle pain,chills,nausea",Flu
+"runny nose,vomiting,sore throat",Malaria
+"fever,chills,headache",Flu
+"body ache,shortness of breath,weakness",Malaria
+"vomiting,headache,body ache",Malaria
+"nausea,runny nose,vomiting",Malaria
+"muscle pain,headache,body ache",Flu
+"shortness of breath,body ache,nausea",Malaria
+"muscle pain,fever,sore throat",Flu
+"muscle pain,sore throat,fever",Flu
+"vomiting,shortness of breath,fever",Malaria
+"weakness,cough,sore throat",Malaria
+"shortness of breath,chills,vomiting",COVID-19
+"chills,body ache,runny nose",Malaria
+"chills,cough,sore throat",COVID-19
+"sore throat,fever,headache",Flu
+"shortness of breath,sore throat,weakness",COVID-19
+"nausea,sore throat,vomiting",Malaria
+"nausea,runny nose,chills",Flu
+"chills,shortness of breath,cough",COVID-19
+"chills,runny nose,body ache",Allergy
+"nausea,cough,body ache",Malaria
+"cough,chills,body ache",Malaria
+"sore throat,muscle pain,cough",Flu
+"shortness of breath,cough,vomiting",COVID-19
+"chills,weakness,runny nose",Allergy
+"sore throat,chills,shortness of breath",COVID-19
+"muscle pain,weakness,sore throat",Flu
+"vomiting,sore throat,nausea",Malaria
+"shortness of breath,headache,nausea",COVID-19
+"muscle pain,weakness,runny nose",Flu
+"nausea,weakness,headache",Malaria
+"chills,weakness,sore throat",Malaria
+"chills,weakness,nausea",Malaria
+"vomiting,fever,sore throat",Malaria
+"body ache,shortness of breath,weakness",Malaria
+"muscle pain,chills,cough",Flu
+"fever,chills,nausea",Flu
+"body ache,chills,cough",Malaria
+"chills,muscle pain,cough",Flu
+"weakness,chills,vomiting",Malaria
+"shortness of breath,body ache,nausea",Malaria
+"vomiting,shortness of breath,chills",Malaria
+"muscle pain,weakness,shortness of breath",COVID-19
+"shortness of breath,fever,body ache",COVID-19
+"weakness,runny nose,fever",Malaria
+"headache,muscle pain,chills",Flu
+"sore throat,headache,cough",COVID-19
+"shortness of breath,nausea,muscle pain",COVID-19
+"runny nose,sore throat,muscle pain",Flu
+"weakness,nausea,muscle pain",Malaria
+"chills,fever,muscle pain",Flu
+"sore throat,nausea,weakness",Malaria
+"weakness,sore throat,nausea",Malaria
+"muscle pain,nausea,chills",Flu
+"shortness of breath,runny nose,chills",COVID-19
+"shortness of breath,sore throat,cough",COVID-19
+"weakness,sore throat,fever",Malaria
+"chills,cough,sore throat",COVID-19
+"muscle pain,body ache,shortness of breath",Malaria
+"sore throat,shortness of breath,fever",COVID-19
+"shortness of breath,body ache,runny nose",COVID-19
+"weakness,fever,cough",Malaria
+"headache,runny nose,sore throat",Allergy
+"fever,sore throat,nausea",Cold
+"chills,body ache,sore throat",Malaria
+"nausea,cough,body ache",Malaria
+"nausea,sore throat,shortness of breath",COVID-19
+"muscle pain,cough,nausea",Flu
+"nausea,sore throat,runny nose",Allergy
+"cough,weakness,fever",COVID-19
+"cough,weakness,chills",COVID-19
+"muscle pain,headache,body ache",Flu
+"cough,muscle pain,headache",Flu
+"runny nose,shortness of breath,cough",COVID-19
+"muscle pain,cough,body ache",Malaria
+"runny nose,sore throat,muscle pain",Flu
+"weakness,fever,cough",Malaria
+"cough,sore throat,vomiting",Malaria
+"shortness of breath,sore throat,chills",COVID-19
+"shortness of breath,sore throat,cough",COVID-19
+"fever,headache,body ache",Flu
+"vomiting,fever,chills",Flu
+"sore throat,body ache,shortness of breath",Malaria
+"runny nose,headache,nausea",Flu
+"nausea,body ache,vomiting",Malaria
+"nausea,fever,weakness",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"cough,headache,shortness of breath",COVID-19
+"muscle pain,weakness,fever",Flu
+"runny nose,headache,shortness of breath",Flu
+"body ache,shortness of breath,sore throat",Malaria
+"nausea,chills,body ache",Malaria
+"runny nose,chills,body ache",Malaria
+"vomiting,runny nose,shortness of breath",Malaria
+"cough,nausea,vomiting",Malaria
+"muscle pain,body ache,cough",Malaria
+"nausea,muscle pain,weakness",Malaria
+"chills,vomiting,nausea",Malaria
+"shortness of breath,vomiting,runny nose",COVID-19
+"nausea,runny nose,fever",Allergy
+"sore throat,vomiting,runny nose",Malaria
+"shortness of breath,weakness,sore throat",COVID-19
+"runny nose,body ache,headache",Malaria
+"fever,headache,body ache",Flu
+"body ache,cough,runny nose",Malaria
+"vomiting,headache,chills",Flu
+"chills,muscle pain,nausea",Flu
+"sore throat,body ache,runny nose",Malaria
+"runny nose,muscle pain,sore throat",Flu
+"muscle pain,runny nose,cough",Flu
+"nausea,cough,runny nose",COVID-19
+"weakness,runny nose,muscle pain",Malaria
+"body ache,muscle pain,vomiting",Malaria
+"weakness,cough,chills",Malaria
+"weakness,fever,vomiting",Malaria
+"vomiting,nausea,headache",Malaria
+"chills,nausea,shortness of breath",COVID-19
+"nausea,body ache,shortness of breath",Malaria
+"chills,nausea,shortness of breath",COVID-19
+"sore throat,fever,vomiting",Malaria
+"body ache,cough,chills",Malaria
+"body ache,muscle pain,cough",Malaria
+"headache,sore throat,body ache",Malaria
+"vomiting,fever,weakness",Malaria
+"weakness,runny nose,body ache",Malaria
+"cough,headache,body ache",Malaria
+"vomiting,headache,chills",Flu
+"runny nose,muscle pain,vomiting",Malaria
+"muscle pain,cough,shortness of breath",COVID-19
+"muscle pain,runny nose,shortness of breath",COVID-19
+"cough,chills,runny nose",Allergy
+"body ache,weakness,cough",Malaria
+"runny nose,vomiting,nausea",Malaria
+"shortness of breath,body ache,vomiting",Malaria
+"headache,body ache,vomiting",Malaria
+"shortness of breath,fever,sore throat",COVID-19
+"sore throat,weakness,fever",Malaria
+"runny nose,cough,chills",COVID-19
+"headache,shortness of breath,chills",Flu
+"sore throat,chills,weakness",Malaria
+"nausea,sore throat,shortness of breath",COVID-19
+"shortness of breath,fever,muscle pain",Flu
+"sore throat,body ache,weakness",Malaria
+"runny nose,chills,nausea",Flu
+"shortness of breath,muscle pain,headache",Flu
+"sore throat,cough,body ache",Malaria
+"sore throat,fever,vomiting",Malaria
+"vomiting,weakness,chills",Malaria
+"nausea,weakness,runny nose",Malaria
+"body ache,vomiting,headache",Malaria
+"runny nose,sore throat,muscle pain",Flu
+"chills,muscle pain,shortness of breath",Flu
+"runny nose,sore throat,body ache",Malaria
+"muscle pain,cough,runny nose",Flu
+"fever,runny nose,headache",Flu
+"shortness of breath,headache,muscle pain",Flu
+"body ache,runny nose,headache",Malaria
+"headache,nausea,weakness",Malaria
+"fever,vomiting,cough",Malaria
+"vomiting,weakness,shortness of breath",Malaria
+"chills,cough,runny nose",Allergy
+"muscle pain,headache,fever",Flu
+"shortness of breath,body ache,vomiting",Malaria
+"runny nose,body ache,nausea",Malaria
+"runny nose,headache,fever",Flu
+"body ache,nausea,cough",Malaria
+"sore throat,weakness,runny nose",Malaria
+"fever,muscle pain,cough",Flu
+"sore throat,cough,runny nose",COVID-19
+"body ache,cough,fever",Malaria
+"nausea,runny nose,muscle pain",Flu
+"chills,shortness of breath,vomiting",COVID-19
+"muscle pain,vomiting,headache",Flu
+"sore throat,runny nose,muscle pain",Flu
+"shortness of breath,body ache,weakness",Malaria
+"vomiting,nausea,weakness",Malaria
+"muscle pain,chills,headache",Flu
+"fever,sore throat,chills",Flu
+"muscle pain,nausea,runny nose",Flu
+"sore throat,body ache,headache",Malaria
+"headache,shortness of breath,fever",Flu
+"body ache,shortness of breath,cough",COVID-19
+"fever,body ache,runny nose",Malaria
+"shortness of breath,chills,body ache",COVID-19
+"muscle pain,fever,runny nose",Flu
+"sore throat,fever,vomiting",Malaria
+"headache,nausea,runny nose",Allergy
+"shortness of breath,runny nose,muscle pain",COVID-19
+"chills,body ache,runny nose",Malaria
+"cough,headache,runny nose",Allergy
+"vomiting,cough,body ache",Malaria
+"runny nose,cough,fever",COVID-19
+"muscle pain,runny nose,body ache",Malaria
+"vomiting,body ache,cough",Malaria
+"muscle pain,sore throat,cough",Flu
+"sore throat,headache,weakness",Malaria
+"chills,nausea,vomiting",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"fever,runny nose,body ache",Malaria
+"muscle pain,chills,cough",Flu
+"cough,body ache,fever",Malaria
+"runny nose,body ache,cough",Malaria
+"body ache,cough,fever",Malaria
+"shortness of breath,sore throat,headache",COVID-19
+"headache,body ache,nausea",Malaria
+"weakness,headache,fever",Flu
+"cough,nausea,weakness",Malaria
+"sore throat,runny nose,nausea",Allergy
+"headache,shortness of breath,nausea",COVID-19
+"fever,nausea,cough",COVID-19
+"cough,muscle pain,sore throat",COVID-19
+"cough,shortness of breath,nausea",COVID-19
+"body ache,fever,nausea",Malaria
+"chills,cough,nausea",COVID-19
+"body ache,fever,weakness",Malaria
+"vomiting,fever,headache",Flu
+"shortness of breath,fever,cough",COVID-19
+"nausea,headache,body ache",Malaria
+"shortness of breath,body ache,headache",COVID-19
+"cough,runny nose,weakness",COVID-19
+"chills,weakness,shortness of breath",COVID-19
+"vomiting,runny nose,muscle pain",Malaria
+"cough,sore throat,weakness",COVID-19
+"fever,weakness,chills",Flu
+"fever,chills,nausea",Flu
+"muscle pain,nausea,headache",Flu
+"headache,shortness of breath,vomiting",COVID-19
+"muscle pain,cough,vomiting",Malaria
+"sore throat,body ache,vomiting",Malaria
+"fever,weakness,chills",Flu
+"nausea,headache,runny nose",Allergy
+"body ache,chills,vomiting",Malaria
+"body ache,shortness of breath,muscle pain",Malaria
+"shortness of breath,body ache,nausea",Malaria
+"chills,weakness,body ache",Malaria
+"weakness,chills,sore throat",Malaria
+"headache,weakness,shortness of breath",COVID-19
+"shortness of breath,headache,sore throat",COVID-19
+"cough,shortness of breath,weakness",COVID-19
+"fever,weakness,nausea",Malaria
+"shortness of breath,weakness,sore throat",COVID-19
+"chills,headache,shortness of breath",Flu
+"vomiting,shortness of breath,cough",COVID-19
+"vomiting,runny nose,cough",Malaria
+"fever,nausea,chills",Flu
+"sore throat,body ache,cough",Malaria
+"weakness,cough,headache",Malaria
+"body ache,shortness of breath,sore throat",Malaria
+"nausea,sore throat,vomiting",Malaria
+"chills,vomiting,nausea",Malaria
+"shortness of breath,muscle pain,cough",COVID-19
+"muscle pain,runny nose,fever",Flu
+"vomiting,headache,muscle pain",Flu
+"cough,shortness of breath,headache",COVID-19
+"weakness,fever,shortness of breath",COVID-19
+"nausea,chills,sore throat",Flu
+"runny nose,headache,vomiting",Flu
+"weakness,muscle pain,cough",Malaria
+"vomiting,chills,body ache",Malaria
+"shortness of breath,fever,nausea",COVID-19
+"body ache,weakness,nausea",Malaria
+"headache,weakness,vomiting",Malaria
+"shortness of breath,runny nose,headache",COVID-19
+"shortness of breath,headache,sore throat",COVID-19
+"cough,headache,shortness of breath",COVID-19
+"nausea,weakness,headache",Malaria
+"cough,muscle pain,shortness of breath",COVID-19
+"vomiting,nausea,weakness",Malaria
+"nausea,body ache,runny nose",Malaria
+"shortness of breath,sore throat,muscle pain",COVID-19
+"sore throat,body ache,cough",Malaria
+"vomiting,shortness of breath,runny nose",Malaria
+"runny nose,muscle pain,chills",Flu
+"weakness,runny nose,fever",Malaria
+"runny nose,shortness of breath,vomiting",COVID-19
+"sore throat,body ache,cough",Malaria
+"sore throat,nausea,muscle pain",Flu
+"fever,weakness,vomiting",Malaria
+"runny nose,sore throat,headache",Flu
+"sore throat,cough,chills",COVID-19
+"body ache,runny nose,nausea",Malaria
+"fever,vomiting,shortness of breath",Malaria
+"runny nose,chills,vomiting",Malaria
+"fever,runny nose,sore throat",Cold
+"fever,shortness of breath,chills",Flu
+"vomiting,shortness of breath,runny nose",Malaria
+"muscle pain,weakness,vomiting",Malaria
+"headache,body ache,weakness",Malaria
+"weakness,fever,vomiting",Malaria
+"cough,muscle pain,sore throat",COVID-19
+"shortness of breath,cough,body ache",COVID-19
+"runny nose,cough,vomiting",Malaria
+"body ache,chills,sore throat",Malaria
+"fever,headache,cough",Flu
+"muscle pain,headache,fever",Flu
+"weakness,shortness of breath,nausea",Malaria
+"runny nose,weakness,headache",Flu
+"vomiting,sore throat,weakness",Malaria
+"shortness of breath,fever,body ache",COVID-19
+"chills,muscle pain,cough",Flu
+"runny nose,nausea,weakness",Malaria
+"body ache,vomiting,headache",Malaria
+"fever,cough,shortness of breath",COVID-19
+"shortness of breath,headache,fever",Flu
+"cough,runny nose,weakness",COVID-19
+"muscle pain,sore throat,runny nose",Flu
+"runny nose,muscle pain,nausea",Flu
+"body ache,headache,sore throat",Malaria
+"cough,sore throat,muscle pain",COVID-19
+"vomiting,cough,muscle pain",Malaria
+"vomiting,nausea,weakness",Malaria
+"sore throat,nausea,runny nose",Allergy
+"fever,runny nose,muscle pain",Flu
+"cough,shortness of breath,sore throat",COVID-19
+"vomiting,runny nose,headache",Malaria
+"muscle pain,vomiting,chills",Flu
+"sore throat,fever,headache",Flu
+"headache,shortness of breath,body ache",COVID-19
+"sore throat,runny nose,headache",Flu
+"fever,sore throat,vomiting",Malaria
+"vomiting,nausea,weakness",Malaria
+"body ache,shortness of breath,runny nose",Malaria
+"chills,sore throat,nausea",Flu
+"cough,body ache,weakness",Malaria
+"vomiting,cough,headache",Malaria
+"vomiting,runny nose,muscle pain",Malaria
+"chills,nausea,vomiting",Malaria
+"cough,nausea,weakness",Malaria
+"muscle pain,weakness,headache",Flu
+"weakness,headache,chills",Flu
+"muscle pain,body ache,weakness",Malaria
+"fever,sore throat,headache",Flu
+"cough,fever,headache",Flu
+"runny nose,cough,muscle pain",COVID-19
+"fever,muscle pain,runny nose",Flu
+"muscle pain,cough,shortness of breath",COVID-19
+"runny nose,chills,cough",COVID-19
+"nausea,shortness of breath,fever",COVID-19
+"body ache,sore throat,cough",Malaria
+"cough,vomiting,fever",Malaria
+"weakness,vomiting,sore throat",Malaria
+"muscle pain,cough,chills",Flu
+"weakness,cough,nausea",Malaria
+"runny nose,sore throat,body ache",Malaria
+"nausea,body ache,cough",Malaria
+"nausea,runny nose,fever",Allergy
+"muscle pain,sore throat,fever",Flu
+"shortness of breath,nausea,vomiting",Malaria
+"body ache,chills,nausea",Malaria
+"runny nose,cough,chills",COVID-19
+"body ache,nausea,fever",Malaria
+"weakness,chills,body ache",Malaria
+"headache,shortness of breath,cough",COVID-19
+"runny nose,sore throat,weakness",Malaria
+"headache,muscle pain,runny nose",Flu
+"headache,body ache,muscle pain",Flu
+"nausea,chills,runny nose",Allergy
+"nausea,body ache,fever",Malaria
+"vomiting,cough,shortness of breath",COVID-19
+"weakness,vomiting,headache",Malaria
+"vomiting,nausea,shortness of breath",Malaria
+"muscle pain,runny nose,fever",Flu
+"shortness of breath,fever,vomiting",COVID-19
+"muscle pain,chills,body ache",Flu
+"runny nose,chills,weakness",Malaria
+"muscle pain,fever,sore throat",Flu
+"muscle pain,body ache,runny nose",Malaria
+"runny nose,muscle pain,nausea",Flu
+"fever,runny nose,vomiting",Malaria
+"fever,cough,chills",Flu
+"shortness of breath,body ache,fever",COVID-19
+"cough,vomiting,nausea",Malaria
+"body ache,weakness,runny nose",Malaria
+"headache,weakness,muscle pain",Flu
+"shortness of breath,nausea,body ache",Malaria
+"sore throat,body ache,vomiting",Malaria
+"shortness of breath,sore throat,fever",COVID-19
+"weakness,vomiting,fever",Malaria
+"runny nose,headache,cough",Flu
+"chills,sore throat,nausea",Flu
+"vomiting,body ache,headache",Malaria
+"shortness of breath,weakness,vomiting",Malaria
+"runny nose,vomiting,nausea",Malaria
+"body ache,nausea,headache",Malaria
+"vomiting,muscle pain,nausea",Malaria
+"shortness of breath,body ache,sore throat",COVID-19
+"body ache,fever,shortness of breath",Malaria
+"chills,shortness of breath,nausea",COVID-19
+"shortness of breath,headache,chills",Flu
+"sore throat,nausea,shortness of breath",COVID-19
+"muscle pain,fever,chills",Flu
+"cough,nausea,vomiting",Malaria
+"runny nose,shortness of breath,weakness",COVID-19
+"sore throat,cough,fever",COVID-19
+"vomiting,headache,chills",Flu
+"fever,cough,runny nose",COVID-19
+"sore throat,shortness of breath,cough",COVID-19
+"headache,shortness of breath,cough",COVID-19
+"muscle pain,cough,nausea",Flu
+"cough,runny nose,vomiting",Malaria
+"nausea,runny nose,weakness",Malaria
+"nausea,muscle pain,shortness of breath",COVID-19
+"fever,nausea,vomiting",Malaria
+"vomiting,chills,body ache",Malaria
+"cough,vomiting,headache",Malaria
+"chills,cough,weakness",COVID-19
+"body ache,muscle pain,sore throat",Malaria
+"nausea,runny nose,vomiting",Malaria
+"nausea,headache,cough",COVID-19
+"fever,body ache,cough",Malaria
+"shortness of breath,runny nose,vomiting",COVID-19
+"headache,runny nose,body ache",Allergy
+"cough,fever,weakness",COVID-19
+"sore throat,weakness,nausea",Malaria
+"muscle pain,chills,shortness of breath",Flu
+"cough,sore throat,body ache",Malaria
+"fever,runny nose,vomiting",Malaria
+"vomiting,nausea,sore throat",Malaria
+"fever,cough,shortness of breath",COVID-19
+"nausea,muscle pain,body ache",Malaria
+"sore throat,muscle pain,vomiting",Malaria
+"muscle pain,headache,chills",Flu
+"headache,muscle pain,fever",Flu
+"vomiting,sore throat,runny nose",Malaria
+"fever,sore throat,runny nose",Cold
+"chills,muscle pain,fever",Flu
+"shortness of breath,muscle pain,nausea",COVID-19
+"fever,runny nose,cough",COVID-19
+"fever,runny nose,muscle pain",Flu
+"muscle pain,sore throat,vomiting",Malaria
+"vomiting,fever,muscle pain",Flu
+"headache,muscle pain,runny nose",Flu
+"chills,vomiting,nausea",Malaria
+"sore throat,cough,fever",COVID-19
+"vomiting,cough,muscle pain",Malaria
+"vomiting,body ache,runny nose",Malaria
+"chills,cough,nausea",COVID-19
+"runny nose,cough,headache",Flu
+"headache,nausea,sore throat",Flu
+"runny nose,weakness,shortness of breath",COVID-19
+"weakness,cough,body ache",Malaria
+"nausea,shortness of breath,body ache",Malaria
+"vomiting,body ache,chills",Malaria
+"shortness of breath,body ache,nausea",Malaria
+"nausea,runny nose,shortness of breath",COVID-19
+"headache,weakness,chills",Flu
+"weakness,chills,sore throat",Malaria
+"sore throat,fever,cough",COVID-19
+"nausea,chills,fever",Flu
+"runny nose,headache,cough",Flu
+"sore throat,muscle pain,fever",Flu
+"body ache,shortness of breath,nausea",Malaria
+"muscle pain,nausea,sore throat",Flu
+"nausea,vomiting,headache",Malaria
+"chills,runny nose,weakness",Allergy
+"headache,shortness of breath,vomiting",COVID-19
+"weakness,muscle pain,headache",Flu
+"vomiting,muscle pain,chills",Flu
+"chills,fever,nausea",Flu
+"body ache,cough,runny nose",Malaria
+"fever,cough,vomiting",Malaria
+"fever,body ache,chills",Flu
+"body ache,nausea,runny nose",Malaria
+"headache,chills,body ache",Flu
+"muscle pain,nausea,runny nose",Flu
+"nausea,fever,shortness of breath",COVID-19
+"cough,fever,chills",Flu
+"cough,nausea,fever",COVID-19
+"headache,muscle pain,chills",Flu
+"muscle pain,chills,shortness of breath",Flu
+"shortness of breath,headache,runny nose",COVID-19
+"shortness of breath,body ache,fever",COVID-19
+"cough,chills,shortness of breath",COVID-19
+"body ache,muscle pain,shortness of breath",Malaria
+"sore throat,nausea,shortness of breath",COVID-19
+"muscle pain,chills,runny nose",Flu
+"vomiting,body ache,cough",Malaria
+"shortness of breath,sore throat,body ache",COVID-19
+"weakness,cough,muscle pain",Malaria
+"body ache,weakness,fever",Malaria
+"sore throat,runny nose,body ache",Malaria
+"body ache,weakness,shortness of breath",Malaria
+"shortness of breath,vomiting,muscle pain",COVID-19
+"shortness of breath,sore throat,nausea",COVID-19
+"cough,weakness,fever",COVID-19
+"weakness,headache,fever",Flu
+"nausea,shortness of breath,headache",COVID-19
+"weakness,runny nose,shortness of breath",COVID-19
+"runny nose,shortness of breath,chills",COVID-19
+"weakness,fever,sore throat",Malaria
+"chills,nausea,muscle pain",Flu
+"fever,nausea,chills",Flu
+"sore throat,muscle pain,cough",Flu
+"muscle pain,fever,cough",Flu
+"chills,fever,runny nose",Flu
+"fever,muscle pain,vomiting",Flu
+"chills,muscle pain,vomiting",Flu
+"fever,cough,shortness of breath",COVID-19
+"runny nose,sore throat,headache",Flu
+"cough,vomiting,body ache",Malaria
+"body ache,weakness,chills",Malaria
+"chills,runny nose,nausea",Allergy
+"chills,vomiting,nausea",Malaria
+"nausea,vomiting,shortness of breath",Malaria
+"shortness of breath,headache,vomiting",COVID-19
+"weakness,headache,cough",Malaria
+"chills,sore throat,runny nose",Allergy
+"sore throat,shortness of breath,vomiting",COVID-19
+"muscle pain,shortness of breath,body ache",COVID-19
+"runny nose,shortness of breath,sore throat",COVID-19
+"muscle pain,fever,body ache",Flu
+"sore throat,runny nose,nausea",Allergy
+"muscle pain,nausea,chills",Flu
+"chills,sore throat,vomiting",Malaria
+"chills,vomiting,sore throat",Malaria
+"muscle pain,fever,body ache",Flu
+"muscle pain,shortness of breath,nausea",COVID-19
+"chills,nausea,headache",Flu
+"shortness of breath,muscle pain,chills",Flu
+"chills,vomiting,weakness",Malaria
+"muscle pain,cough,fever",Flu
+"nausea,weakness,muscle pain",Malaria
+"fever,vomiting,runny nose",Malaria
+"headache,runny nose,weakness",Allergy
+"shortness of breath,body ache,fever",COVID-19
+"sore throat,fever,headache",Flu
+"shortness of breath,weakness,runny nose",COVID-19
+"cough,runny nose,weakness",COVID-19
+"vomiting,cough,runny nose",Malaria
+"weakness,chills,fever",Flu
+"vomiting,headache,runny nose",Malaria
+"headache,cough,runny nose",Allergy
+"runny nose,headache,vomiting",Flu
+"fever,vomiting,headache",Flu
+"body ache,vomiting,weakness",Malaria
+"chills,shortness of breath,body ache",COVID-19
+"body ache,headache,muscle pain",Flu
+"vomiting,muscle pain,body ache",Malaria
+"fever,runny nose,weakness",Malaria
+"shortness of breath,nausea,cough",COVID-19
+"weakness,headache,cough",Malaria
+"body ache,runny nose,nausea",Malaria
+"runny nose,fever,headache",Flu
+"chills,shortness of breath,body ache",COVID-19
+"shortness of breath,nausea,chills",COVID-19
+"vomiting,sore throat,body ache",Malaria
+"runny nose,nausea,headache",Flu
+"fever,body ache,muscle pain",Flu
+"vomiting,runny nose,shortness of breath",Malaria
+"fever,body ache,vomiting",Malaria
+"nausea,sore throat,fever",Flu
+"vomiting,muscle pain,nausea",Malaria
+"runny nose,shortness of breath,fever",COVID-19
+"sore throat,headache,nausea",Flu
+"cough,fever,shortness of breath",COVID-19
+"vomiting,headache,cough",Malaria
+"sore throat,chills,weakness",Malaria
+"cough,chills,weakness",COVID-19
+"vomiting,chills,sore throat",Malaria
+"chills,runny nose,fever",Flu
+"weakness,body ache,chills",Malaria
+"cough,headache,chills",Flu
+"body ache,cough,fever",Malaria
+"shortness of breath,weakness,nausea",Malaria
+"sore throat,shortness of breath,fever",COVID-19
+"nausea,headache,muscle pain",Flu
+"vomiting,muscle pain,runny nose",Malaria
+"headache,weakness,vomiting",Malaria
+"headache,chills,muscle pain",Flu
+"cough,runny nose,sore throat",COVID-19
+"muscle pain,runny nose,headache",Flu
+"shortness of breath,cough,vomiting",COVID-19
+"cough,fever,headache",Flu
+"muscle pain,headache,cough",Flu
+"weakness,shortness of breath,sore throat",COVID-19
+"headache,chills,sore throat",Flu
+"fever,vomiting,weakness",Malaria
+"cough,chills,shortness of breath",COVID-19
+"muscle pain,sore throat,cough",Flu
+"sore throat,weakness,headache",Malaria
+"muscle pain,shortness of breath,sore throat",COVID-19
+"fever,cough,chills",Flu
+"body ache,muscle pain,shortness of breath",Malaria
+"muscle pain,nausea,cough",Flu
+"sore throat,vomiting,weakness",Malaria
+"body ache,weakness,muscle pain",Malaria
+"nausea,weakness,headache",Malaria
+"headache,fever,weakness",Flu
+"vomiting,cough,runny nose",Malaria
+"cough,runny nose,chills",COVID-19
+"headache,fever,body ache",Flu
+"vomiting,headache,cough",Malaria
+"muscle pain,shortness of breath,body ache",COVID-19
+"runny nose,chills,nausea",Flu
+"fever,weakness,body ache",Malaria
+"vomiting,runny nose,fever",Malaria
+"cough,chills,sore throat",COVID-19
+"vomiting,muscle pain,cough",Malaria
+"shortness of breath,cough,chills",COVID-19
+"shortness of breath,cough,vomiting",COVID-19
+"body ache,chills,sore throat",Malaria
+"vomiting,cough,sore throat",Malaria
+"chills,shortness of breath,body ache",COVID-19
+"fever,runny nose,shortness of breath",COVID-19
+"cough,runny nose,weakness",COVID-19
+"chills,vomiting,body ache",Malaria
+"runny nose,sore throat,fever",Allergy
+"nausea,shortness of breath,cough",COVID-19
+"fever,headache,chills",Flu
+"fever,muscle pain,weakness",Flu
+"nausea,muscle pain,runny nose",Flu
+"sore throat,chills,runny nose",Allergy
+"nausea,fever,runny nose",Allergy
+"shortness of breath,sore throat,headache",COVID-19
+"muscle pain,vomiting,runny nose",Malaria
+"sore throat,chills,shortness of breath",COVID-19
+"weakness,body ache,vomiting",Malaria
+"fever,sore throat,weakness",Malaria
+"fever,muscle pain,headache",Flu
+"sore throat,cough,chills",COVID-19
+"muscle pain,weakness,headache",Flu
+"body ache,nausea,shortness of breath",Malaria
+"chills,vomiting,muscle pain",Flu
+"cough,fever,vomiting",Malaria
+"nausea,shortness of breath,weakness",Malaria
+"muscle pain,sore throat,weakness",Flu
+"cough,muscle pain,sore throat",COVID-19
+"weakness,chills,fever",Flu
+"weakness,muscle pain,vomiting",Malaria
+"vomiting,headache,cough",Malaria
+"chills,muscle pain,weakness",Flu
+"fever,cough,vomiting",Malaria
+"sore throat,nausea,shortness of breath",COVID-19
+"vomiting,muscle pain,shortness of breath",Malaria
+"sore throat,shortness of breath,fever",COVID-19
+"sore throat,shortness of breath,runny nose",COVID-19
+"body ache,weakness,nausea",Malaria
+"body ache,fever,muscle pain",Flu
+"runny nose,chills,sore throat",Flu
+"vomiting,shortness of breath,weakness",Malaria
+"muscle pain,nausea,headache",Flu
+"runny nose,fever,muscle pain",Flu
+"body ache,headache,vomiting",Malaria
+"vomiting,sore throat,weakness",Malaria
+"headache,weakness,shortness of breath",COVID-19
+"shortness of breath,body ache,chills",COVID-19
+"cough,weakness,fever",COVID-19
+"fever,vomiting,sore throat",Malaria
+"weakness,body ache,headache",Malaria
+"body ache,nausea,chills",Malaria
+"chills,fever,sore throat",Flu
+"sore throat,nausea,runny nose",Allergy
+"body ache,cough,nausea",Malaria
+"cough,sore throat,shortness of breath",COVID-19
+"nausea,headache,shortness of breath",COVID-19
+"runny nose,body ache,fever",Malaria
+"shortness of breath,nausea,muscle pain",COVID-19
+"body ache,fever,vomiting",Malaria
+"headache,weakness,sore throat",Malaria
+"sore throat,vomiting,fever",Malaria
+"shortness of breath,muscle pain,headache",Flu
+"vomiting,shortness of breath,fever",Malaria
+"cough,muscle pain,vomiting",Malaria
+"weakness,body ache,runny nose",Malaria
+"fever,runny nose,headache",Flu
+"nausea,headache,cough",COVID-19
+"nausea,fever,sore throat",Cold
+"cough,body ache,runny nose",Malaria
+"chills,shortness of breath,vomiting",COVID-19
+"fever,body ache,muscle pain",Flu
+"weakness,body ache,shortness of breath",Malaria
+"weakness,muscle pain,vomiting",Malaria
+"headache,sore throat,weakness",Malaria
+"shortness of breath,body ache,muscle pain",COVID-19
+"cough,headache,weakness",COVID-19
+"nausea,vomiting,weakness",Malaria
+"fever,muscle pain,vomiting",Flu
+"cough,shortness of breath,muscle pain",COVID-19
+"sore throat,fever,vomiting",Malaria
+"headache,runny nose,shortness of breath",Allergy
+"runny nose,muscle pain,shortness of breath",COVID-19
+"headache,weakness,nausea",Malaria
+"chills,sore throat,runny nose",Allergy
+"shortness of breath,body ache,muscle pain",COVID-19
+"fever,headache,body ache",Flu
+"cough,muscle pain,sore throat",COVID-19
+"runny nose,headache,sore throat",Flu
+"weakness,runny nose,sore throat",Malaria
+"headache,body ache,fever",Flu
+"runny nose,chills,headache",Flu
+"fever,body ache,runny nose",Malaria
+"runny nose,shortness of breath,headache",COVID-19
+"nausea,runny nose,cough",COVID-19
+"cough,weakness,fever",COVID-19
+"nausea,fever,sore throat",Cold
+"nausea,weakness,body ache",Malaria
+"cough,body ache,weakness",Malaria
+"headache,cough,shortness of breath",COVID-19
+"runny nose,headache,fever",Flu
+"weakness,muscle pain,vomiting",Malaria
+"muscle pain,vomiting,sore throat",Malaria
+"muscle pain,shortness of breath,fever",Flu
+"weakness,shortness of breath,body ache",Malaria
+"runny nose,vomiting,nausea",Malaria
+"weakness,headache,shortness of breath",COVID-19
+"cough,chills,body ache",Malaria
+"muscle pain,runny nose,sore throat",Flu
+"fever,runny nose,vomiting",Malaria
+"nausea,body ache,sore throat",Malaria
+"runny nose,chills,fever",Flu
+"muscle pain,body ache,nausea",Malaria
+"sore throat,fever,cough",COVID-19
+"chills,nausea,vomiting",Malaria
+"cough,chills,weakness",COVID-19
+"muscle pain,weakness,nausea",Malaria
+"sore throat,chills,nausea",Flu
+"fever,weakness,muscle pain",Flu
+"fever,vomiting,cough",Malaria
+"weakness,sore throat,nausea",Malaria
+"fever,runny nose,body ache",Malaria
+"body ache,chills,shortness of breath",Malaria
+"weakness,body ache,runny nose",Malaria
+"chills,vomiting,cough",Malaria
+"chills,cough,vomiting",Malaria
+"sore throat,runny nose,nausea",Allergy
+"fever,runny nose,vomiting",Malaria
+"nausea,shortness of breath,headache",COVID-19
+"shortness of breath,headache,weakness",COVID-19
+"sore throat,runny nose,weakness",Malaria
+"nausea,chills,body ache",Malaria
+"nausea,chills,shortness of breath",COVID-19
+"runny nose,fever,vomiting",Malaria
+"body ache,chills,headache",Flu
+"body ache,runny nose,weakness",Malaria
+"headache,chills,vomiting",Flu
+"chills,runny nose,nausea",Allergy
+"nausea,muscle pain,chills",Flu
+"nausea,shortness of breath,muscle pain",COVID-19
+"muscle pain,shortness of breath,headache",Flu
+"sore throat,cough,shortness of breath",COVID-19
+"runny nose,nausea,headache",Flu
+"sore throat,fever,cough",COVID-19
+"runny nose,muscle pain,fever",Flu
+"fever,sore throat,nausea",Cold
+"weakness,fever,muscle pain",Flu
+"sore throat,nausea,muscle pain",Flu
+"body ache,chills,shortness of breath",Malaria
+"fever,body ache,runny nose",Malaria
+"fever,vomiting,headache",Flu
+"cough,shortness of breath,muscle pain",COVID-19
+"cough,body ache,chills",Malaria
+"shortness of breath,headache,chills",Flu
+"vomiting,weakness,chills",Malaria
+"shortness of breath,nausea,runny nose",COVID-19
+"muscle pain,headache,sore throat",Flu
+"weakness,vomiting,chills",Malaria
+"body ache,weakness,fever",Malaria
+"runny nose,headache,nausea",Flu
+"shortness of breath,nausea,vomiting",Malaria
+"weakness,headache,muscle pain",Flu
+"fever,sore throat,nausea",Cold
+"chills,shortness of breath,cough",COVID-19
+"cough,vomiting,sore throat",Malaria
+"sore throat,runny nose,chills",Flu
+"vomiting,fever,chills",Flu
+"weakness,fever,vomiting",Malaria
+"muscle pain,fever,body ache",Flu
+"fever,muscle pain,weakness",Flu
+"sore throat,cough,body ache",Malaria
+"vomiting,chills,fever",Flu
+"runny nose,muscle pain,cough",Flu
+"headache,vomiting,runny nose",Malaria
+"shortness of breath,chills,fever",Flu
+"fever,nausea,shortness of breath",COVID-19
+"cough,nausea,vomiting",Malaria
+"sore throat,cough,vomiting",Malaria
+"nausea,body ache,vomiting",Malaria
+"body ache,sore throat,cough",Malaria
+"runny nose,vomiting,muscle pain",Malaria
+"muscle pain,weakness,fever",Flu
+"shortness of breath,nausea,weakness",Malaria
+"cough,sore throat,shortness of breath",COVID-19
+"fever,chills,shortness of breath",Flu
+"shortness of breath,body ache,fever",COVID-19
+"cough,sore throat,vomiting",Malaria
+"cough,fever,vomiting",Malaria
+"runny nose,fever,vomiting",Malaria
+"runny nose,fever,weakness",Malaria
+"shortness of breath,weakness,fever",COVID-19
+"cough,chills,sore throat",COVID-19
+"chills,body ache,cough",Malaria
+"vomiting,sore throat,headache",Malaria
+"fever,runny nose,weakness",Malaria
+"vomiting,chills,headache",Flu
+"vomiting,chills,shortness of breath",Malaria
+"muscle pain,weakness,vomiting",Malaria
+"vomiting,chills,nausea",Malaria
+"fever,sore throat,vomiting",Malaria
+"runny nose,sore throat,cough",COVID-19
+"body ache,sore throat,vomiting",Malaria
+"nausea,weakness,sore throat",Malaria
+"nausea,runny nose,fever",Allergy
+"vomiting,cough,nausea",Malaria
+"runny nose,chills,headache",Flu
+"weakness,body ache,vomiting",Malaria
+"weakness,nausea,sore throat",Malaria
+"chills,fever,nausea",Flu
+"sore throat,vomiting,shortness of breath",Malaria
+"muscle pain,chills,weakness",Flu
+"body ache,headache,runny nose",Malaria
+"vomiting,chills,muscle pain",Flu
+"runny nose,body ache,weakness",Malaria
+"nausea,chills,headache",Flu
+"sore throat,vomiting,chills",Malaria
+"weakness,cough,shortness of breath",COVID-19
+"muscle pain,vomiting,chills",Flu
+"body ache,cough,headache",Malaria
+"body ache,shortness of breath,chills",Malaria
+"fever,runny nose,headache",Flu
+"runny nose,headache,muscle pain",Flu
+"fever,cough,headache",Flu
+"runny nose,vomiting,headache",Malaria
+"muscle pain,vomiting,fever",Flu
+"sore throat,nausea,vomiting",Malaria
+"nausea,chills,vomiting",Malaria
+"sore throat,shortness of breath,weakness",COVID-19
+"fever,chills,muscle pain",Flu
+"weakness,headache,fever",Flu
+"fever,headache,body ache",Flu
+"muscle pain,runny nose,body ache",Malaria
+"headache,cough,chills",Flu
+"runny nose,body ache,nausea",Malaria
+"vomiting,runny nose,muscle pain",Malaria
+"cough,nausea,chills",COVID-19
+"sore throat,nausea,vomiting",Malaria
+"shortness of breath,weakness,runny nose",COVID-19
+"sore throat,cough,weakness",COVID-19
+"chills,muscle pain,shortness of breath",Flu
+"shortness of breath,muscle pain,vomiting",COVID-19
+"chills,weakness,body ache",Malaria
+"body ache,fever,runny nose",Malaria
+"fever,headache,muscle pain",Flu
+"body ache,chills,vomiting",Malaria
+"fever,runny nose,shortness of breath",COVID-19
+"chills,cough,weakness",COVID-19
+"headache,weakness,muscle pain",Flu
+"cough,chills,body ache",Malaria
+"shortness of breath,weakness,sore throat",COVID-19
+"shortness of breath,body ache,sore throat",COVID-19
+"body ache,cough,shortness of breath",COVID-19
+"weakness,chills,muscle pain",Flu
+"weakness,chills,runny nose",Allergy
+"runny nose,cough,weakness",COVID-19
+"cough,vomiting,sore throat",Malaria
+"body ache,headache,shortness of breath",Malaria
+"body ache,shortness of breath,sore throat",Malaria
+"vomiting,sore throat,headache",Malaria
+"fever,runny nose,chills",Flu
+"headache,vomiting,body ache",Malaria
+"cough,runny nose,vomiting",Malaria
+"shortness of breath,sore throat,body ache",COVID-19
+"chills,body ache,fever",Flu
+"shortness of breath,nausea,fever",COVID-19
+"runny nose,fever,body ache",Malaria
+"sore throat,vomiting,muscle pain",Malaria
+"muscle pain,headache,fever",Flu
+"weakness,nausea,body ache",Malaria
+"chills,cough,headache",Flu
+"sore throat,cough,runny nose",COVID-19
+"vomiting,nausea,runny nose",Malaria
+"chills,headache,weakness",Flu
+"shortness of breath,nausea,headache",COVID-19
+"body ache,nausea,headache",Malaria
+"body ache,shortness of breath,muscle pain",Malaria
+"runny nose,weakness,fever",Malaria
+"sore throat,headache,shortness of breath",COVID-19
+"sore throat,fever,muscle pain",Flu
+"body ache,chills,headache",Flu
+"muscle pain,nausea,chills",Flu
+"vomiting,chills,cough",Malaria
+"runny nose,body ache,chills",Malaria
+"cough,sore throat,headache",COVID-19
+"vomiting,shortness of breath,body ache",Malaria
+"runny nose,sore throat,headache",Flu
+"body ache,shortness of breath,vomiting",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"vomiting,nausea,fever",Malaria
+"weakness,headache,vomiting",Malaria
+"weakness,muscle pain,vomiting",Malaria
+"cough,muscle pain,vomiting",Malaria
+"headache,vomiting,shortness of breath",Malaria
+"weakness,cough,headache",Malaria
+"weakness,headache,fever",Flu
+"headache,shortness of breath,fever",Flu
+"nausea,muscle pain,headache",Flu
+"cough,body ache,shortness of breath",COVID-19
+"headache,cough,runny nose",Allergy
+"nausea,shortness of breath,body ache",Malaria
+"fever,cough,runny nose",COVID-19
+"weakness,sore throat,body ache",Malaria
+"chills,weakness,shortness of breath",COVID-19
+"fever,vomiting,muscle pain",Flu
+"cough,weakness,fever",COVID-19
+"runny nose,body ache,chills",Malaria
+"fever,sore throat,body ache",Malaria
+"muscle pain,headache,nausea",Flu
+"cough,weakness,vomiting",Malaria
+"muscle pain,body ache,runny nose",Malaria
+"weakness,vomiting,runny nose",Malaria
+"chills,sore throat,body ache",Malaria
+"cough,body ache,chills",Malaria
+"headache,weakness,sore throat",Malaria
+"headache,shortness of breath,cough",COVID-19
+"nausea,headache,body ache",Malaria
+"cough,headache,muscle pain",Flu
+"chills,cough,body ache",Malaria
+"headache,shortness of breath,runny nose",COVID-19
+"fever,runny nose,sore throat",Cold
+"weakness,muscle pain,runny nose",Malaria
+"headache,body ache,nausea",Malaria
+"body ache,runny nose,fever",Malaria
+"cough,headache,nausea",COVID-19
+"vomiting,cough,shortness of breath",COVID-19
+"vomiting,nausea,cough",Malaria
+"vomiting,nausea,body ache",Malaria
+"cough,body ache,nausea",Malaria
+"weakness,sore throat,nausea",Malaria
+"headache,cough,sore throat",COVID-19
+"sore throat,nausea,muscle pain",Flu
+"chills,runny nose,headache",Flu
+"nausea,sore throat,chills",Flu
+"muscle pain,fever,cough",Flu
+"weakness,fever,cough",Malaria
+"cough,shortness of breath,chills",COVID-19
+"runny nose,vomiting,sore throat",Malaria
+"headache,chills,fever",Flu
+"weakness,sore throat,chills",Malaria
+"body ache,vomiting,headache",Malaria
+"cough,body ache,shortness of breath",COVID-19
+"fever,headache,cough",Flu
+"cough,shortness of breath,runny nose",COVID-19
+"shortness of breath,headache,nausea",COVID-19
+"shortness of breath,sore throat,weakness",COVID-19
+"shortness of breath,vomiting,nausea",Malaria
+"weakness,chills,fever",Flu
+"fever,chills,shortness of breath",Flu
+"runny nose,vomiting,muscle pain",Malaria
+"muscle pain,shortness of breath,cough",COVID-19
+"vomiting,body ache,runny nose",Malaria
+"muscle pain,cough,nausea",Flu
+"body ache,fever,headache",Flu
+"headache,fever,shortness of breath",Flu
+"fever,nausea,sore throat",Cold
+"vomiting,runny nose,chills",Malaria
+"fever,vomiting,cough",Malaria
+"chills,sore throat,cough",COVID-19
+"weakness,vomiting,nausea",Malaria
+"headache,cough,vomiting",Malaria
+"muscle pain,body ache,cough",Malaria
+"headache,muscle pain,chills",Flu
+"nausea,sore throat,body ache",Malaria
+"weakness,body ache,cough",Malaria
+"nausea,fever,cough",COVID-19
+"body ache,sore throat,weakness",Malaria
+"weakness,body ache,sore throat",Malaria
+"muscle pain,weakness,chills",Flu
+"fever,chills,nausea",Flu
+"nausea,fever,body ache",Malaria
+"sore throat,vomiting,weakness",Malaria
+"fever,muscle pain,vomiting",Flu
+"cough,nausea,weakness",Malaria
+"headache,fever,chills",Flu
+"shortness of breath,vomiting,chills",COVID-19
+"body ache,runny nose,weakness",Malaria
+"sore throat,vomiting,cough",Malaria
+"runny nose,body ache,fever",Malaria
+"vomiting,nausea,sore throat",Malaria
+"runny nose,nausea,sore throat",Allergy
+"body ache,shortness of breath,cough",COVID-19
+"muscle pain,nausea,shortness of breath",COVID-19
+"nausea,fever,sore throat",Cold
+"headache,nausea,cough",COVID-19
+"nausea,cough,fever",COVID-19
+"vomiting,body ache,sore throat",Malaria
+"body ache,cough,sore throat",Malaria
+"weakness,fever,headache",Flu
+"sore throat,fever,body ache",Malaria
+"runny nose,body ache,nausea",Malaria
+"vomiting,weakness,headache",Malaria
+"cough,nausea,chills",COVID-19
+"weakness,sore throat,body ache",Malaria
+"shortness of breath,vomiting,muscle pain",COVID-19
+"nausea,weakness,sore throat",Malaria
+"sore throat,chills,vomiting",Malaria
+"cough,sore throat,muscle pain",COVID-19
+"vomiting,nausea,cough",Malaria
+"sore throat,weakness,headache",Malaria
+"muscle pain,nausea,headache",Flu
+"shortness of breath,sore throat,vomiting",COVID-19
+"fever,vomiting,muscle pain",Flu
+"chills,muscle pain,shortness of breath",Flu
+"vomiting,cough,shortness of breath",COVID-19
+"nausea,headache,fever",Flu
+"body ache,runny nose,cough",Malaria
+"muscle pain,fever,nausea",Flu
+"vomiting,runny nose,body ache",Malaria
+"cough,weakness,nausea",Malaria
+"chills,muscle pain,vomiting",Flu
+"shortness of breath,muscle pain,headache",Flu
+"nausea,runny nose,body ache",Malaria
+"shortness of breath,runny nose,muscle pain",COVID-19
+"runny nose,body ache,weakness",Malaria
+"muscle pain,chills,sore throat",Flu
+"fever,muscle pain,body ache",Flu
+"runny nose,weakness,fever",Malaria
+"sore throat,nausea,weakness",Malaria
+"cough,fever,headache",Flu
+"body ache,nausea,weakness",Malaria
+"sore throat,cough,runny nose",COVID-19
+"sore throat,cough,shortness of breath",COVID-19
+"runny nose,nausea,body ache",Malaria
+"body ache,fever,headache",Flu
+"vomiting,weakness,nausea",Malaria
+"shortness of breath,headache,muscle pain",Flu
+"body ache,nausea,weakness",Malaria
+"vomiting,headache,weakness",Malaria
+"chills,muscle pain,nausea",Flu
+"runny nose,body ache,headache",Malaria
+"cough,chills,headache",Flu
+"sore throat,weakness,headache",Malaria
+"weakness,sore throat,nausea",Malaria
+"runny nose,headache,cough",Flu
+"fever,sore throat,chills",Flu
+"headache,nausea,runny nose",Allergy
+"runny nose,muscle pain,fever",Flu
+"nausea,shortness of breath,runny nose",COVID-19
+"weakness,vomiting,chills",Malaria
+"weakness,fever,nausea",Malaria
+"nausea,sore throat,chills",Flu
+"headache,nausea,chills",Flu
+"sore throat,weakness,cough",Malaria
+"weakness,sore throat,chills",Malaria
+"headache,runny nose,muscle pain",Flu
+"fever,vomiting,muscle pain",Flu
+"shortness of breath,fever,muscle pain",Flu
+"fever,cough,runny nose",COVID-19
+"nausea,runny nose,headache",Flu
+"muscle pain,body ache,shortness of breath",Malaria
+"weakness,runny nose,headache",Flu
+"body ache,muscle pain,chills",Flu
+"sore throat,body ache,fever",Malaria
+"vomiting,sore throat,headache",Malaria
+"sore throat,shortness of breath,body ache",COVID-19
+"shortness of breath,body ache,muscle pain",COVID-19
+"sore throat,body ache,cough",Malaria
+"muscle pain,headache,weakness",Flu
+"fever,body ache,vomiting",Malaria
+"body ache,fever,sore throat",Malaria
+"weakness,shortness of breath,fever",COVID-19
+"body ache,runny nose,muscle pain",Malaria
+"nausea,body ache,sore throat",Malaria
+"nausea,shortness of breath,weakness",Malaria
+"body ache,shortness of breath,weakness",Malaria
+"chills,nausea,sore throat",Flu
+"nausea,vomiting,chills",Malaria
+"weakness,body ache,sore throat",Malaria
+"body ache,chills,runny nose",Malaria
+"shortness of breath,muscle pain,weakness",COVID-19
+"runny nose,nausea,chills",Flu
+"body ache,vomiting,fever",Malaria
+"sore throat,cough,nausea",COVID-19
+"sore throat,shortness of breath,runny nose",COVID-19
+"fever,headache,runny nose",Flu
+"fever,body ache,sore throat",Malaria
+"weakness,muscle pain,nausea",Malaria
+"shortness of breath,body ache,weakness",Malaria
+"nausea,shortness of breath,runny nose",COVID-19
+"muscle pain,fever,runny nose",Flu
+"runny nose,chills,weakness",Malaria
+"runny nose,headache,body ache",Flu
+"vomiting,runny nose,headache",Malaria
+"fever,sore throat,headache",Flu
+"nausea,fever,body ache",Malaria
+"chills,fever,cough",Flu
+"weakness,muscle pain,runny nose",Malaria
+"sore throat,runny nose,nausea",Allergy
+"cough,body ache,sore throat",Malaria
+"fever,nausea,muscle pain",Flu
+"nausea,fever,muscle pain",Flu
+"muscle pain,body ache,weakness",Malaria
+"sore throat,cough,body ache",Malaria
+"nausea,shortness of breath,body ache",Malaria
+"shortness of breath,headache,nausea",COVID-19
+"vomiting,shortness of breath,weakness",Malaria
+"cough,vomiting,muscle pain",Malaria
+"headache,weakness,nausea",Malaria
+"muscle pain,fever,vomiting",Flu
+"muscle pain,body ache,nausea",Malaria
+"weakness,shortness of breath,muscle pain",COVID-19
+"weakness,muscle pain,vomiting",Malaria
+"nausea,muscle pain,body ache",Malaria
+"headache,nausea,cough",COVID-19
+"cough,body ache,chills",Malaria
+"vomiting,sore throat,runny nose",Malaria
+"sore throat,cough,muscle pain",COVID-19
+"sore throat,chills,muscle pain",Flu
+"nausea,headache,sore throat",Flu
+"fever,sore throat,cough",COVID-19
+"vomiting,fever,chills",Flu
+"sore throat,headache,runny nose",Allergy
+"headache,cough,shortness of breath",COVID-19
+"headache,shortness of breath,body ache",COVID-19
+"fever,headache,nausea",Flu
+"headache,vomiting,nausea",Malaria
+"shortness of breath,muscle pain,fever",Flu
+"headache,body ache,muscle pain",Flu
+"headache,body ache,weakness",Malaria
+"body ache,cough,muscle pain",Malaria
+"shortness of breath,vomiting,muscle pain",COVID-19
+"runny nose,shortness of breath,fever",COVID-19
+"runny nose,headache,shortness of breath",Flu
+"chills,body ache,vomiting",Malaria
+"chills,nausea,muscle pain",Flu
+"weakness,body ache,shortness of breath",Malaria
+"cough,runny nose,chills",COVID-19
+"cough,muscle pain,nausea",COVID-19
+"headache,body ache,weakness",Malaria
+"cough,weakness,runny nose",COVID-19
+"weakness,headache,sore throat",Malaria
+"nausea,body ache,vomiting",Malaria
+"fever,chills,cough",Flu
+"sore throat,muscle pain,nausea",Flu
+"shortness of breath,chills,muscle pain",Flu
+"fever,muscle pain,weakness",Flu
+"sore throat,nausea,weakness",Malaria
+"chills,shortness of breath,cough",COVID-19
+"runny nose,fever,headache",Flu
+"body ache,runny nose,nausea",Malaria
+"weakness,runny nose,headache",Flu
+"headache,sore throat,chills",Flu
+"body ache,chills,weakness",Malaria
+"sore throat,runny nose,muscle pain",Flu
+"weakness,headache,chills",Flu
+"muscle pain,nausea,vomiting",Malaria
+"chills,body ache,shortness of breath",Malaria
+"fever,muscle pain,headache",Flu
+"nausea,chills,cough",COVID-19
+"fever,chills,runny nose",Flu
+"vomiting,body ache,headache",Malaria
+"shortness of breath,weakness,runny nose",COVID-19
+"weakness,cough,chills",Malaria
+"chills,sore throat,headache",Flu
+"cough,weakness,muscle pain",COVID-19
+"chills,fever,body ache",Flu
+"chills,cough,weakness",COVID-19
+"weakness,fever,runny nose",Malaria
+"body ache,sore throat,chills",Malaria
+"fever,shortness of breath,chills",Flu
+"chills,runny nose,cough",Allergy
+"fever,runny nose,sore throat",Cold
+"chills,nausea,fever",Flu
+"nausea,shortness of breath,fever",COVID-19
+"weakness,runny nose,vomiting",Malaria
+"muscle pain,weakness,cough",Flu
+"sore throat,body ache,nausea",Malaria
+"cough,body ache,vomiting",Malaria
+"chills,runny nose,weakness",Allergy
+"weakness,muscle pain,sore throat",Malaria
+"weakness,shortness of breath,sore throat",COVID-19
+"chills,headache,runny nose",Flu
+"weakness,vomiting,body ache",Malaria
+"headache,nausea,sore throat",Flu
+"muscle pain,nausea,runny nose",Flu
+"weakness,headache,muscle pain",Flu
+"chills,vomiting,runny nose",Malaria
+"cough,body ache,headache",Malaria
+"cough,runny nose,headache",Flu
+"sore throat,weakness,shortness of breath",COVID-19
+"shortness of breath,headache,weakness",COVID-19
+"nausea,chills,muscle pain",Flu
+"chills,muscle pain,sore throat",Flu
+"runny nose,body ache,sore throat",Malaria
+"shortness of breath,fever,headache",Flu
+"sore throat,body ache,runny nose",Malaria
+"muscle pain,vomiting,headache",Flu
+"cough,weakness,nausea",Malaria
+"weakness,body ache,runny nose",Malaria
+"nausea,shortness of breath,fever",COVID-19
+"vomiting,nausea,shortness of breath",Malaria
+"chills,nausea,body ache",Malaria
+"cough,chills,runny nose",Allergy
+"chills,runny nose,body ache",Allergy
+"chills,weakness,muscle pain",Flu
+"fever,shortness of breath,nausea",COVID-19
+"sore throat,fever,headache",Flu
+"vomiting,weakness,shortness of breath",Malaria
+"fever,muscle pain,nausea",Flu
+"runny nose,cough,muscle pain",COVID-19
+"fever,weakness,shortness of breath",COVID-19
+"muscle pain,headache,cough",Flu
+"cough,muscle pain,body ache",Malaria
+"fever,vomiting,chills",Flu
+"sore throat,runny nose,muscle pain",Flu
+"cough,headache,weakness",COVID-19
+"chills,headache,runny nose",Flu
+"cough,nausea,runny nose",COVID-19
+"fever,runny nose,weakness",Malaria
+"muscle pain,nausea,runny nose",Flu
+"weakness,sore throat,vomiting",Malaria
+"sore throat,fever,weakness",Malaria
+"runny nose,shortness of breath,nausea",COVID-19
+"muscle pain,chills,headache",Flu
+"sore throat,muscle pain,fever",Flu
+"weakness,body ache,chills",Malaria
+"chills,muscle pain,nausea",Flu
+"body ache,chills,nausea",Malaria
+"weakness,muscle pain,headache",Flu
+"runny nose,fever,nausea",Allergy
+"body ache,cough,fever",Malaria
+"headache,chills,vomiting",Flu
+"cough,chills,sore throat",COVID-19
+"weakness,vomiting,runny nose",Malaria
+"chills,fever,vomiting",Flu
+"muscle pain,shortness of breath,runny nose",COVID-19
+"muscle pain,runny nose,cough",Flu
+"nausea,cough,fever",COVID-19
+"fever,nausea,vomiting",Malaria
+"muscle pain,cough,nausea",Flu
+"chills,cough,body ache",Malaria
+"fever,nausea,chills",Flu
+"nausea,fever,sore throat",Cold
+"runny nose,nausea,body ache",Malaria
+"vomiting,nausea,sore throat",Malaria
+"weakness,runny nose,body ache",Malaria
+"chills,sore throat,runny nose",Allergy
+"shortness of breath,fever,headache",Flu
+"nausea,runny nose,cough",COVID-19
+"headache,cough,muscle pain",Flu
+"vomiting,cough,chills",Malaria
+"weakness,runny nose,chills",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"nausea,body ache,headache",Malaria
+"vomiting,sore throat,headache",Malaria
+"cough,vomiting,runny nose",Malaria
+"runny nose,muscle pain,weakness",Flu
+"nausea,vomiting,cough",Malaria
+"vomiting,nausea,chills",Malaria
+"chills,vomiting,headache",Flu
+"fever,sore throat,weakness",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"muscle pain,runny nose,weakness",Flu
+"chills,headache,shortness of breath",Flu
+"nausea,muscle pain,weakness",Malaria
+"nausea,shortness of breath,runny nose",COVID-19
+"weakness,body ache,chills",Malaria
+"body ache,nausea,cough",Malaria
+"chills,runny nose,cough",Allergy
+"weakness,headache,chills",Flu
+"muscle pain,nausea,chills",Flu
+"body ache,muscle pain,runny nose",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"chills,headache,fever",Flu
+"vomiting,cough,body ache",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"sore throat,chills,fever",Flu
+"runny nose,chills,body ache",Malaria
+"body ache,nausea,shortness of breath",Malaria
+"weakness,sore throat,fever",Malaria
+"body ache,weakness,sore throat",Malaria
+"vomiting,body ache,cough",Malaria
+"shortness of breath,chills,runny nose",COVID-19
+"shortness of breath,headache,sore throat",COVID-19
+"headache,fever,vomiting",Flu
+"muscle pain,body ache,fever",Flu
+"runny nose,weakness,fever",Malaria
+"chills,nausea,body ache",Malaria
+"nausea,runny nose,shortness of breath",COVID-19
+"shortness of breath,fever,chills",Flu
+"headache,runny nose,nausea",Allergy
+"shortness of breath,fever,muscle pain",Flu
+"headache,body ache,fever",Flu
+"sore throat,fever,chills",Flu
+"fever,runny nose,chills",Flu
+"body ache,shortness of breath,vomiting",Malaria
+"cough,muscle pain,body ache",Malaria
+"nausea,shortness of breath,sore throat",COVID-19
+"vomiting,sore throat,body ache",Malaria
+"shortness of breath,runny nose,weakness",COVID-19
+"weakness,headache,muscle pain",Flu
+"chills,cough,sore throat",COVID-19
+"cough,nausea,body ache",Malaria
+"weakness,sore throat,vomiting",Malaria
+"headache,body ache,chills",Flu
+"sore throat,shortness of breath,body ache",COVID-19
+"body ache,headache,runny nose",Malaria
+"chills,cough,headache",Flu
+"shortness of breath,nausea,vomiting",Malaria
+"nausea,runny nose,shortness of breath",COVID-19
+"runny nose,vomiting,nausea",Malaria
+"shortness of breath,runny nose,cough",COVID-19
+"fever,shortness of breath,nausea",COVID-19
+"runny nose,chills,fever",Flu
+"fever,sore throat,muscle pain",Flu
+"vomiting,runny nose,cough",Malaria
+"nausea,body ache,headache",Malaria
+"nausea,weakness,vomiting",Malaria
+"shortness of breath,runny nose,fever",COVID-19
+"runny nose,chills,nausea",Flu
+"body ache,vomiting,fever",Malaria
+"vomiting,headache,fever",Flu
+"weakness,cough,muscle pain",Malaria
+"sore throat,muscle pain,weakness",Flu
+"nausea,fever,chills",Flu
+"nausea,vomiting,weakness",Malaria
+"body ache,chills,headache",Flu
+"shortness of breath,nausea,body ache",Malaria
+"headache,sore throat,cough",COVID-19
+"muscle pain,headache,sore throat",Flu
+"cough,vomiting,nausea",Malaria
+"fever,nausea,body ache",Malaria
+"nausea,fever,weakness",Malaria
+"runny nose,sore throat,nausea",Allergy
+"muscle pain,headache,fever",Flu
+"weakness,chills,nausea",Malaria
+"body ache,muscle pain,weakness",Malaria
+"muscle pain,body ache,weakness",Malaria
+"headache,vomiting,chills",Flu
+"headache,sore throat,fever",Flu
+"body ache,fever,runny nose",Malaria
+"cough,headache,sore throat",COVID-19
+"nausea,cough,weakness",Malaria
+"weakness,vomiting,shortness of breath",Malaria
+"cough,fever,muscle pain",Flu
+"runny nose,nausea,sore throat",Allergy
+"cough,runny nose,shortness of breath",COVID-19
+"chills,headache,fever",Flu
+"chills,vomiting,runny nose",Malaria
+"shortness of breath,headache,cough",COVID-19
+"chills,nausea,sore throat",Flu
+"cough,sore throat,fever",COVID-19
+"vomiting,fever,shortness of breath",Malaria
+"runny nose,muscle pain,sore throat",Flu
+"fever,chills,muscle pain",Flu
+"fever,cough,body ache",Malaria
+"vomiting,muscle pain,nausea",Malaria
+"nausea,headache,chills",Flu
+"weakness,shortness of breath,runny nose",COVID-19
+"sore throat,fever,chills",Flu
+"chills,vomiting,muscle pain",Flu
+"muscle pain,headache,weakness",Flu
+"sore throat,fever,body ache",Malaria
+"headache,body ache,weakness",Malaria
+"sore throat,headache,nausea",Flu
+"muscle pain,weakness,vomiting",Malaria
+"cough,headache,nausea",COVID-19
+"chills,weakness,runny nose",Allergy
+"vomiting,headache,muscle pain",Flu
+"muscle pain,shortness of breath,cough",COVID-19
+"sore throat,fever,shortness of breath",COVID-19
+"headache,body ache,weakness",Malaria
+"headache,muscle pain,body ache",Flu
+"weakness,sore throat,nausea",Malaria
+"fever,chills,runny nose",Flu
+"cough,nausea,runny nose",COVID-19
+"fever,runny nose,nausea",Allergy
+"weakness,fever,sore throat",Malaria
+"vomiting,chills,headache",Flu
+"body ache,shortness of breath,muscle pain",Malaria
+"sore throat,fever,weakness",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"sore throat,chills,weakness",Malaria
+"sore throat,cough,weakness",COVID-19
+"cough,muscle pain,chills",Flu
+"sore throat,body ache,cough",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"sore throat,nausea,headache",Flu
+"runny nose,vomiting,body ache",Malaria
+"vomiting,body ache,sore throat",Malaria
+"chills,headache,body ache",Flu
+"nausea,muscle pain,body ache",Malaria
+"nausea,sore throat,muscle pain",Flu
+"vomiting,fever,headache",Flu
+"chills,vomiting,runny nose",Malaria
+"nausea,cough,runny nose",COVID-19
+"body ache,vomiting,fever",Malaria
+"headache,sore throat,nausea",Flu
+"weakness,sore throat,muscle pain",Malaria
+"nausea,chills,body ache",Malaria
+"nausea,runny nose,fever",Allergy
+"headache,runny nose,muscle pain",Flu
+"weakness,chills,fever",Flu
+"vomiting,shortness of breath,headache",Malaria
+"headache,runny nose,chills",Flu
+"nausea,body ache,sore throat",Malaria
+"vomiting,muscle pain,body ache",Malaria
+"nausea,weakness,vomiting",Malaria
+"nausea,vomiting,body ache",Malaria
+"nausea,fever,vomiting",Malaria
+"body ache,weakness,sore throat",Malaria
+"fever,headache,shortness of breath",Flu
+"runny nose,shortness of breath,sore throat",COVID-19
+"body ache,chills,headache",Flu
+"fever,runny nose,headache",Flu
+"muscle pain,weakness,cough",Flu
+"body ache,chills,nausea",Malaria
+"weakness,vomiting,shortness of breath",Malaria
+"fever,body ache,runny nose",Malaria
+"nausea,body ache,headache",Malaria
+"body ache,headache,fever",Flu
+"sore throat,headache,runny nose",Allergy
+"fever,runny nose,chills",Flu
+"nausea,fever,headache",Flu
+"sore throat,body ache,chills",Malaria
+"fever,vomiting,weakness",Malaria
+"vomiting,runny nose,nausea",Malaria
+"nausea,cough,headache",COVID-19
+"sore throat,vomiting,headache",Malaria
+"sore throat,runny nose,fever",Allergy
+"fever,nausea,vomiting",Malaria
+"muscle pain,runny nose,nausea",Flu
+"body ache,muscle pain,cough",Malaria
+"cough,body ache,sore throat",Malaria
+"muscle pain,runny nose,nausea",Flu
+"headache,vomiting,cough",Malaria
+"chills,headache,weakness",Flu
+"sore throat,chills,shortness of breath",COVID-19
+"cough,shortness of breath,runny nose",COVID-19
+"muscle pain,chills,cough",Flu
+"body ache,weakness,runny nose",Malaria
+"muscle pain,cough,vomiting",Malaria
+"sore throat,muscle pain,body ache",Malaria
+"vomiting,runny nose,cough",Malaria
+"shortness of breath,chills,cough",COVID-19
+"runny nose,muscle pain,sore throat",Flu
+"cough,vomiting,muscle pain",Malaria
+"body ache,cough,shortness of breath",COVID-19
+"nausea,chills,vomiting",Malaria
+"vomiting,shortness of breath,body ache",Malaria
+"muscle pain,cough,chills",Flu
+"headache,body ache,runny nose",Malaria
+"nausea,shortness of breath,chills",COVID-19
+"muscle pain,weakness,body ache",Malaria
+"chills,cough,headache",Flu
+"shortness of breath,weakness,runny nose",COVID-19
+"sore throat,headache,cough",COVID-19
+"sore throat,body ache,shortness of breath",Malaria
+"fever,runny nose,nausea",Allergy
+"nausea,fever,shortness of breath",COVID-19
+"weakness,runny nose,shortness of breath",COVID-19
+"headache,fever,shortness of breath",Flu
+"muscle pain,nausea,shortness of breath",COVID-19
+"fever,headache,runny nose",Flu
+"nausea,headache,fever",Flu
+"vomiting,weakness,muscle pain",Malaria
+"weakness,nausea,runny nose",Malaria
+"body ache,runny nose,cough",Malaria
+"runny nose,shortness of breath,nausea",COVID-19
+"shortness of breath,body ache,fever",COVID-19
+"body ache,headache,nausea",Malaria
+"muscle pain,shortness of breath,nausea",COVID-19
+"headache,cough,shortness of breath",COVID-19
+"headache,muscle pain,nausea",Flu
+"sore throat,cough,chills",COVID-19
+"muscle pain,runny nose,vomiting",Malaria
+"shortness of breath,chills,cough",COVID-19
+"shortness of breath,headache,runny nose",COVID-19
+"weakness,runny nose,headache",Flu
+"chills,shortness of breath,nausea",COVID-19
+"body ache,headache,fever",Flu
+"runny nose,weakness,fever",Malaria
+"cough,fever,shortness of breath",COVID-19
+"chills,cough,headache",Flu
+"muscle pain,weakness,body ache",Malaria
+"sore throat,cough,runny nose",COVID-19
+"body ache,sore throat,muscle pain",Malaria
+"sore throat,headache,chills",Flu
+"weakness,cough,nausea",Malaria
+"headache,shortness of breath,weakness",COVID-19
+"headache,muscle pain,shortness of breath",Flu
+"shortness of breath,weakness,headache",COVID-19
+"fever,sore throat,shortness of breath",COVID-19
+"chills,weakness,sore throat",Malaria
+"body ache,fever,headache",Flu
+"fever,muscle pain,shortness of breath",Flu
+"nausea,weakness,sore throat",Malaria
+"body ache,sore throat,runny nose",Malaria
+"shortness of breath,fever,headache",Flu
+"muscle pain,sore throat,cough",Flu
+"cough,nausea,fever",COVID-19
+"muscle pain,cough,fever",Flu
+"cough,body ache,muscle pain",Malaria
+"cough,headache,chills",Flu
+"vomiting,fever,chills",Flu
+"chills,muscle pain,weakness",Flu
+"vomiting,nausea,body ache",Malaria
+"shortness of breath,nausea,sore throat",COVID-19
+"weakness,runny nose,shortness of breath",COVID-19
+"runny nose,chills,shortness of breath",COVID-19
+"body ache,shortness of breath,nausea",Malaria
+"cough,muscle pain,body ache",Malaria
+"vomiting,fever,chills",Flu
+"body ache,chills,shortness of breath",Malaria
+"muscle pain,headache,body ache",Flu
+"shortness of breath,runny nose,weakness",COVID-19
+"fever,nausea,body ache",Malaria
+"runny nose,headache,sore throat",Flu
+"fever,headache,cough",Flu
+"runny nose,headache,weakness",Flu
+"nausea,vomiting,headache",Malaria
+"chills,fever,runny nose",Flu
+"fever,runny nose,weakness",Malaria
+"nausea,muscle pain,fever",Flu
+"headache,body ache,chills",Flu
+"sore throat,weakness,headache",Malaria
+"nausea,shortness of breath,sore throat",COVID-19
+"shortness of breath,chills,headache",Flu
+"headache,runny nose,sore throat",Allergy
+"nausea,vomiting,chills",Malaria
+"fever,vomiting,nausea",Malaria
+"shortness of breath,sore throat,chills",COVID-19
+"headache,vomiting,weakness",Malaria
+"sore throat,nausea,body ache",Malaria
+"chills,sore throat,weakness",Malaria
+"vomiting,shortness of breath,muscle pain",Malaria
+"nausea,fever,headache",Flu
+"weakness,fever,muscle pain",Flu
+"headache,muscle pain,cough",Flu
+"chills,nausea,sore throat",Flu
+"sore throat,muscle pain,weakness",Flu
+"fever,shortness of breath,headache",Flu
+"body ache,cough,weakness",Malaria
+"weakness,cough,headache",Malaria
+"chills,fever,vomiting",Flu
+"cough,weakness,vomiting",Malaria
+"fever,chills,nausea",Flu
+"runny nose,headache,weakness",Flu
+"chills,body ache,fever",Flu
+"shortness of breath,sore throat,cough",COVID-19
+"body ache,headache,chills",Flu
+"shortness of breath,sore throat,muscle pain",COVID-19
+"muscle pain,vomiting,weakness",Malaria
+"fever,sore throat,cough",COVID-19
+"cough,shortness of breath,nausea",COVID-19
+"cough,sore throat,fever",COVID-19
+"cough,fever,body ache",Malaria
+"cough,nausea,headache",COVID-19
+"nausea,headache,shortness of breath",COVID-19
+"sore throat,runny nose,fever",Allergy
+"vomiting,fever,runny nose",Malaria
+"fever,body ache,cough",Malaria
+"muscle pain,nausea,headache",Flu
+"shortness of breath,sore throat,weakness",COVID-19
+"nausea,headache,shortness of breath",COVID-19
+"fever,body ache,shortness of breath",Malaria
+"cough,chills,headache",Flu
+"sore throat,chills,headache",Flu
+"vomiting,body ache,cough",Malaria
+"nausea,shortness of breath,vomiting",Malaria
+"headache,weakness,vomiting",Malaria
+"chills,vomiting,runny nose",Malaria
+"body ache,nausea,fever",Malaria
+"runny nose,fever,cough",COVID-19
+"runny nose,fever,sore throat",Cold
+"muscle pain,shortness of breath,fever",Flu
+"chills,muscle pain,body ache",Flu
+"cough,runny nose,chills",COVID-19
+"cough,muscle pain,headache",Flu
+"body ache,chills,cough",Malaria
+"cough,weakness,sore throat",COVID-19
+"fever,body ache,nausea",Malaria
+"vomiting,shortness of breath,cough",COVID-19
+"cough,shortness of breath,headache",COVID-19
+"shortness of breath,body ache,weakness",Malaria
+"body ache,chills,sore throat",Malaria
+"muscle pain,headache,nausea",Flu
+"nausea,runny nose,sore throat",Allergy
+"weakness,sore throat,runny nose",Malaria
+"chills,muscle pain,body ache",Flu
+"headache,chills,weakness",Flu
+"muscle pain,body ache,weakness",Malaria
+"headache,runny nose,shortness of breath",Allergy
+"chills,nausea,weakness",Malaria
+"fever,sore throat,weakness",Malaria
+"runny nose,sore throat,vomiting",Malaria
+"fever,vomiting,headache",Flu
+"chills,fever,sore throat",Flu
+"shortness of breath,body ache,fever",COVID-19
+"nausea,vomiting,body ache",Malaria
+"cough,runny nose,muscle pain",COVID-19
+"fever,shortness of breath,nausea",COVID-19
+"body ache,cough,shortness of breath",COVID-19
+"vomiting,runny nose,sore throat",Malaria
+"cough,fever,vomiting",Malaria
+"cough,weakness,vomiting",Malaria
+"runny nose,weakness,nausea",Malaria
+"headache,shortness of breath,cough",COVID-19
+"nausea,shortness of breath,muscle pain",COVID-19
+"muscle pain,chills,shortness of breath",Flu
+"body ache,chills,headache",Flu
+"fever,chills,cough",Flu
+"runny nose,nausea,body ache",Malaria
+"muscle pain,vomiting,body ache",Malaria
+"shortness of breath,weakness,vomiting",Malaria
+"headache,vomiting,cough",Malaria
+"chills,nausea,vomiting",Malaria
+"headache,chills,cough",Flu
+"headache,chills,body ache",Flu
+"vomiting,nausea,body ache",Malaria
+"muscle pain,weakness,sore throat",Flu
+"headache,chills,muscle pain",Flu
+"chills,muscle pain,vomiting",Flu
+"cough,headache,chills",Flu
+"chills,body ache,weakness",Malaria
+"runny nose,sore throat,headache",Flu
+"weakness,shortness of breath,nausea",Malaria
+"shortness of breath,cough,sore throat",COVID-19
+"shortness of breath,muscle pain,chills",Flu
+"cough,shortness of breath,chills",COVID-19
+"sore throat,chills,weakness",Malaria
+"shortness of breath,weakness,cough",COVID-19
+"chills,runny nose,shortness of breath",Allergy
+"headache,muscle pain,chills",Flu
+"weakness,headache,shortness of breath",COVID-19
+"headache,shortness of breath,sore throat",COVID-19
+"vomiting,fever,shortness of breath",Malaria
+"muscle pain,chills,weakness",Flu
+"cough,body ache,nausea",Malaria
+"vomiting,body ache,fever",Malaria
+"nausea,shortness of breath,fever",COVID-19
+"runny nose,weakness,muscle pain",Malaria
+"nausea,muscle pain,headache",Flu
+"runny nose,vomiting,weakness",Malaria
+"headache,fever,shortness of breath",Flu
+"nausea,chills,cough",COVID-19
+"weakness,runny nose,shortness of breath",COVID-19
+"chills,vomiting,fever",Flu
+"muscle pain,chills,shortness of breath",Flu
+"shortness of breath,chills,cough",COVID-19
+"fever,headache,chills",Flu
+"chills,body ache,weakness",Malaria
+"nausea,weakness,muscle pain",Malaria
+"fever,nausea,muscle pain",Flu
+"shortness of breath,headache,body ache",COVID-19
+"fever,weakness,sore throat",Malaria
+"sore throat,weakness,cough",Malaria
+"body ache,fever,shortness of breath",Malaria
+"runny nose,body ache,fever",Malaria
+"runny nose,headache,weakness",Flu
+"runny nose,shortness of breath,muscle pain",COVID-19
+"muscle pain,headache,nausea",Flu
+"sore throat,chills,fever",Flu
+"chills,weakness,nausea",Malaria
+"fever,shortness of breath,runny nose",COVID-19
+"fever,headache,vomiting",Flu
+"muscle pain,body ache,cough",Malaria
+"nausea,sore throat,chills",Flu
+"cough,body ache,sore throat",Malaria
+"chills,cough,nausea",COVID-19
+"weakness,headache,chills",Flu
+"runny nose,sore throat,nausea",Allergy
+"runny nose,fever,nausea",Allergy
+"cough,shortness of breath,muscle pain",COVID-19
+"headache,cough,chills",Flu
+"runny nose,chills,shortness of breath",COVID-19
+"sore throat,runny nose,body ache",Malaria
+"body ache,weakness,runny nose",Malaria
+"body ache,chills,sore throat",Malaria
+"headache,nausea,weakness",Malaria
+"weakness,muscle pain,chills",Flu
+"weakness,body ache,vomiting",Malaria
+"sore throat,cough,muscle pain",COVID-19
+"headache,fever,cough",Flu
+"sore throat,headache,shortness of breath",COVID-19
+"weakness,muscle pain,vomiting",Malaria
+"runny nose,nausea,weakness",Malaria
+"cough,chills,vomiting",Malaria
+"weakness,runny nose,shortness of breath",COVID-19
+"fever,vomiting,weakness",Malaria
+"muscle pain,chills,weakness",Flu
+"weakness,shortness of breath,sore throat",COVID-19
+"muscle pain,body ache,shortness of breath",Malaria
+"cough,muscle pain,chills",Flu
+"fever,muscle pain,body ache",Flu
+"vomiting,runny nose,fever",Malaria
+"body ache,vomiting,headache",Malaria
+"chills,cough,vomiting",Malaria
+"shortness of breath,cough,muscle pain",COVID-19
+"chills,nausea,fever",Flu
+"runny nose,vomiting,headache",Malaria
+"nausea,vomiting,fever",Malaria
+"headache,body ache,shortness of breath",Malaria
+"cough,muscle pain,nausea",COVID-19
+"body ache,cough,chills",Malaria
+"muscle pain,runny nose,chills",Flu
+"runny nose,sore throat,weakness",Malaria
+"fever,weakness,shortness of breath",COVID-19
+"shortness of breath,sore throat,fever",COVID-19
+"vomiting,nausea,weakness",Malaria
+"vomiting,cough,shortness of breath",COVID-19
+"headache,shortness of breath,sore throat",COVID-19
+"body ache,cough,vomiting",Malaria
+"shortness of breath,weakness,runny nose",COVID-19
+"sore throat,headache,fever",Flu
+"runny nose,fever,nausea",Allergy
+"fever,cough,nausea",COVID-19
+"fever,headache,cough",Flu
+"nausea,fever,sore throat",Cold
+"runny nose,sore throat,fever",Allergy
+"headache,nausea,muscle pain",Flu
+"headache,weakness,fever",Flu
+"weakness,body ache,cough",Malaria
+"weakness,fever,nausea",Malaria
+"chills,nausea,body ache",Malaria
+"runny nose,headache,cough",Flu
+"weakness,cough,headache",Malaria
+"shortness of breath,runny nose,chills",COVID-19
+"body ache,vomiting,muscle pain",Malaria
+"nausea,headache,chills",Flu
+"nausea,chills,body ache",Malaria
+"sore throat,runny nose,headache",Flu
+"cough,fever,headache",Flu
+"chills,weakness,vomiting",Malaria
+"nausea,muscle pain,headache",Flu
+"body ache,weakness,chills",Malaria
+"nausea,headache,shortness of breath",COVID-19
+"sore throat,body ache,runny nose",Malaria
+"sore throat,fever,weakness",Malaria
+"nausea,chills,shortness of breath",COVID-19
+"cough,nausea,fever",COVID-19
+"fever,nausea,muscle pain",Flu
+"runny nose,fever,sore throat",Cold
+"sore throat,shortness of breath,headache",COVID-19
+"runny nose,vomiting,nausea",Malaria
+"weakness,fever,body ache",Malaria
+"cough,muscle pain,nausea",COVID-19
+"fever,runny nose,cough",COVID-19
+"muscle pain,body ache,chills",Flu
+"fever,runny nose,nausea",Allergy
+"sore throat,fever,muscle pain",Flu
+"headache,body ache,runny nose",Malaria
+"cough,body ache,sore throat",Malaria
+"shortness of breath,body ache,muscle pain",COVID-19
+"nausea,chills,body ache",Malaria
+"runny nose,nausea,sore throat",Allergy
+"chills,runny nose,weakness",Allergy
+"shortness of breath,fever,body ache",COVID-19
+"runny nose,sore throat,weakness",Malaria
+"runny nose,headache,shortness of breath",Flu
+"vomiting,nausea,chills",Malaria
+"sore throat,vomiting,runny nose",Malaria
+"sore throat,body ache,cough",Malaria
+"headache,vomiting,muscle pain",Flu
+"weakness,vomiting,muscle pain",Malaria
+"runny nose,chills,weakness",Malaria
+"fever,body ache,nausea",Malaria
+"body ache,vomiting,muscle pain",Malaria
+"vomiting,shortness of breath,nausea",Malaria
+"chills,cough,body ache",Malaria
+"headache,sore throat,shortness of breath",COVID-19
+"cough,chills,runny nose",Allergy
+"sore throat,cough,shortness of breath",COVID-19
+"sore throat,cough,vomiting",Malaria
+"weakness,chills,headache",Flu
+"weakness,body ache,runny nose",Malaria
+"fever,sore throat,runny nose",Cold
+"nausea,cough,sore throat",COVID-19
+"chills,fever,nausea",Flu
+"weakness,runny nose,muscle pain",Malaria
+"weakness,body ache,vomiting",Malaria
+"weakness,headache,muscle pain",Flu
+"cough,fever,runny nose",COVID-19
+"headache,shortness of breath,fever",Flu
+"weakness,shortness of breath,headache",COVID-19
+"runny nose,fever,shortness of breath",COVID-19
+"weakness,headache,muscle pain",Flu
+"runny nose,vomiting,sore throat",Malaria
+"body ache,sore throat,shortness of breath",Malaria
+"muscle pain,body ache,fever",Flu
+"nausea,cough,chills",COVID-19
+"fever,sore throat,headache",Flu
+"fever,shortness of breath,sore throat",COVID-19
+"shortness of breath,runny nose,cough",COVID-19
+"shortness of breath,chills,headache",Flu
+"sore throat,runny nose,weakness",Malaria
+"vomiting,headache,cough",Malaria
+"shortness of breath,cough,chills",COVID-19
+"weakness,shortness of breath,runny nose",COVID-19
+"nausea,weakness,fever",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"fever,chills,shortness of breath",Flu
+"vomiting,chills,sore throat",Malaria
+"body ache,runny nose,cough",Malaria
+"sore throat,chills,nausea",Flu
+"chills,shortness of breath,body ache",COVID-19
+"nausea,shortness of breath,cough",COVID-19
+"nausea,shortness of breath,muscle pain",COVID-19
+"weakness,vomiting,fever",Malaria
+"sore throat,headache,runny nose",Allergy
+"muscle pain,vomiting,cough",Malaria
+"chills,runny nose,fever",Flu
+"shortness of breath,vomiting,nausea",Malaria
+"body ache,headache,chills",Flu
+"runny nose,muscle pain,cough",Flu
+"nausea,chills,sore throat",Flu
+"vomiting,muscle pain,sore throat",Malaria
+"headache,chills,muscle pain",Flu
+"shortness of breath,body ache,vomiting",Malaria
+"fever,nausea,vomiting",Malaria
+"shortness of breath,headache,vomiting",COVID-19
+"cough,muscle pain,runny nose",COVID-19
+"shortness of breath,vomiting,body ache",Malaria
+"cough,weakness,body ache",Malaria
+"cough,body ache,chills",Malaria
+"runny nose,fever,chills",Flu
+"vomiting,shortness of breath,fever",Malaria
+"headache,vomiting,muscle pain",Flu
+"shortness of breath,headache,weakness",COVID-19
+"chills,headache,sore throat",Flu
+"headache,weakness,vomiting",Malaria
+"cough,fever,chills",Flu
+"sore throat,headache,cough",COVID-19
+"muscle pain,headache,shortness of breath",Flu
+"shortness of breath,chills,muscle pain",Flu
+"vomiting,headache,fever",Flu
+"cough,headache,body ache",Malaria
+"fever,body ache,cough",Malaria
+"chills,cough,runny nose",Allergy
+"headache,runny nose,body ache",Allergy
+"weakness,cough,sore throat",Malaria
+"runny nose,muscle pain,weakness",Flu
+"weakness,headache,shortness of breath",COVID-19
+"shortness of breath,muscle pain,sore throat",COVID-19
+"cough,runny nose,vomiting",Malaria
+"weakness,muscle pain,sore throat",Malaria
+"body ache,sore throat,cough",Malaria
+"headache,vomiting,muscle pain",Flu
+"body ache,runny nose,fever",Malaria
+"nausea,fever,muscle pain",Flu
+"body ache,headache,chills",Flu
+"runny nose,nausea,shortness of breath",COVID-19
+"body ache,chills,weakness",Malaria
+"headache,body ache,runny nose",Malaria
+"headache,vomiting,cough",Malaria
+"nausea,fever,sore throat",Cold
+"body ache,cough,weakness",Malaria
+"body ache,cough,sore throat",Malaria
+"chills,muscle pain,vomiting",Flu
+"weakness,vomiting,runny nose",Malaria
+"fever,cough,runny nose",COVID-19
+"nausea,chills,body ache",Malaria
+"runny nose,fever,muscle pain",Flu
+"nausea,headache,fever",Flu
+"chills,shortness of breath,body ache",COVID-19
+"nausea,headache,cough",COVID-19
+"muscle pain,cough,runny nose",Flu
+"runny nose,fever,vomiting",Malaria
+"weakness,headache,body ache",Malaria
+"nausea,vomiting,weakness",Malaria
+"nausea,muscle pain,shortness of breath",COVID-19
+"vomiting,runny nose,headache",Malaria
+"weakness,shortness of breath,headache",COVID-19
+"shortness of breath,nausea,vomiting",Malaria
+"sore throat,fever,headache",Flu
+"vomiting,shortness of breath,fever",Malaria
+"fever,sore throat,cough",COVID-19
+"nausea,cough,sore throat",COVID-19
+"weakness,nausea,body ache",Malaria
+"runny nose,headache,body ache",Flu
+"vomiting,cough,body ache",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"headache,runny nose,fever",Flu
+"nausea,weakness,body ache",Malaria
+"runny nose,body ache,shortness of breath",Malaria
+"fever,sore throat,shortness of breath",COVID-19
+"chills,cough,sore throat",COVID-19
+"weakness,headache,vomiting",Malaria
+"body ache,cough,muscle pain",Malaria
+"nausea,cough,weakness",Malaria
+"vomiting,shortness of breath,runny nose",Malaria
+"muscle pain,headache,runny nose",Flu
+"chills,runny nose,shortness of breath",Allergy
+"muscle pain,vomiting,shortness of breath",Malaria
+"vomiting,weakness,sore throat",Malaria
+"nausea,sore throat,chills",Flu
+"vomiting,runny nose,nausea",Malaria
+"muscle pain,nausea,weakness",Malaria
+"vomiting,weakness,runny nose",Malaria
+"muscle pain,shortness of breath,fever",Flu
+"headache,nausea,body ache",Malaria
+"fever,weakness,shortness of breath",COVID-19
+"runny nose,nausea,shortness of breath",COVID-19
+"muscle pain,chills,vomiting",Flu
+"headache,sore throat,vomiting",Malaria
+"sore throat,runny nose,headache",Flu
+"runny nose,shortness of breath,muscle pain",COVID-19
+"headache,sore throat,vomiting",Malaria
+"fever,chills,nausea",Flu
+"shortness of breath,chills,body ache",COVID-19
+"cough,vomiting,muscle pain",Malaria
+"cough,headache,vomiting",Malaria
+"body ache,nausea,vomiting",Malaria
+"vomiting,sore throat,headache",Malaria
+"weakness,sore throat,vomiting",Malaria
+"vomiting,muscle pain,nausea",Malaria
+"sore throat,nausea,runny nose",Allergy
+"sore throat,body ache,muscle pain",Malaria
+"shortness of breath,fever,chills",Flu
+"vomiting,body ache,cough",Malaria
+"vomiting,muscle pain,runny nose",Malaria
+"nausea,muscle pain,vomiting",Malaria
+"weakness,shortness of breath,fever",COVID-19
+"chills,fever,nausea",Flu
+"headache,sore throat,runny nose",Allergy
+"muscle pain,runny nose,shortness of breath",COVID-19
+"weakness,headache,sore throat",Malaria
+"shortness of breath,cough,body ache",COVID-19
+"runny nose,shortness of breath,cough",COVID-19
+"headache,body ache,chills",Flu
+"weakness,headache,fever",Flu
+"headache,weakness,muscle pain",Flu
+"cough,nausea,muscle pain",COVID-19
+"shortness of breath,runny nose,weakness",COVID-19
+"vomiting,fever,shortness of breath",Malaria
+"vomiting,chills,weakness",Malaria
+"muscle pain,vomiting,headache",Flu
+"muscle pain,shortness of breath,cough",COVID-19
+"muscle pain,headache,vomiting",Flu
+"nausea,body ache,cough",Malaria
+"chills,runny nose,shortness of breath",Allergy
+"chills,cough,muscle pain",Flu
+"sore throat,cough,weakness",COVID-19
+"shortness of breath,runny nose,weakness",COVID-19
+"fever,chills,shortness of breath",Flu
+"sore throat,shortness of breath,fever",COVID-19
+"cough,vomiting,chills",Malaria
+"vomiting,sore throat,shortness of breath",Malaria
+"nausea,runny nose,chills",Flu
+"sore throat,nausea,fever",Flu
+"shortness of breath,headache,cough",COVID-19
+"fever,cough,headache",Flu
+"runny nose,vomiting,shortness of breath",Malaria
+"nausea,vomiting,cough",Malaria
+"body ache,headache,nausea",Malaria
+"shortness of breath,vomiting,nausea",Malaria
+"vomiting,weakness,chills",Malaria
+"weakness,vomiting,sore throat",Malaria
+"muscle pain,runny nose,weakness",Flu
+"muscle pain,weakness,headache",Flu
+"sore throat,weakness,headache",Malaria
+"body ache,headache,cough",Malaria
+"nausea,weakness,headache",Malaria
+"weakness,cough,chills",Malaria
+"vomiting,weakness,headache",Malaria
+"cough,nausea,fever",COVID-19
+"headache,shortness of breath,fever",Flu
+"vomiting,body ache,nausea",Malaria
+"muscle pain,chills,headache",Flu
+"runny nose,weakness,chills",Malaria
+"cough,weakness,muscle pain",COVID-19
+"cough,chills,body ache",Malaria
+"muscle pain,chills,weakness",Flu
+"shortness of breath,fever,chills",Flu
+"chills,vomiting,runny nose",Malaria
+"chills,fever,shortness of breath",Flu
+"runny nose,sore throat,chills",Flu
+"shortness of breath,nausea,chills",COVID-19
+"cough,vomiting,shortness of breath",COVID-19
+"body ache,shortness of breath,sore throat",Malaria
+"cough,runny nose,headache",Flu
+"vomiting,chills,shortness of breath",Malaria
+"body ache,vomiting,runny nose",Malaria
+"runny nose,headache,vomiting",Flu
+"headache,fever,sore throat",Flu
+"muscle pain,headache,chills",Flu
+"shortness of breath,runny nose,sore throat",COVID-19
+"vomiting,fever,weakness",Malaria
+"muscle pain,runny nose,vomiting",Malaria
+"runny nose,nausea,body ache",Malaria
+"nausea,body ache,fever",Malaria
+"vomiting,body ache,weakness",Malaria
+"headache,shortness of breath,body ache",COVID-19
+"runny nose,muscle pain,sore throat",Flu
+"body ache,chills,shortness of breath",Malaria
+"fever,body ache,nausea",Malaria
+"vomiting,headache,sore throat",Malaria
+"vomiting,runny nose,shortness of breath",Malaria
+"headache,vomiting,weakness",Malaria
+"vomiting,shortness of breath,nausea",Malaria
+"nausea,weakness,headache",Malaria
+"shortness of breath,body ache,cough",COVID-19
+"vomiting,headache,weakness",Malaria
+"chills,sore throat,nausea",Flu
+"sore throat,headache,fever",Flu
+"body ache,vomiting,cough",Malaria
+"cough,shortness of breath,nausea",COVID-19
+"vomiting,chills,nausea",Malaria
+"runny nose,chills,cough",COVID-19
+"headache,sore throat,muscle pain",Flu
+"chills,muscle pain,weakness",Flu
+"headache,vomiting,weakness",Malaria
+"cough,muscle pain,sore throat",COVID-19
+"cough,chills,nausea",COVID-19
+"vomiting,fever,cough",Malaria
+"cough,shortness of breath,vomiting",COVID-19
+"headache,cough,vomiting",Malaria
+"nausea,vomiting,runny nose",Malaria
+"cough,runny nose,fever",COVID-19
+"runny nose,sore throat,body ache",Malaria
+"runny nose,weakness,headache",Flu
+"cough,headache,vomiting",Malaria
+"chills,fever,sore throat",Flu
+"runny nose,fever,body ache",Malaria
+"weakness,nausea,chills",Malaria
+"cough,fever,shortness of breath",COVID-19
+"sore throat,runny nose,fever",Allergy
+"cough,fever,vomiting",Malaria
+"shortness of breath,headache,body ache",COVID-19
+"headache,runny nose,fever",Flu
+"vomiting,muscle pain,nausea",Malaria
+"muscle pain,shortness of breath,headache",Flu
+"muscle pain,sore throat,headache",Flu
+"chills,shortness of breath,headache",Flu
+"nausea,muscle pain,body ache",Malaria
+"weakness,body ache,vomiting",Malaria
+"headache,weakness,chills",Flu
+"vomiting,shortness of breath,fever",Malaria
+"nausea,muscle pain,chills",Flu
+"shortness of breath,runny nose,headache",COVID-19
+"fever,chills,body ache",Flu
+"muscle pain,nausea,vomiting",Malaria
+"cough,muscle pain,headache",Flu
+"muscle pain,fever,shortness of breath",Flu
+"headache,vomiting,body ache",Malaria
+"nausea,fever,weakness",Malaria
+"cough,muscle pain,weakness",COVID-19
+"weakness,nausea,cough",Malaria
+"headache,muscle pain,sore throat",Flu
+"nausea,weakness,shortness of breath",Malaria
+"weakness,fever,nausea",Malaria
+"headache,body ache,shortness of breath",Malaria
+"chills,fever,headache",Flu
+"headache,runny nose,fever",Flu
+"weakness,muscle pain,cough",Malaria
+"fever,weakness,headache",Flu
+"chills,nausea,vomiting",Malaria
+"headache,weakness,vomiting",Malaria
+"shortness of breath,vomiting,sore throat",COVID-19
+"cough,fever,body ache",Malaria
+"sore throat,muscle pain,chills",Flu
+"chills,muscle pain,body ache",Flu
+"runny nose,body ache,cough",Malaria
+"chills,vomiting,runny nose",Malaria
+"weakness,muscle pain,body ache",Malaria
+"body ache,nausea,cough",Malaria
+"nausea,weakness,sore throat",Malaria
+"vomiting,headache,cough",Malaria
+"headache,chills,sore throat",Flu
+"nausea,sore throat,chills",Flu
+"shortness of breath,muscle pain,runny nose",COVID-19
+"body ache,vomiting,cough",Malaria
+"cough,body ache,fever",Malaria
+"nausea,runny nose,headache",Flu
+"muscle pain,headache,nausea",Flu
+"body ache,sore throat,vomiting",Malaria
+"shortness of breath,sore throat,weakness",COVID-19
+"body ache,cough,headache",Malaria
+"sore throat,fever,body ache",Malaria
+"headache,sore throat,vomiting",Malaria
+"muscle pain,body ache,vomiting",Malaria
+"chills,shortness of breath,cough",COVID-19
+"body ache,fever,nausea",Malaria
+"nausea,weakness,body ache",Malaria
+"chills,muscle pain,weakness",Flu
+"fever,headache,vomiting",Flu
+"vomiting,shortness of breath,body ache",Malaria
+"fever,weakness,muscle pain",Flu
+"muscle pain,cough,vomiting",Malaria
+"headache,chills,vomiting",Flu
+"body ache,cough,vomiting",Malaria
+"fever,body ache,chills",Flu
+"cough,vomiting,headache",Malaria
+"muscle pain,headache,sore throat",Flu
+"fever,body ache,headache",Flu
+"muscle pain,vomiting,headache",Flu
+"shortness of breath,muscle pain,chills",Flu
+"headache,chills,cough",Flu
+"runny nose,weakness,headache",Flu
+"nausea,sore throat,runny nose",Allergy
+"body ache,cough,sore throat",Malaria
+"body ache,muscle pain,runny nose",Malaria
+"weakness,nausea,chills",Malaria
+"body ache,runny nose,sore throat",Malaria
+"chills,cough,nausea",COVID-19
+"fever,headache,nausea",Flu
+"sore throat,muscle pain,cough",Flu
+"vomiting,headache,runny nose",Malaria
+"body ache,shortness of breath,sore throat",Malaria
+"muscle pain,vomiting,weakness",Malaria
+"sore throat,cough,fever",COVID-19
+"chills,weakness,fever",Flu
+"runny nose,vomiting,chills",Malaria
+"runny nose,body ache,fever",Malaria
+"weakness,vomiting,sore throat",Malaria
+"headache,cough,chills",Flu
+"shortness of breath,body ache,weakness",Malaria
+"vomiting,body ache,headache",Malaria
+"fever,sore throat,muscle pain",Flu
+"body ache,sore throat,muscle pain",Malaria
+"weakness,cough,runny nose",Malaria
+"body ache,nausea,fever",Malaria
+"vomiting,chills,shortness of breath",Malaria
+"chills,cough,nausea",COVID-19
+"nausea,chills,shortness of breath",COVID-19
+"body ache,cough,vomiting",Malaria
+"muscle pain,shortness of breath,headache",Flu
+"shortness of breath,vomiting,nausea",Malaria
+"shortness of breath,fever,weakness",COVID-19
+"headache,runny nose,cough",Allergy
+"muscle pain,chills,headache",Flu
+"cough,muscle pain,fever",Flu
+"body ache,chills,muscle pain",Flu
+"chills,sore throat,vomiting",Malaria
+"nausea,headache,cough",COVID-19
+"nausea,runny nose,cough",COVID-19
+"shortness of breath,vomiting,runny nose",COVID-19
+"fever,weakness,vomiting",Malaria
+"headache,cough,fever",Flu
+"body ache,muscle pain,shortness of breath",Malaria
+"sore throat,body ache,shortness of breath",Malaria
+"weakness,shortness of breath,vomiting",Malaria
+"nausea,body ache,runny nose",Malaria
+"chills,body ache,muscle pain",Flu
+"body ache,weakness,fever",Malaria
+"vomiting,body ache,chills",Malaria
+"body ache,fever,nausea",Malaria
+"cough,fever,headache",Flu
+"headache,muscle pain,runny nose",Flu
+"muscle pain,runny nose,nausea",Flu
+"sore throat,fever,runny nose",Allergy
+"vomiting,cough,nausea",Malaria
+"muscle pain,nausea,sore throat",Flu
+"chills,sore throat,runny nose",Allergy
+"shortness of breath,body ache,headache",COVID-19
+"body ache,muscle pain,chills",Flu
+"body ache,vomiting,sore throat",Malaria
+"cough,vomiting,weakness",Malaria
+"shortness of breath,runny nose,sore throat",COVID-19
+"runny nose,vomiting,fever",Malaria
+"fever,runny nose,body ache",Malaria
+"sore throat,nausea,cough",COVID-19
+"fever,shortness of breath,nausea",COVID-19
+"muscle pain,headache,body ache",Flu
+"fever,headache,weakness",Flu
+"weakness,cough,chills",Malaria
+"cough,muscle pain,nausea",COVID-19
+"vomiting,fever,muscle pain",Flu
+"vomiting,cough,sore throat",Malaria
+"cough,fever,nausea",COVID-19
+"muscle pain,fever,vomiting",Flu
+"headache,body ache,shortness of breath",Malaria
+"vomiting,shortness of breath,nausea",Malaria
+"headache,nausea,shortness of breath",COVID-19
+"cough,body ache,fever",Malaria
+"headache,chills,shortness of breath",Flu
+"shortness of breath,cough,nausea",COVID-19
+"shortness of breath,nausea,weakness",Malaria
+"sore throat,fever,nausea",Flu
+"weakness,chills,body ache",Malaria
+"cough,vomiting,muscle pain",Malaria
+"fever,muscle pain,cough",Flu
+"sore throat,headache,weakness",Malaria
+"nausea,runny nose,sore throat",Allergy
+"chills,weakness,body ache",Malaria
+"nausea,muscle pain,runny nose",Flu
+"vomiting,runny nose,cough",Malaria
+"body ache,cough,headache",Malaria
+"muscle pain,headache,nausea",Flu
+"vomiting,weakness,sore throat",Malaria
+"chills,muscle pain,headache",Flu
+"headache,nausea,muscle pain",Flu
+"body ache,runny nose,fever",Malaria
+"vomiting,body ache,chills",Malaria
+"runny nose,vomiting,shortness of breath",Malaria
+"chills,muscle pain,body ache",Flu
+"nausea,muscle pain,headache",Flu
+"shortness of breath,muscle pain,runny nose",COVID-19
+"sore throat,headache,muscle pain",Flu
+"fever,headache,runny nose",Flu
+"cough,fever,sore throat",COVID-19
+"weakness,runny nose,vomiting",Malaria
+"headache,body ache,shortness of breath",Malaria
+"headache,weakness,muscle pain",Flu
+"sore throat,weakness,muscle pain",Malaria
+"sore throat,vomiting,body ache",Malaria
+"cough,runny nose,nausea",COVID-19
+"headache,runny nose,weakness",Allergy
+"weakness,fever,runny nose",Malaria
+"sore throat,muscle pain,cough",Flu
+"runny nose,muscle pain,body ache",Malaria
+"vomiting,headache,muscle pain",Flu
+"fever,headache,shortness of breath",Flu
+"headache,fever,body ache",Flu
+"cough,weakness,body ache",Malaria
+"sore throat,muscle pain,chills",Flu
+"nausea,weakness,chills",Malaria
+"weakness,sore throat,body ache",Malaria
+"weakness,runny nose,cough",Malaria
+"weakness,nausea,body ache",Malaria
+"weakness,headache,fever",Flu
+"shortness of breath,weakness,runny nose",COVID-19
+"vomiting,fever,cough",Malaria
+"chills,shortness of breath,cough",COVID-19
+"muscle pain,headache,chills",Flu
+"fever,nausea,cough",COVID-19
+"chills,runny nose,weakness",Allergy
+"vomiting,chills,body ache",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"headache,vomiting,runny nose",Malaria
+"vomiting,body ache,cough",Malaria
+"body ache,vomiting,chills",Malaria
+"body ache,nausea,sore throat",Malaria
+"body ache,muscle pain,runny nose",Malaria
+"chills,runny nose,weakness",Allergy
+"muscle pain,cough,weakness",Flu
+"shortness of breath,muscle pain,sore throat",COVID-19
+"cough,body ache,sore throat",Malaria
+"body ache,chills,headache",Flu
+"sore throat,fever,headache",Flu
+"runny nose,body ache,vomiting",Malaria
+"headache,runny nose,sore throat",Allergy
+"headache,shortness of breath,nausea",COVID-19
+"weakness,shortness of breath,vomiting",Malaria
+"cough,headache,runny nose",Allergy
+"muscle pain,runny nose,weakness",Flu
+"vomiting,runny nose,cough",Malaria
+"sore throat,muscle pain,vomiting",Malaria
+"sore throat,shortness of breath,chills",COVID-19
+"headache,shortness of breath,fever",Flu
+"runny nose,body ache,shortness of breath",Malaria
+"shortness of breath,sore throat,headache",COVID-19
+"sore throat,chills,nausea",Flu
+"shortness of breath,fever,chills",Flu
+"sore throat,chills,fever",Flu
+"chills,weakness,fever",Flu
+"chills,headache,body ache",Flu
+"fever,body ache,cough",Malaria
+"nausea,vomiting,weakness",Malaria
+"vomiting,runny nose,chills",Malaria
+"runny nose,chills,weakness",Malaria
+"vomiting,weakness,shortness of breath",Malaria
+"vomiting,body ache,weakness",Malaria
+"nausea,headache,body ache",Malaria
+"headache,fever,sore throat",Flu
+"shortness of breath,chills,sore throat",COVID-19
+"sore throat,nausea,weakness",Malaria
+"fever,vomiting,nausea",Malaria
+"runny nose,muscle pain,headache",Flu
+"vomiting,fever,shortness of breath",Malaria
+"fever,headache,chills",Flu
+"chills,nausea,muscle pain",Flu
+"sore throat,vomiting,muscle pain",Malaria
+"chills,shortness of breath,sore throat",COVID-19
+"vomiting,muscle pain,shortness of breath",Malaria
+"headache,body ache,fever",Flu
+"muscle pain,vomiting,shortness of breath",Malaria
+"nausea,runny nose,chills",Flu
+"shortness of breath,body ache,nausea",Malaria
+"nausea,muscle pain,shortness of breath",COVID-19
+"muscle pain,sore throat,vomiting",Malaria
+"sore throat,weakness,body ache",Malaria
+"body ache,muscle pain,fever",Flu
+"fever,sore throat,chills",Flu
+"headache,muscle pain,shortness of breath",Flu
+"shortness of breath,muscle pain,body ache",COVID-19
+"sore throat,fever,headache",Flu
+"cough,sore throat,chills",COVID-19
+"body ache,nausea,chills",Malaria
+"shortness of breath,chills,fever",Flu
+"body ache,chills,fever",Flu
+"fever,weakness,muscle pain",Flu
+"shortness of breath,weakness,sore throat",COVID-19
+"weakness,runny nose,nausea",Malaria
+"runny nose,fever,body ache",Malaria
+"chills,nausea,runny nose",Allergy
+"fever,weakness,muscle pain",Flu
+"nausea,weakness,sore throat",Malaria
+"weakness,headache,sore throat",Malaria
+"nausea,fever,sore throat",Cold
+"vomiting,headache,sore throat",Malaria
+"weakness,sore throat,runny nose",Malaria
+"body ache,headache,nausea",Malaria
+"vomiting,chills,shortness of breath",Malaria
+"nausea,muscle pain,sore throat",Flu
+"headache,shortness of breath,muscle pain",Flu
+"muscle pain,vomiting,weakness",Malaria
+"vomiting,sore throat,body ache",Malaria
+"runny nose,shortness of breath,body ache",COVID-19
+"cough,sore throat,runny nose",COVID-19
+"nausea,shortness of breath,sore throat",COVID-19
+"body ache,runny nose,muscle pain",Malaria
+"body ache,sore throat,chills",Malaria
+"runny nose,muscle pain,weakness",Flu
+"fever,cough,chills",Flu
+"nausea,chills,cough",COVID-19
+"runny nose,muscle pain,shortness of breath",COVID-19
+"sore throat,headache,chills",Flu
+"headache,weakness,sore throat",Malaria
+"shortness of breath,runny nose,weakness",COVID-19
+"headache,runny nose,sore throat",Allergy
+"sore throat,nausea,vomiting",Malaria
+"cough,headache,runny nose",Allergy
+"vomiting,shortness of breath,sore throat",Malaria
+"chills,cough,vomiting",Malaria
+"body ache,muscle pain,shortness of breath",Malaria
+"cough,sore throat,headache",COVID-19
+"runny nose,headache,nausea",Flu
+"vomiting,sore throat,muscle pain",Malaria
+"cough,muscle pain,nausea",COVID-19
+"muscle pain,runny nose,nausea",Flu
+"weakness,shortness of breath,cough",COVID-19
+"sore throat,headache,body ache",Malaria
+"headache,sore throat,nausea",Flu
+"sore throat,muscle pain,chills",Flu
+"nausea,cough,muscle pain",COVID-19
+"nausea,runny nose,shortness of breath",COVID-19
+"runny nose,shortness of breath,headache",COVID-19
+"cough,vomiting,shortness of breath",COVID-19
+"shortness of breath,chills,body ache",COVID-19
+"body ache,fever,weakness",Malaria
+"weakness,chills,cough",Malaria
+"chills,vomiting,cough",Malaria
+"nausea,sore throat,fever",Flu
+"runny nose,vomiting,cough",Malaria
+"nausea,weakness,cough",Malaria
+"fever,chills,headache",Flu
+"sore throat,runny nose,chills",Flu
+"sore throat,cough,runny nose",COVID-19
+"weakness,vomiting,muscle pain",Malaria
+"nausea,sore throat,headache",Flu
+"weakness,body ache,nausea",Malaria
+"sore throat,headache,weakness",Malaria
+"chills,weakness,body ache",Malaria
+"runny nose,fever,weakness",Malaria
+"weakness,fever,runny nose",Malaria
+"shortness of breath,runny nose,weakness",COVID-19
+"fever,muscle pain,headache",Flu
+"fever,headache,body ache",Flu
+"weakness,shortness of breath,body ache",Malaria
+"sore throat,nausea,fever",Flu
+"headache,fever,vomiting",Flu
+"weakness,sore throat,vomiting",Malaria
+"shortness of breath,vomiting,fever",COVID-19
+"weakness,nausea,chills",Malaria
+"runny nose,shortness of breath,chills",COVID-19
+"runny nose,headache,weakness",Flu
+"body ache,shortness of breath,headache",Malaria
+"fever,sore throat,nausea",Cold
+"cough,runny nose,sore throat",COVID-19
+"cough,runny nose,body ache",Malaria
+"nausea,sore throat,weakness",Malaria
+"fever,runny nose,weakness",Malaria
+"body ache,sore throat,runny nose",Malaria
+"vomiting,weakness,fever",Malaria
+"fever,sore throat,vomiting",Malaria
+"chills,headache,weakness",Flu
+"vomiting,nausea,fever",Malaria
+"vomiting,nausea,headache",Malaria
+"body ache,fever,shortness of breath",Malaria
+"muscle pain,nausea,shortness of breath",COVID-19
+"cough,nausea,vomiting",Malaria
+"runny nose,fever,sore throat",Cold
+"vomiting,muscle pain,fever",Flu
+"fever,chills,shortness of breath",Flu
+"nausea,body ache,chills",Malaria
+"body ache,nausea,fever",Malaria
+"vomiting,body ache,muscle pain",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"shortness of breath,nausea,body ache",Malaria
+"muscle pain,shortness of breath,body ache",COVID-19
+"body ache,vomiting,nausea",Malaria
+"shortness of breath,headache,vomiting",COVID-19
+"shortness of breath,cough,runny nose",COVID-19
+"muscle pain,runny nose,nausea",Flu
+"muscle pain,chills,sore throat",Flu
+"vomiting,shortness of breath,sore throat",Malaria
+"vomiting,fever,headache",Flu
+"nausea,fever,headache",Flu
+"headache,weakness,body ache",Malaria
+"sore throat,runny nose,body ache",Malaria
+"headache,weakness,muscle pain",Flu
+"fever,nausea,sore throat",Cold
+"sore throat,runny nose,headache",Flu
+"body ache,muscle pain,sore throat",Malaria
+"cough,nausea,runny nose",COVID-19
+"weakness,shortness of breath,body ache",Malaria
+"vomiting,shortness of breath,headache",Malaria
+"body ache,chills,shortness of breath",Malaria
+"body ache,headache,runny nose",Malaria
+"fever,weakness,chills",Flu
+"sore throat,fever,body ache",Malaria
+"sore throat,shortness of breath,nausea",COVID-19
+"muscle pain,shortness of breath,runny nose",COVID-19
+"vomiting,shortness of breath,weakness",Malaria
+"vomiting,runny nose,headache",Malaria
+"muscle pain,nausea,weakness",Malaria
+"nausea,runny nose,muscle pain",Flu
+"muscle pain,body ache,nausea",Malaria
+"shortness of breath,nausea,weakness",Malaria
+"shortness of breath,chills,cough",COVID-19
+"shortness of breath,headache,nausea",COVID-19
+"weakness,sore throat,muscle pain",Malaria
+"weakness,nausea,cough",Malaria
+"vomiting,shortness of breath,muscle pain",Malaria
+"vomiting,fever,weakness",Malaria
+"fever,nausea,weakness",Malaria
+"chills,muscle pain,headache",Flu
+"nausea,muscle pain,body ache",Malaria
+"vomiting,runny nose,muscle pain",Malaria
+"headache,body ache,shortness of breath",Malaria
+"muscle pain,nausea,headache",Flu
+"cough,weakness,vomiting",Malaria
+"cough,weakness,body ache",Malaria
+"chills,body ache,headache",Flu
+"chills,headache,fever",Flu
+"nausea,shortness of breath,fever",COVID-19
+"sore throat,runny nose,fever",Allergy
+"runny nose,headache,fever",Flu
+"muscle pain,weakness,fever",Flu
+"weakness,fever,chills",Flu
+"fever,muscle pain,sore throat",Flu
+"vomiting,muscle pain,shortness of breath",Malaria
+"muscle pain,sore throat,chills",Flu
+"cough,shortness of breath,body ache",COVID-19
+"sore throat,runny nose,cough",COVID-19
+"vomiting,shortness of breath,sore throat",Malaria
+"weakness,chills,vomiting",Malaria
+"headache,weakness,fever",Flu
+"sore throat,weakness,headache",Malaria
+"nausea,cough,runny nose",COVID-19
+"headache,runny nose,shortness of breath",Allergy
+"chills,vomiting,muscle pain",Flu
+"muscle pain,runny nose,weakness",Flu
+"fever,body ache,runny nose",Malaria
+"chills,cough,vomiting",Malaria
+"weakness,fever,chills",Flu
+"headache,sore throat,runny nose",Allergy
+"cough,chills,shortness of breath",COVID-19
+"cough,body ache,nausea",Malaria
+"runny nose,fever,body ache",Malaria
+"nausea,vomiting,fever",Malaria
+"muscle pain,body ache,vomiting",Malaria
+"muscle pain,nausea,chills",Flu
+"headache,shortness of breath,body ache",COVID-19
+"chills,shortness of breath,muscle pain",Flu
+"body ache,headache,muscle pain",Flu
+"nausea,shortness of breath,cough",COVID-19
+"weakness,nausea,vomiting",Malaria
+"shortness of breath,nausea,headache",COVID-19
+"headache,vomiting,cough",Malaria
+"muscle pain,shortness of breath,cough",COVID-19
+"body ache,chills,muscle pain",Flu
+"muscle pain,headache,body ache",Flu
+"runny nose,weakness,nausea",Malaria
+"body ache,chills,muscle pain",Flu
+"fever,cough,shortness of breath",COVID-19
+"shortness of breath,fever,runny nose",COVID-19
+"chills,muscle pain,headache",Flu
+"fever,sore throat,weakness",Malaria
+"chills,sore throat,muscle pain",Flu
+"cough,runny nose,nausea",COVID-19
+"headache,shortness of breath,body ache",COVID-19
+"chills,sore throat,cough",COVID-19
+"cough,body ache,fever",Malaria
+"shortness of breath,fever,muscle pain",Flu
+"nausea,shortness of breath,sore throat",COVID-19
+"vomiting,chills,nausea",Malaria
+"muscle pain,fever,nausea",Flu
+"nausea,sore throat,weakness",Malaria
+"cough,weakness,fever",COVID-19
+"nausea,weakness,vomiting",Malaria
+"sore throat,muscle pain,chills",Flu
+"vomiting,body ache,muscle pain",Malaria
+"weakness,chills,runny nose",Allergy
+"body ache,vomiting,runny nose",Malaria
+"cough,vomiting,body ache",Malaria
+"vomiting,shortness of breath,nausea",Malaria
+"vomiting,chills,headache",Flu
+"headache,muscle pain,chills",Flu
+"headache,vomiting,sore throat",Malaria
+"body ache,cough,shortness of breath",COVID-19
+"runny nose,chills,sore throat",Flu
+"fever,weakness,vomiting",Malaria
+"headache,weakness,cough",Malaria
+"cough,runny nose,chills",COVID-19
+"headache,muscle pain,vomiting",Flu
+"muscle pain,headache,runny nose",Flu
+"muscle pain,sore throat,nausea",Flu
+"sore throat,weakness,shortness of breath",COVID-19
+"muscle pain,shortness of breath,weakness",COVID-19
+"weakness,muscle pain,cough",Malaria
+"sore throat,chills,shortness of breath",COVID-19
+"shortness of breath,sore throat,runny nose",COVID-19
+"headache,sore throat,shortness of breath",COVID-19
+"fever,shortness of breath,sore throat",COVID-19
+"sore throat,muscle pain,weakness",Flu
+"cough,weakness,shortness of breath",COVID-19
+"cough,body ache,fever",Malaria
+"vomiting,cough,runny nose",Malaria
+"weakness,nausea,runny nose",Malaria
+"headache,fever,vomiting",Flu
+"muscle pain,sore throat,weakness",Flu
+"nausea,cough,body ache",Malaria
+"shortness of breath,headache,vomiting",COVID-19
+"chills,sore throat,body ache",Malaria
+"cough,fever,chills",Flu
+"body ache,sore throat,shortness of breath",Malaria
+"headache,shortness of breath,weakness",COVID-19
+"runny nose,vomiting,weakness",Malaria
+"headache,fever,chills",Flu
+"cough,muscle pain,sore throat",COVID-19
+"weakness,headache,nausea",Malaria
+"shortness of breath,headache,chills",Flu
+"vomiting,body ache,nausea",Malaria
+"nausea,vomiting,runny nose",Malaria
+"sore throat,shortness of breath,weakness",COVID-19
+"fever,cough,sore throat",COVID-19
+"nausea,chills,body ache",Malaria
+"body ache,vomiting,weakness",Malaria
+"runny nose,cough,weakness",COVID-19
+"shortness of breath,nausea,vomiting",Malaria
+"runny nose,headache,chills",Flu
+"vomiting,muscle pain,shortness of breath",Malaria
+"sore throat,runny nose,vomiting",Malaria
+"headache,muscle pain,nausea",Flu
+"headache,sore throat,vomiting",Malaria
+"fever,chills,shortness of breath",Flu
+"runny nose,nausea,weakness",Malaria
+"sore throat,cough,fever",COVID-19
+"sore throat,headache,weakness",Malaria
+"headache,cough,fever",Flu
+"weakness,sore throat,cough",Malaria
+"muscle pain,shortness of breath,nausea",COVID-19
+"cough,shortness of breath,weakness",COVID-19
+"muscle pain,runny nose,headache",Flu
+"shortness of breath,muscle pain,headache",Flu
+"cough,chills,vomiting",Malaria
+"chills,headache,cough",Flu
+"muscle pain,headache,weakness",Flu
+"runny nose,shortness of breath,sore throat",COVID-19
+"vomiting,chills,weakness",Malaria
+"chills,muscle pain,weakness",Flu
+"runny nose,cough,muscle pain",COVID-19
+"weakness,nausea,runny nose",Malaria
+"fever,headache,runny nose",Flu
+"headache,runny nose,sore throat",Allergy
+"vomiting,sore throat,cough",Malaria
+"runny nose,sore throat,headache",Flu
+"vomiting,body ache,sore throat",Malaria
+"sore throat,cough,fever",COVID-19
+"weakness,sore throat,cough",Malaria
+"weakness,cough,shortness of breath",COVID-19
+"chills,muscle pain,sore throat",Flu
+"sore throat,nausea,weakness",Malaria
+"fever,runny nose,sore throat",Cold
+"cough,runny nose,weakness",COVID-19
+"headache,runny nose,body ache",Allergy
+"vomiting,fever,nausea",Malaria
+"weakness,cough,headache",Malaria
+"body ache,sore throat,weakness",Malaria
+"sore throat,chills,muscle pain",Flu
+"body ache,weakness,chills",Malaria
+"cough,vomiting,muscle pain",Malaria
+"vomiting,chills,headache",Flu
+"fever,sore throat,cough",COVID-19
+"sore throat,cough,headache",COVID-19
+"fever,weakness,headache",Flu
+"body ache,muscle pain,nausea",Malaria
+"fever,runny nose,muscle pain",Flu
+"vomiting,muscle pain,body ache",Malaria
+"headache,cough,body ache",Malaria
+"chills,body ache,weakness",Malaria
+"muscle pain,sore throat,body ache",Malaria
+"cough,body ache,sore throat",Malaria
+"vomiting,shortness of breath,runny nose",Malaria
+"shortness of breath,runny nose,sore throat",COVID-19
+"weakness,shortness of breath,fever",COVID-19
+"fever,runny nose,headache",Flu
+"fever,muscle pain,runny nose",Flu
+"vomiting,sore throat,nausea",Malaria
+"fever,muscle pain,vomiting",Flu
+"vomiting,chills,cough",Malaria
+"fever,body ache,nausea",Malaria
+"headache,cough,chills",Flu
+"vomiting,fever,shortness of breath",Malaria
+"weakness,fever,sore throat",Malaria
+"fever,vomiting,shortness of breath",Malaria
+"shortness of breath,sore throat,runny nose",COVID-19
+"body ache,weakness,cough",Malaria
+"fever,sore throat,headache",Flu
+"muscle pain,runny nose,headache",Flu
+"headache,muscle pain,vomiting",Flu
+"muscle pain,shortness of breath,runny nose",COVID-19
+"runny nose,muscle pain,body ache",Malaria
+"weakness,cough,vomiting",Malaria
+"chills,headache,cough",Flu
+"cough,weakness,body ache",Malaria
+"runny nose,sore throat,weakness",Malaria
+"shortness of breath,fever,vomiting",COVID-19
+"fever,chills,weakness",Flu
+"fever,chills,cough",Flu
+"muscle pain,fever,weakness",Flu
+"muscle pain,shortness of breath,weakness",COVID-19
+"nausea,runny nose,vomiting",Malaria
+"sore throat,vomiting,nausea",Malaria
+"fever,cough,runny nose",COVID-19
+"vomiting,sore throat,headache",Malaria
+"nausea,weakness,vomiting",Malaria
+"shortness of breath,muscle pain,cough",COVID-19
+"shortness of breath,sore throat,vomiting",COVID-19
+"shortness of breath,chills,fever",Flu
+"vomiting,weakness,chills",Malaria
+"body ache,shortness of breath,sore throat",Malaria
+"cough,runny nose,chills",COVID-19
+"weakness,headache,vomiting",Malaria
+"headache,chills,runny nose",Flu
+"nausea,vomiting,chills",Malaria
+"sore throat,muscle pain,body ache",Malaria
+"weakness,muscle pain,runny nose",Malaria
+"sore throat,body ache,fever",Malaria
+"weakness,muscle pain,fever",Flu
+"weakness,nausea,fever",Malaria
+"vomiting,runny nose,nausea",Malaria
+"body ache,muscle pain,sore throat",Malaria
+"headache,weakness,chills",Flu
+"sore throat,runny nose,weakness",Malaria
+"shortness of breath,body ache,chills",COVID-19
+"headache,fever,runny nose",Flu
+"nausea,muscle pain,weakness",Malaria
+"body ache,chills,headache",Flu
+"fever,headache,chills",Flu
+"chills,weakness,sore throat",Malaria
+"sore throat,headache,runny nose",Allergy
+"runny nose,fever,cough",COVID-19
+"nausea,sore throat,vomiting",Malaria
+"fever,runny nose,sore throat",Cold
+"sore throat,muscle pain,cough",Flu
+"headache,shortness of breath,runny nose",COVID-19
+"runny nose,headache,weakness",Flu
+"fever,nausea,weakness",Malaria
+"cough,shortness of breath,weakness",COVID-19
+"nausea,sore throat,shortness of breath",COVID-19
+"runny nose,headache,weakness",Flu
+"fever,vomiting,shortness of breath",Malaria
+"weakness,runny nose,cough",Malaria
+"sore throat,weakness,body ache",Malaria
+"weakness,vomiting,shortness of breath",Malaria
+"fever,weakness,chills",Flu
+"body ache,sore throat,fever",Malaria
+"chills,headache,runny nose",Flu
+"muscle pain,cough,body ache",Malaria
+"nausea,vomiting,fever",Malaria
+"shortness of breath,fever,nausea",COVID-19
+"muscle pain,runny nose,chills",Flu
+"chills,nausea,headache",Flu
+"runny nose,chills,body ache",Malaria
+"muscle pain,nausea,sore throat",Flu
+"body ache,vomiting,fever",Malaria
+"headache,weakness,nausea",Malaria
+"headache,nausea,muscle pain",Flu
+"fever,cough,vomiting",Malaria
+"runny nose,nausea,cough",COVID-19
+"vomiting,sore throat,fever",Malaria
+"cough,runny nose,muscle pain",COVID-19
+"sore throat,headache,weakness",Malaria
+"runny nose,cough,headache",Flu
+"nausea,sore throat,runny nose",Allergy
+"body ache,shortness of breath,fever",Malaria
+"headache,nausea,sore throat",Flu
+"runny nose,cough,chills",COVID-19
+"chills,runny nose,vomiting",Allergy
+"muscle pain,chills,sore throat",Flu
+"shortness of breath,sore throat,body ache",COVID-19
+"sore throat,nausea,headache",Flu
+"muscle pain,headache,nausea",Flu
+"muscle pain,fever,cough",Flu
+"fever,cough,muscle pain",Flu
+"chills,body ache,weakness",Malaria
+"chills,body ache,muscle pain",Flu
+"muscle pain,shortness of breath,sore throat",COVID-19
+"sore throat,cough,nausea",COVID-19
+"vomiting,muscle pain,cough",Malaria
+"headache,nausea,vomiting",Malaria
+"nausea,vomiting,weakness",Malaria
+"vomiting,muscle pain,fever",Flu
+"weakness,muscle pain,nausea",Malaria
+"shortness of breath,weakness,fever",COVID-19
+"muscle pain,body ache,cough",Malaria
+"nausea,muscle pain,cough",Flu
+"runny nose,body ache,vomiting",Malaria
+"fever,vomiting,shortness of breath",Malaria
+"muscle pain,cough,sore throat",Flu
+"body ache,fever,cough",Malaria
+"cough,sore throat,nausea",COVID-19
+"body ache,shortness of breath,headache",Malaria
+"fever,weakness,sore throat",Malaria
+"muscle pain,vomiting,cough",Malaria
+"vomiting,chills,cough",Malaria
+"fever,sore throat,nausea",Cold
+"fever,sore throat,vomiting",Malaria
+"fever,shortness of breath,body ache",COVID-19
+"muscle pain,nausea,weakness",Malaria
+"vomiting,runny nose,body ache",Malaria
+"shortness of breath,sore throat,cough",COVID-19
+"fever,shortness of breath,headache",Flu
+"nausea,muscle pain,body ache",Malaria
+"chills,weakness,cough",Malaria
+"body ache,sore throat,cough",Malaria
+"body ache,sore throat,headache",Malaria
+"sore throat,headache,nausea",Flu
+"body ache,headache,shortness of breath",Malaria
+"chills,nausea,fever",Flu
+"vomiting,weakness,fever",Malaria
+"muscle pain,runny nose,body ache",Malaria
+"cough,chills,body ache",Malaria
+"sore throat,body ache,weakness",Malaria
+"shortness of breath,headache,weakness",COVID-19
+"cough,runny nose,chills",COVID-19
+"shortness of breath,runny nose,headache",COVID-19
+"nausea,sore throat,fever",Flu
+"runny nose,cough,headache",Flu
+"headache,cough,muscle pain",Flu
+"vomiting,weakness,cough",Malaria
+"runny nose,body ache,vomiting",Malaria
+"cough,muscle pain,sore throat",COVID-19
+"headache,weakness,chills",Flu
+"runny nose,cough,fever",COVID-19
+"body ache,cough,shortness of breath",COVID-19
+"fever,weakness,vomiting",Malaria
+"nausea,weakness,sore throat",Malaria
+"weakness,fever,chills",Flu
+"body ache,runny nose,shortness of breath",Malaria
+"nausea,cough,fever",COVID-19
+"cough,muscle pain,runny nose",COVID-19
+"shortness of breath,muscle pain,runny nose",COVID-19
+"runny nose,fever,headache",Flu
+"headache,vomiting,weakness",Malaria
+"nausea,body ache,fever",Malaria
+"runny nose,cough,nausea",COVID-19
+"runny nose,vomiting,chills",Malaria
+"muscle pain,vomiting,cough",Malaria
+"weakness,runny nose,body ache",Malaria
+"cough,nausea,headache",COVID-19
+"chills,shortness of breath,vomiting",COVID-19
+"headache,vomiting,cough",Malaria
+"cough,chills,runny nose",Allergy
+"fever,chills,sore throat",Flu
+"nausea,runny nose,weakness",Malaria
+"vomiting,headache,chills",Flu
+"vomiting,muscle pain,weakness",Malaria
+"vomiting,body ache,cough",Malaria
+"shortness of breath,body ache,muscle pain",COVID-19
+"body ache,shortness of breath,chills",Malaria
+"shortness of breath,muscle pain,nausea",COVID-19
+"cough,weakness,nausea",Malaria
+"runny nose,chills,muscle pain",Flu
+"sore throat,headache,vomiting",Malaria
+"sore throat,muscle pain,body ache",Malaria
+"muscle pain,runny nose,body ache",Malaria
+"chills,sore throat,runny nose",Allergy
+"weakness,runny nose,shortness of breath",COVID-19
+"sore throat,runny nose,headache",Flu
+"vomiting,headache,fever",Flu
+"chills,vomiting,weakness",Malaria
+"sore throat,fever,cough",COVID-19
+"muscle pain,body ache,weakness",Malaria
+"runny nose,chills,muscle pain",Flu
+"weakness,headache,cough",Malaria
+"body ache,cough,muscle pain",Malaria
+"nausea,vomiting,weakness",Malaria
+"fever,body ache,headache",Flu
+"cough,sore throat,shortness of breath",COVID-19
+"weakness,sore throat,vomiting",Malaria
+"nausea,muscle pain,cough",Flu
+"sore throat,shortness of breath,body ache",COVID-19
+"shortness of breath,fever,nausea",COVID-19
+"weakness,headache,cough",Malaria
+"fever,nausea,chills",Flu
+"sore throat,shortness of breath,cough",COVID-19
+"fever,runny nose,nausea",Allergy
+"vomiting,headache,muscle pain",Flu
+"weakness,muscle pain,headache",Flu
+"fever,runny nose,vomiting",Malaria
+"sore throat,cough,muscle pain",COVID-19
+"headache,fever,shortness of breath",Flu
+"muscle pain,weakness,sore throat",Flu
+"sore throat,nausea,weakness",Malaria
+"sore throat,weakness,chills",Malaria
+"fever,body ache,sore throat",Malaria
+"headache,cough,muscle pain",Flu
+"body ache,nausea,cough",Malaria
+"cough,runny nose,fever",COVID-19
+"headache,weakness,cough",Malaria
+"chills,headache,runny nose",Flu
+"headache,chills,weakness",Flu
+"cough,chills,shortness of breath",COVID-19
+"shortness of breath,muscle pain,sore throat",COVID-19
+"chills,body ache,shortness of breath",Malaria
+"vomiting,chills,shortness of breath",Malaria
+"fever,runny nose,cough",COVID-19
+"fever,weakness,sore throat",Malaria
+"headache,shortness of breath,muscle pain",Flu
+"runny nose,weakness,body ache",Malaria
+"runny nose,muscle pain,fever",Flu
+"nausea,body ache,weakness",Malaria
+"vomiting,muscle pain,headache",Flu
+"chills,cough,sore throat",COVID-19
+"vomiting,chills,fever",Flu
+"chills,body ache,sore throat",Malaria
+"weakness,cough,runny nose",Malaria
+"headache,runny nose,cough",Allergy
+"nausea,vomiting,chills",Malaria
+"vomiting,headache,chills",Flu
+"runny nose,weakness,nausea",Malaria
+"chills,sore throat,shortness of breath",COVID-19
+"fever,muscle pain,shortness of breath",Flu
+"headache,nausea,body ache",Malaria
+"body ache,muscle pain,cough",Malaria
+"headache,weakness,chills",Flu
+"runny nose,sore throat,body ache",Malaria
+"headache,vomiting,nausea",Malaria
+"shortness of breath,sore throat,vomiting",COVID-19
+"shortness of breath,fever,cough",COVID-19
+"sore throat,muscle pain,cough",Flu
+"muscle pain,chills,vomiting",Flu
+"muscle pain,body ache,runny nose",Malaria
+"nausea,sore throat,body ache",Malaria
+"muscle pain,vomiting,headache",Flu
+"cough,runny nose,vomiting",Malaria
+"weakness,cough,headache",Malaria
+"chills,muscle pain,nausea",Flu
+"fever,body ache,cough",Malaria
+"muscle pain,runny nose,vomiting",Malaria
+"chills,fever,nausea",Flu
+"chills,sore throat,body ache",Malaria
+"sore throat,weakness,nausea",Malaria
+"headache,chills,body ache",Flu
+"nausea,headache,weakness",Malaria
+"body ache,cough,fever",Malaria
+"sore throat,nausea,headache",Flu
+"nausea,shortness of breath,sore throat",COVID-19
+"sore throat,nausea,chills",Flu
+"headache,shortness of breath,nausea",COVID-19
+"muscle pain,shortness of breath,vomiting",COVID-19
+"weakness,sore throat,headache",Malaria
+"cough,body ache,vomiting",Malaria
+"muscle pain,weakness,cough",Flu
+"shortness of breath,body ache,weakness",Malaria
+"fever,runny nose,weakness",Malaria
+"body ache,sore throat,vomiting",Malaria
+"muscle pain,cough,runny nose",Flu
+"cough,vomiting,shortness of breath",COVID-19
+"headache,weakness,muscle pain",Flu
+"nausea,vomiting,fever",Malaria
+"shortness of breath,body ache,vomiting",Malaria
+"nausea,sore throat,shortness of breath",COVID-19
+"muscle pain,fever,nausea",Flu
+"vomiting,runny nose,weakness",Malaria
+"body ache,sore throat,nausea",Malaria
+"vomiting,muscle pain,fever",Flu
+"cough,vomiting,muscle pain",Malaria
+"cough,muscle pain,runny nose",COVID-19
+"muscle pain,chills,runny nose",Flu
+"chills,headache,body ache",Flu
+"vomiting,weakness,shortness of breath",Malaria
+"weakness,shortness of breath,runny nose",COVID-19
+"cough,vomiting,weakness",Malaria
+"nausea,cough,body ache",Malaria
+"headache,muscle pain,shortness of breath",Flu
+"nausea,shortness of breath,headache",COVID-19
+"shortness of breath,vomiting,chills",COVID-19
+"shortness of breath,runny nose,sore throat",COVID-19
+"body ache,weakness,cough",Malaria
+"chills,nausea,muscle pain",Flu
+"muscle pain,body ache,nausea",Malaria
+"headache,muscle pain,runny nose",Flu
+"fever,vomiting,chills",Flu
+"weakness,chills,vomiting",Malaria
+"muscle pain,body ache,headache",Flu
+"runny nose,sore throat,shortness of breath",COVID-19
+"fever,headache,sore throat",Flu
+"shortness of breath,runny nose,nausea",COVID-19
+"runny nose,shortness of breath,body ache",COVID-19
+"runny nose,cough,fever",COVID-19
+"headache,vomiting,shortness of breath",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"nausea,cough,runny nose",COVID-19
+"muscle pain,weakness,shortness of breath",COVID-19
+"chills,body ache,muscle pain",Flu
+"sore throat,body ache,muscle pain",Malaria
+"cough,runny nose,weakness",COVID-19
+"body ache,fever,weakness",Malaria
+"nausea,weakness,sore throat",Malaria
+"headache,cough,muscle pain",Flu
+"chills,headache,cough",Flu
+"vomiting,weakness,cough",Malaria
+"fever,headache,vomiting",Flu
+"chills,muscle pain,body ache",Flu
+"sore throat,chills,cough",COVID-19
+"chills,runny nose,vomiting",Allergy
+"cough,headache,runny nose",Allergy
+"weakness,runny nose,vomiting",Malaria
+"cough,headache,shortness of breath",COVID-19
+"nausea,vomiting,sore throat",Malaria
+"vomiting,nausea,body ache",Malaria
+"runny nose,chills,shortness of breath",COVID-19
+"shortness of breath,muscle pain,nausea",COVID-19
+"cough,body ache,shortness of breath",COVID-19
+"muscle pain,nausea,cough",Flu
+"body ache,headache,runny nose",Malaria
+"weakness,shortness of breath,muscle pain",COVID-19
+"runny nose,cough,fever",COVID-19
+"weakness,muscle pain,vomiting",Malaria
+"runny nose,weakness,nausea",Malaria
+"body ache,fever,runny nose",Malaria
+"fever,body ache,nausea",Malaria
+"weakness,muscle pain,sore throat",Malaria
+"vomiting,fever,nausea",Malaria
+"chills,nausea,vomiting",Malaria
+"muscle pain,fever,body ache",Flu
+"weakness,vomiting,headache",Malaria
+"muscle pain,sore throat,vomiting",Malaria
+"sore throat,headache,muscle pain",Flu
+"cough,runny nose,headache",Flu
+"weakness,vomiting,shortness of breath",Malaria
+"vomiting,weakness,cough",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"body ache,muscle pain,cough",Malaria
+"weakness,muscle pain,fever",Flu
+"vomiting,weakness,nausea",Malaria
+"body ache,runny nose,weakness",Malaria
+"headache,shortness of breath,fever",Flu
+"weakness,vomiting,shortness of breath",Malaria
+"vomiting,runny nose,sore throat",Malaria
+"body ache,weakness,sore throat",Malaria
+"headache,chills,weakness",Flu
+"runny nose,weakness,fever",Malaria
+"chills,weakness,runny nose",Allergy
+"weakness,chills,sore throat",Malaria
+"chills,headache,muscle pain",Flu
+"vomiting,chills,body ache",Malaria
+"chills,vomiting,cough",Malaria
+"nausea,vomiting,fever",Malaria
+"body ache,chills,nausea",Malaria
+"runny nose,chills,cough",COVID-19
+"chills,vomiting,headache",Flu
+"nausea,cough,headache",COVID-19
+"sore throat,vomiting,weakness",Malaria
+"headache,shortness of breath,fever",Flu
+"nausea,headache,fever",Flu
+"runny nose,vomiting,sore throat",Malaria
+"sore throat,chills,weakness",Malaria
+"sore throat,weakness,runny nose",Malaria
+"weakness,muscle pain,sore throat",Malaria
+"fever,vomiting,chills",Flu
+"cough,body ache,vomiting",Malaria
+"muscle pain,fever,weakness",Flu
+"chills,muscle pain,headache",Flu
+"shortness of breath,muscle pain,sore throat",COVID-19
+"headache,chills,vomiting",Flu
+"vomiting,weakness,chills",Malaria
+"headache,weakness,body ache",Malaria
+"cough,nausea,shortness of breath",COVID-19
+"chills,nausea,headache",Flu
+"vomiting,cough,sore throat",Malaria
+"fever,headache,cough",Flu
+"vomiting,weakness,cough",Malaria
+"vomiting,chills,muscle pain",Flu
+"shortness of breath,body ache,headache",COVID-19
+"sore throat,runny nose,vomiting",Malaria
+"headache,shortness of breath,chills",Flu
+"cough,shortness of breath,muscle pain",COVID-19
+"shortness of breath,chills,weakness",COVID-19
+"vomiting,cough,chills",Malaria
+"body ache,cough,vomiting",Malaria
+"runny nose,sore throat,body ache",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"chills,vomiting,weakness",Malaria
+"chills,vomiting,shortness of breath",Malaria
+"sore throat,fever,nausea",Flu
+"cough,body ache,chills",Malaria
+"runny nose,muscle pain,sore throat",Flu
+"nausea,fever,sore throat",Cold
+"weakness,cough,chills",Malaria
+"vomiting,headache,weakness",Malaria
+"vomiting,body ache,muscle pain",Malaria
+"chills,fever,runny nose",Flu
+"cough,weakness,body ache",Malaria
+"weakness,vomiting,muscle pain",Malaria
+"cough,chills,muscle pain",Flu
+"cough,weakness,fever",COVID-19
+"chills,cough,vomiting",Malaria
+"vomiting,shortness of breath,headache",Malaria
+"runny nose,cough,headache",Flu
+"cough,vomiting,weakness",Malaria
+"fever,nausea,muscle pain",Flu
+"cough,sore throat,chills",COVID-19
+"weakness,shortness of breath,chills",COVID-19
+"cough,sore throat,shortness of breath",COVID-19
+"sore throat,weakness,cough",Malaria
+"muscle pain,chills,weakness",Flu
+"fever,nausea,headache",Flu
+"nausea,sore throat,weakness",Malaria
+"fever,headache,runny nose",Flu
+"vomiting,cough,headache",Malaria
+"vomiting,chills,weakness",Malaria
+"shortness of breath,nausea,vomiting",Malaria
+"sore throat,cough,shortness of breath",COVID-19
+"cough,runny nose,shortness of breath",COVID-19
+"muscle pain,runny nose,vomiting",Malaria
+"headache,cough,nausea",COVID-19
+"cough,runny nose,sore throat",COVID-19
+"cough,nausea,fever",COVID-19
+"nausea,fever,sore throat",Cold
+"vomiting,shortness of breath,runny nose",Malaria
+"sore throat,muscle pain,headache",Flu
+"headache,muscle pain,sore throat",Flu
+"chills,headache,muscle pain",Flu
+"cough,sore throat,body ache",Malaria
+"chills,cough,vomiting",Malaria
+"headache,cough,vomiting",Malaria
+"fever,vomiting,sore throat",Malaria
+"shortness of breath,chills,fever",Flu
+"body ache,cough,muscle pain",Malaria
+"weakness,nausea,sore throat",Malaria
+"sore throat,body ache,headache",Malaria
+"sore throat,cough,muscle pain",COVID-19
+"cough,vomiting,sore throat",Malaria
+"shortness of breath,body ache,cough",COVID-19
+"runny nose,headache,cough",Flu
+"headache,vomiting,sore throat",Malaria
+"nausea,cough,body ache",Malaria
+"runny nose,weakness,fever",Malaria
+"sore throat,nausea,runny nose",Allergy
+"fever,runny nose,chills",Flu
+"fever,shortness of breath,muscle pain",Flu
+"runny nose,body ache,fever",Malaria
+"headache,cough,sore throat",COVID-19
+"runny nose,fever,sore throat",Cold
+"muscle pain,sore throat,nausea",Flu
+"fever,muscle pain,headache",Flu
+"nausea,body ache,fever",Malaria
+"shortness of breath,cough,sore throat",COVID-19
+"nausea,sore throat,body ache",Malaria
+"sore throat,muscle pain,runny nose",Flu
+"chills,headache,runny nose",Flu
+"cough,headache,runny nose",Allergy
+"sore throat,vomiting,shortness of breath",Malaria
+"vomiting,sore throat,weakness",Malaria
+"cough,body ache,sore throat",Malaria
+"cough,shortness of breath,weakness",COVID-19
+"vomiting,weakness,sore throat",Malaria
+"cough,vomiting,fever",Malaria
+"cough,muscle pain,weakness",COVID-19
+"weakness,muscle pain,sore throat",Malaria
+"weakness,cough,sore throat",Malaria
+"cough,weakness,vomiting",Malaria
+"vomiting,weakness,shortness of breath",Malaria
+"sore throat,fever,nausea",Flu
+"body ache,runny nose,vomiting",Malaria
+"chills,fever,muscle pain",Flu
+"shortness of breath,fever,chills",Flu
+"nausea,shortness of breath,weakness",Malaria
+"fever,body ache,vomiting",Malaria
+"cough,weakness,body ache",Malaria
+"nausea,fever,sore throat",Cold
+"sore throat,body ache,fever",Malaria
+"chills,muscle pain,weakness",Flu
+"vomiting,nausea,cough",Malaria
+"headache,muscle pain,fever",Flu
+"muscle pain,fever,cough",Flu
+"fever,headache,shortness of breath",Flu
+"nausea,muscle pain,vomiting",Malaria
+"fever,cough,muscle pain",Flu
+"body ache,weakness,fever",Malaria
+"muscle pain,sore throat,cough",Flu
+"body ache,headache,chills",Flu
+"chills,cough,fever",Flu
+"nausea,chills,muscle pain",Flu
+"vomiting,body ache,weakness",Malaria
+"cough,sore throat,weakness",COVID-19
+"sore throat,weakness,body ache",Malaria
+"nausea,runny nose,vomiting",Malaria
+"body ache,runny nose,headache",Malaria
+"muscle pain,chills,cough",Flu
+"muscle pain,body ache,chills",Flu
+"runny nose,cough,sore throat",COVID-19
+"weakness,headache,chills",Flu
+"shortness of breath,sore throat,nausea",COVID-19
+"runny nose,weakness,cough",Malaria
+"muscle pain,body ache,chills",Flu
+"headache,muscle pain,nausea",Flu
+"runny nose,body ache,vomiting",Malaria
+"sore throat,runny nose,nausea",Allergy
+"body ache,nausea,headache",Malaria
+"chills,body ache,runny nose",Malaria
+"cough,vomiting,sore throat",Malaria
+"runny nose,fever,weakness",Malaria
+"muscle pain,nausea,vomiting",Malaria
+"runny nose,headache,vomiting",Flu
+"headache,cough,weakness",COVID-19
+"chills,nausea,weakness",Malaria
+"weakness,nausea,chills",Malaria
+"runny nose,shortness of breath,fever",COVID-19
+"nausea,shortness of breath,fever",COVID-19
+"body ache,chills,weakness",Malaria
+"headache,body ache,runny nose",Malaria
+"headache,shortness of breath,sore throat",COVID-19
+"cough,shortness of breath,chills",COVID-19
+"vomiting,shortness of breath,body ache",Malaria
+"fever,sore throat,vomiting",Malaria
+"sore throat,cough,headache",COVID-19
+"sore throat,weakness,headache",Malaria
+"runny nose,sore throat,body ache",Malaria
+"weakness,shortness of breath,cough",COVID-19
+"body ache,muscle pain,runny nose",Malaria
+"headache,runny nose,chills",Flu
+"headache,sore throat,shortness of breath",COVID-19
+"nausea,muscle pain,body ache",Malaria
+"vomiting,shortness of breath,muscle pain",Malaria
+"chills,vomiting,runny nose",Malaria
+"runny nose,headache,vomiting",Flu
+"body ache,fever,chills",Flu
+"fever,weakness,muscle pain",Flu
+"weakness,cough,headache",Malaria
+"shortness of breath,fever,muscle pain",Flu
+"weakness,nausea,shortness of breath",Malaria
+"body ache,weakness,cough",Malaria
+"body ache,runny nose,fever",Malaria
+"muscle pain,vomiting,fever",Flu
+"body ache,runny nose,weakness",Malaria
+"shortness of breath,vomiting,chills",COVID-19
+"shortness of breath,weakness,nausea",Malaria
+"body ache,weakness,sore throat",Malaria
+"runny nose,vomiting,body ache",Malaria
+"headache,shortness of breath,nausea",COVID-19
+"headache,shortness of breath,body ache",COVID-19
+"body ache,vomiting,headache",Malaria
+"runny nose,body ache,muscle pain",Malaria
+"vomiting,runny nose,nausea",Malaria
+"vomiting,cough,body ache",Malaria
+"shortness of breath,chills,weakness",COVID-19
+"cough,fever,weakness",COVID-19
+"sore throat,cough,runny nose",COVID-19
+"headache,vomiting,chills",Flu
+"vomiting,nausea,sore throat",Malaria
+"cough,runny nose,chills",COVID-19
+"body ache,cough,muscle pain",Malaria
+"shortness of breath,weakness,fever",COVID-19
+"weakness,vomiting,shortness of breath",Malaria
+"vomiting,weakness,nausea",Malaria
+"sore throat,muscle pain,fever",Flu
+"shortness of breath,headache,body ache",COVID-19
+"chills,vomiting,fever",Flu
+"weakness,runny nose,cough",Malaria
+"muscle pain,headache,fever",Flu
+"weakness,body ache,muscle pain",Malaria
+"weakness,cough,chills",Malaria
+"runny nose,cough,weakness",COVID-19
+"shortness of breath,body ache,vomiting",Malaria
+"nausea,muscle pain,weakness",Malaria
+"headache,weakness,body ache",Malaria
+"vomiting,shortness of breath,nausea",Malaria
+"headache,chills,runny nose",Flu
+"shortness of breath,sore throat,fever",COVID-19
+"chills,muscle pain,cough",Flu
+"runny nose,sore throat,headache",Flu
+"cough,body ache,runny nose",Malaria
+"body ache,shortness of breath,weakness",Malaria
+"nausea,runny nose,sore throat",Allergy
+"body ache,nausea,runny nose",Malaria
+"vomiting,chills,nausea",Malaria
+"fever,nausea,body ache",Malaria
+"weakness,runny nose,nausea",Malaria
+"sore throat,nausea,cough",COVID-19
+"nausea,vomiting,shortness of breath",Malaria
+"chills,nausea,fever",Flu
+"weakness,shortness of breath,sore throat",COVID-19
+"fever,vomiting,cough",Malaria
+"runny nose,muscle pain,headache",Flu
+"fever,body ache,vomiting",Malaria
+"shortness of breath,headache,sore throat",COVID-19
+"weakness,headache,sore throat",Malaria
+"weakness,sore throat,body ache",Malaria
+"shortness of breath,sore throat,runny nose",COVID-19
+"sore throat,vomiting,cough",Malaria
+"runny nose,weakness,cough",Malaria
+"muscle pain,shortness of breath,sore throat",COVID-19
+"headache,weakness,runny nose",Allergy
+"weakness,vomiting,chills",Malaria
+"cough,fever,muscle pain",Flu
+"fever,runny nose,headache",Flu
+"shortness of breath,fever,weakness",COVID-19
+"cough,fever,shortness of breath",COVID-19
+"runny nose,sore throat,vomiting",Malaria
+"weakness,muscle pain,vomiting",Malaria
+"sore throat,fever,shortness of breath",COVID-19
+"headache,sore throat,muscle pain",Flu
+"chills,cough,body ache",Malaria
+"cough,chills,weakness",COVID-19
+"muscle pain,runny nose,fever",Flu
+"muscle pain,weakness,shortness of breath",COVID-19
+"runny nose,body ache,cough",Malaria
+"body ache,runny nose,cough",Malaria
+"runny nose,muscle pain,vomiting",Malaria
+"body ache,shortness of breath,runny nose",Malaria
+"chills,cough,runny nose",Allergy
+"headache,fever,chills",Flu
+"chills,fever,body ache",Flu
+"cough,runny nose,headache",Flu
+"cough,nausea,vomiting",Malaria
+"fever,sore throat,body ache",Malaria
+"fever,muscle pain,body ache",Flu
+"muscle pain,weakness,nausea",Malaria
+"shortness of breath,nausea,cough",COVID-19
+"vomiting,muscle pain,cough",Malaria
+"sore throat,nausea,runny nose",Allergy
+"muscle pain,runny nose,body ache",Malaria
+"cough,chills,muscle pain",Flu
+"cough,shortness of breath,headache",COVID-19
+"cough,shortness of breath,nausea",COVID-19
+"vomiting,cough,weakness",Malaria
+"shortness of breath,muscle pain,weakness",COVID-19
+"weakness,shortness of breath,fever",COVID-19
+"shortness of breath,runny nose,headache",COVID-19
+"muscle pain,vomiting,shortness of breath",Malaria
+"weakness,fever,shortness of breath",COVID-19
+"shortness of breath,vomiting,body ache",Malaria
+"fever,body ache,chills",Flu
+"headache,runny nose,fever",Flu
+"body ache,nausea,chills",Malaria
+"sore throat,shortness of breath,runny nose",COVID-19
+"nausea,runny nose,fever",Allergy
+"body ache,muscle pain,chills",Flu
+"cough,vomiting,weakness",Malaria
+"body ache,weakness,vomiting",Malaria
+"body ache,runny nose,vomiting",Malaria
+"fever,weakness,chills",Flu
+"shortness of breath,cough,muscle pain",COVID-19
+"fever,nausea,headache",Flu
+"body ache,sore throat,runny nose",Malaria
+"shortness of breath,nausea,body ache",Malaria
+"shortness of breath,headache,fever",Flu
+"cough,chills,vomiting",Malaria
+"shortness of breath,nausea,body ache",Malaria
+"nausea,weakness,runny nose",Malaria
+"chills,cough,body ache",Malaria
+"vomiting,shortness of breath,muscle pain",Malaria
+"muscle pain,sore throat,headache",Flu
+"vomiting,shortness of breath,headache",Malaria
+"nausea,weakness,muscle pain",Malaria
+"nausea,vomiting,cough",Malaria
+"shortness of breath,runny nose,muscle pain",COVID-19
+"vomiting,nausea,body ache",Malaria
+"headache,chills,vomiting",Flu
+"cough,chills,sore throat",COVID-19
+"headache,chills,runny nose",Flu
+"chills,muscle pain,nausea",Flu
+"headache,runny nose,chills",Flu
+"fever,headache,nausea",Flu
+"chills,sore throat,body ache",Malaria
+"fever,headache,cough",Flu
+"cough,body ache,shortness of breath",COVID-19
+"body ache,shortness of breath,muscle pain",Malaria
+"weakness,runny nose,fever",Malaria
+"runny nose,sore throat,fever",Allergy
+"chills,headache,sore throat",Flu
+"headache,nausea,shortness of breath",COVID-19
+"nausea,headache,runny nose",Allergy
+"fever,weakness,shortness of breath",COVID-19
+"fever,runny nose,nausea",Allergy
+"chills,sore throat,muscle pain",Flu
+"chills,shortness of breath,body ache",COVID-19
+"muscle pain,runny nose,chills",Flu
+"runny nose,fever,muscle pain",Flu
+"shortness of breath,fever,nausea",COVID-19
+"fever,headache,weakness",Flu
+"chills,runny nose,cough",Allergy
+"muscle pain,body ache,headache",Flu
+"runny nose,sore throat,muscle pain",Flu
+"headache,runny nose,weakness",Allergy
+"runny nose,weakness,shortness of breath",COVID-19
+"chills,cough,sore throat",COVID-19
+"chills,cough,weakness",COVID-19
+"body ache,fever,runny nose",Malaria
+"cough,runny nose,fever",COVID-19
+"fever,body ache,nausea",Malaria
+"muscle pain,cough,headache",Flu
+"runny nose,vomiting,chills",Malaria
+"vomiting,shortness of breath,chills",Malaria
+"chills,body ache,weakness",Malaria
+"runny nose,sore throat,muscle pain",Flu
+"cough,nausea,chills",COVID-19
+"weakness,chills,sore throat",Malaria
+"sore throat,vomiting,cough",Malaria
+"sore throat,body ache,fever",Malaria
+"runny nose,body ache,cough",Malaria
+"cough,shortness of breath,sore throat",COVID-19
+"cough,shortness of breath,nausea",COVID-19
+"muscle pain,shortness of breath,headache",Flu
+"sore throat,nausea,chills",Flu
+"chills,headache,sore throat",Flu
+"vomiting,body ache,runny nose",Malaria
+"fever,chills,vomiting",Flu
+"headache,vomiting,cough",Malaria
+"shortness of breath,vomiting,muscle pain",COVID-19
+"nausea,headache,shortness of breath",COVID-19
+"vomiting,muscle pain,cough",Malaria
+"cough,fever,muscle pain",Flu
+"sore throat,cough,chills",COVID-19
+"sore throat,shortness of breath,chills",COVID-19
+"body ache,muscle pain,vomiting",Malaria
+"fever,nausea,cough",COVID-19
+"runny nose,cough,shortness of breath",COVID-19
+"muscle pain,cough,chills",Flu
+"sore throat,nausea,fever",Flu
+"runny nose,body ache,muscle pain",Malaria
+"cough,fever,sore throat",COVID-19
+"runny nose,nausea,sore throat",Allergy
+"cough,chills,fever",Flu
+"shortness of breath,chills,nausea",COVID-19
+"runny nose,chills,nausea",Flu
+"body ache,weakness,muscle pain",Malaria
+"cough,nausea,weakness",Malaria
+"cough,headache,weakness",COVID-19
+"shortness of breath,muscle pain,headache",Flu
+"cough,muscle pain,headache",Flu
+"chills,nausea,fever",Flu
+"cough,shortness of breath,muscle pain",COVID-19
+"body ache,sore throat,nausea",Malaria
+"body ache,runny nose,nausea",Malaria
+"vomiting,chills,shortness of breath",Malaria
+"weakness,chills,sore throat",Malaria
+"chills,sore throat,nausea",Flu
+"chills,headache,weakness",Flu
+"fever,runny nose,muscle pain",Flu
+"nausea,chills,cough",COVID-19
+"headache,fever,weakness",Flu
+"fever,sore throat,runny nose",Cold
+"chills,weakness,cough",Malaria
+"body ache,muscle pain,nausea",Malaria
+"shortness of breath,vomiting,headache",COVID-19
+"body ache,muscle pain,sore throat",Malaria
+"nausea,fever,weakness",Malaria
+"fever,weakness,nausea",Malaria
+"sore throat,fever,chills",Flu
+"muscle pain,nausea,fever",Flu
+"body ache,shortness of breath,nausea",Malaria
+"body ache,muscle pain,fever",Flu
+"fever,cough,runny nose",COVID-19
+"runny nose,body ache,fever",Malaria
+"nausea,cough,chills",COVID-19
+"body ache,muscle pain,chills",Flu
+"cough,chills,shortness of breath",COVID-19
+"nausea,muscle pain,sore throat",Flu
+"headache,weakness,runny nose",Allergy
+"headache,body ache,nausea",Malaria
+"shortness of breath,cough,body ache",COVID-19
+"muscle pain,cough,runny nose",Flu
+"weakness,body ache,fever",Malaria
+"shortness of breath,vomiting,cough",COVID-19
+"weakness,fever,nausea",Malaria
+"weakness,nausea,runny nose",Malaria
+"body ache,headache,shortness of breath",Malaria
+"runny nose,fever,body ache",Malaria
+"chills,muscle pain,cough",Flu
+"nausea,chills,weakness",Malaria
+"runny nose,weakness,chills",Malaria
+"nausea,weakness,cough",Malaria
+"sore throat,nausea,weakness",Malaria
+"body ache,chills,weakness",Malaria
+"shortness of breath,headache,weakness",COVID-19
+"sore throat,headache,cough",COVID-19
+"shortness of breath,cough,vomiting",COVID-19
+"weakness,nausea,muscle pain",Malaria
+"shortness of breath,nausea,vomiting",Malaria
+"body ache,muscle pain,cough",Malaria
+"runny nose,body ache,vomiting",Malaria
+"nausea,chills,vomiting",Malaria
+"chills,vomiting,fever",Flu
+"chills,vomiting,sore throat",Malaria
+"cough,body ache,fever",Malaria
+"fever,runny nose,body ache",Malaria
+"nausea,headache,sore throat",Flu
+"chills,shortness of breath,muscle pain",Flu
+"body ache,headache,vomiting",Malaria
+"weakness,muscle pain,sore throat",Malaria
+"chills,headache,cough",Flu
+"shortness of breath,muscle pain,body ache",COVID-19
+"weakness,body ache,vomiting",Malaria
+"vomiting,muscle pain,shortness of breath",Malaria
+"chills,nausea,shortness of breath",COVID-19
+"runny nose,vomiting,cough",Malaria
+"shortness of breath,body ache,headache",COVID-19
+"fever,chills,body ache",Flu
+"weakness,fever,sore throat",Malaria
+"shortness of breath,vomiting,weakness",Malaria
+"sore throat,chills,shortness of breath",COVID-19
+"body ache,vomiting,shortness of breath",Malaria
+"cough,shortness of breath,headache",COVID-19
+"body ache,shortness of breath,sore throat",Malaria
+"chills,headache,nausea",Flu
+"weakness,cough,body ache",Malaria
+"cough,sore throat,vomiting",Malaria
+"vomiting,shortness of breath,chills",Malaria
+"fever,runny nose,body ache",Malaria
+"cough,shortness of breath,fever",COVID-19
+"sore throat,runny nose,cough",COVID-19
+"vomiting,shortness of breath,cough",COVID-19
+"shortness of breath,headache,vomiting",COVID-19
+"weakness,headache,muscle pain",Flu
+"cough,muscle pain,vomiting",Malaria
+"fever,headache,chills",Flu
+"cough,sore throat,weakness",COVID-19
+"fever,nausea,headache",Flu
+"sore throat,vomiting,cough",Malaria
+"headache,sore throat,cough",COVID-19
+"sore throat,weakness,nausea",Malaria
+"runny nose,muscle pain,chills",Flu
+"body ache,chills,nausea",Malaria
+"runny nose,shortness of breath,sore throat",COVID-19
+"shortness of breath,nausea,muscle pain",COVID-19
+"chills,shortness of breath,runny nose",COVID-19
+"muscle pain,weakness,headache",Flu
+"sore throat,headache,nausea",Flu
+"vomiting,shortness of breath,body ache",Malaria
+"cough,sore throat,headache",COVID-19
+"chills,fever,nausea",Flu
+"fever,sore throat,body ache",Malaria
+"sore throat,fever,chills",Flu
+"runny nose,body ache,weakness",Malaria
+"headache,shortness of breath,nausea",COVID-19
+"muscle pain,sore throat,weakness",Flu
+"sore throat,nausea,body ache",Malaria
+"weakness,runny nose,cough",Malaria
+"vomiting,runny nose,sore throat",Malaria
+"sore throat,runny nose,cough",COVID-19
+"vomiting,muscle pain,nausea",Malaria
+"runny nose,vomiting,nausea",Malaria
+"headache,vomiting,runny nose",Malaria
+"cough,nausea,sore throat",COVID-19
+"shortness of breath,body ache,runny nose",COVID-19
+"body ache,weakness,fever",Malaria
+"cough,runny nose,body ache",Malaria
+"nausea,fever,sore throat",Cold
+"vomiting,runny nose,shortness of breath",Malaria
+"chills,vomiting,body ache",Malaria
+"weakness,fever,muscle pain",Flu
+"cough,weakness,headache",COVID-19
+"fever,vomiting,cough",Malaria
+"chills,runny nose,weakness",Allergy
+"fever,sore throat,shortness of breath",COVID-19
+"cough,weakness,vomiting",Malaria
+"muscle pain,cough,vomiting",Malaria
+"muscle pain,body ache,runny nose",Malaria
+"chills,runny nose,vomiting",Allergy
+"body ache,vomiting,muscle pain",Malaria
+"nausea,runny nose,headache",Flu
+"shortness of breath,chills,sore throat",COVID-19
+"fever,chills,muscle pain",Flu
+"muscle pain,headache,weakness",Flu
+"body ache,chills,nausea",Malaria
+"fever,cough,muscle pain",Flu
+"sore throat,vomiting,body ache",Malaria
+"nausea,weakness,fever",Malaria
+"chills,body ache,runny nose",Malaria
+"body ache,weakness,fever",Malaria
+"body ache,cough,nausea",Malaria
+"fever,cough,headache",Flu
+"chills,muscle pain,runny nose",Flu
+"sore throat,runny nose,vomiting",Malaria
+"muscle pain,cough,nausea",Flu
+"runny nose,shortness of breath,muscle pain",COVID-19
+"body ache,shortness of breath,sore throat",Malaria
+"nausea,runny nose,vomiting",Malaria
+"runny nose,fever,vomiting",Malaria
+"runny nose,sore throat,weakness",Malaria
+"runny nose,shortness of breath,chills",COVID-19
+"fever,nausea,chills",Flu
+"cough,nausea,runny nose",COVID-19
+"cough,headache,nausea",COVID-19
+"shortness of breath,runny nose,vomiting",COVID-19
+"weakness,shortness of breath,chills",COVID-19
+"cough,runny nose,chills",COVID-19
+"vomiting,muscle pain,headache",Flu
+"headache,chills,cough",Flu
+"weakness,nausea,fever",Malaria
+"body ache,headache,cough",Malaria
+"runny nose,fever,shortness of breath",COVID-19
+"nausea,fever,cough",COVID-19
+"weakness,chills,nausea",Malaria
+"cough,sore throat,nausea",COVID-19
+"muscle pain,weakness,nausea",Malaria
+"chills,runny nose,vomiting",Allergy
+"chills,nausea,weakness",Malaria
+"runny nose,weakness,muscle pain",Malaria
+"body ache,weakness,headache",Malaria
+"shortness of breath,runny nose,chills",COVID-19
+"vomiting,runny nose,cough",Malaria
+"shortness of breath,sore throat,muscle pain",COVID-19
+"vomiting,chills,runny nose",Malaria
+"weakness,fever,nausea",Malaria
+"shortness of breath,vomiting,sore throat",COVID-19
+"runny nose,muscle pain,body ache",Malaria
+"chills,weakness,sore throat",Malaria
+"body ache,chills,cough",Malaria
+"chills,runny nose,headache",Flu
+"vomiting,nausea,sore throat",Malaria
+"shortness of breath,body ache,sore throat",COVID-19
+"cough,chills,vomiting",Malaria
+"nausea,fever,muscle pain",Flu
+"cough,headache,runny nose",Allergy
+"sore throat,runny nose,cough",COVID-19
+"runny nose,chills,muscle pain",Flu
+"fever,sore throat,shortness of breath",COVID-19
+"headache,weakness,shortness of breath",COVID-19
+"muscle pain,shortness of breath,weakness",COVID-19
+"vomiting,fever,cough",Malaria
+"runny nose,weakness,nausea",Malaria
+"headache,sore throat,body ache",Malaria
+"nausea,weakness,muscle pain",Malaria
+"weakness,muscle pain,sore throat",Malaria
+"muscle pain,chills,nausea",Flu
+"nausea,vomiting,sore throat",Malaria
+"fever,runny nose,vomiting",Malaria
+"headache,vomiting,body ache",Malaria
+"body ache,weakness,chills",Malaria
+"shortness of breath,nausea,sore throat",COVID-19
+"body ache,chills,shortness of breath",Malaria
+"weakness,cough,fever",Malaria
+"sore throat,runny nose,weakness",Malaria
+"body ache,cough,nausea",Malaria
+"chills,weakness,fever",Flu
+"sore throat,shortness of breath,nausea",COVID-19
+"vomiting,weakness,muscle pain",Malaria
+"nausea,shortness of breath,body ache",Malaria
+"body ache,headache,cough",Malaria
+"chills,sore throat,fever",Flu
+"headache,shortness of breath,fever",Flu
+"sore throat,nausea,muscle pain",Flu
+"body ache,runny nose,weakness",Malaria
+"chills,weakness,cough",Malaria
+"runny nose,body ache,nausea",Malaria
+"chills,cough,body ache",Malaria
+"muscle pain,vomiting,sore throat",Malaria
+"sore throat,shortness of breath,muscle pain",COVID-19
+"vomiting,fever,weakness",Malaria
+"cough,shortness of breath,sore throat",COVID-19
+"runny nose,fever,body ache",Malaria
+"cough,chills,headache",Flu
+"cough,body ache,vomiting",Malaria
+"nausea,shortness of breath,headache",COVID-19
+"cough,vomiting,fever",Malaria
+"chills,muscle pain,runny nose",Flu
+"headache,shortness of breath,weakness",COVID-19
+"chills,vomiting,sore throat",Malaria
+"body ache,runny nose,vomiting",Malaria
+"cough,fever,vomiting",Malaria
+"vomiting,cough,muscle pain",Malaria
+"sore throat,headache,body ache",Malaria
+"vomiting,muscle pain,runny nose",Malaria
+"chills,shortness of breath,cough",COVID-19
+"headache,cough,sore throat",COVID-19
+"body ache,runny nose,vomiting",Malaria
+"sore throat,runny nose,vomiting",Malaria
+"muscle pain,body ache,runny nose",Malaria
+"chills,muscle pain,weakness",Flu
+"chills,weakness,runny nose",Allergy
+"weakness,shortness of breath,runny nose",COVID-19
+"runny nose,sore throat,headache",Flu
+"fever,sore throat,runny nose",Cold
+"muscle pain,headache,chills",Flu
+"sore throat,fever,shortness of breath",COVID-19
+"body ache,runny nose,shortness of breath",Malaria
+"runny nose,fever,sore throat",Cold
+"chills,weakness,fever",Flu
+"weakness,runny nose,headache",Flu
+"muscle pain,fever,runny nose",Flu
+"headache,fever,runny nose",Flu
+"shortness of breath,runny nose,body ache",COVID-19
+"muscle pain,weakness,vomiting",Malaria
+"chills,sore throat,runny nose",Allergy
+"fever,body ache,sore throat",Malaria
+"nausea,weakness,runny nose",Malaria
+"fever,headache,cough",Flu
+"nausea,shortness of breath,sore throat",COVID-19
+"nausea,runny nose,body ache",Malaria
+"muscle pain,cough,runny nose",Flu
+"chills,sore throat,fever",Flu
+"runny nose,shortness of breath,sore throat",COVID-19
+"muscle pain,shortness of breath,vomiting",COVID-19
+"vomiting,weakness,body ache",Malaria
+"fever,body ache,chills",Flu
+"fever,shortness of breath,cough",COVID-19
+"runny nose,weakness,vomiting",Malaria
+"headache,chills,runny nose",Flu
+"muscle pain,body ache,shortness of breath",Malaria
+"body ache,runny nose,cough",Malaria
+"vomiting,chills,cough",Malaria
+"body ache,fever,muscle pain",Flu
+"weakness,chills,nausea",Malaria
+"vomiting,fever,chills",Flu
+"headache,chills,weakness",Flu
+"cough,chills,headache",Flu
+"muscle pain,runny nose,chills",Flu
+"sore throat,muscle pain,vomiting",Malaria
+"body ache,nausea,chills",Malaria
+"chills,runny nose,shortness of breath",Allergy
+"fever,runny nose,chills",Flu
+"nausea,weakness,fever",Malaria
+"runny nose,body ache,nausea",Malaria
+"shortness of breath,muscle pain,chills",Flu
+"weakness,chills,nausea",Malaria
+"headache,shortness of breath,body ache",COVID-19
+"headache,weakness,vomiting",Malaria
+"fever,cough,nausea",COVID-19
+"muscle pain,body ache,sore throat",Malaria
+"nausea,vomiting,runny nose",Malaria
+"chills,weakness,headache",Flu
+"sore throat,body ache,vomiting",Malaria
+"weakness,nausea,headache",Malaria
+"body ache,chills,sore throat",Malaria
+"nausea,vomiting,headache",Malaria
+"sore throat,muscle pain,body ache",Malaria
+"runny nose,sore throat,vomiting",Malaria
+"sore throat,weakness,shortness of breath",COVID-19
+"muscle pain,body ache,runny nose",Malaria
+"sore throat,body ache,headache",Malaria
+"headache,weakness,shortness of breath",COVID-19
+"muscle pain,chills,headache",Flu
+"sore throat,vomiting,cough",Malaria
+"weakness,vomiting,fever",Malaria
+"runny nose,headache,sore throat",Flu
+"chills,nausea,muscle pain",Flu
+"headache,cough,nausea",COVID-19
+"runny nose,chills,fever",Flu
+"shortness of breath,headache,muscle pain",Flu
+"body ache,cough,vomiting",Malaria
+"muscle pain,vomiting,fever",Flu
+"weakness,body ache,sore throat",Malaria
+"chills,sore throat,nausea",Flu
+"headache,fever,runny nose",Flu
+"sore throat,nausea,vomiting",Malaria
+"vomiting,nausea,chills",Malaria
+"sore throat,fever,headache",Flu
+"weakness,shortness of breath,nausea",Malaria
+"headache,body ache,runny nose",Malaria
+"fever,vomiting,chills",Flu
+"sore throat,muscle pain,body ache",Malaria
+"chills,muscle pain,body ache",Flu
+"nausea,muscle pain,sore throat",Flu
+"vomiting,headache,cough",Malaria
+"weakness,nausea,runny nose",Malaria
+"headache,sore throat,weakness",Malaria
+"chills,nausea,muscle pain",Flu
+"fever,muscle pain,chills",Flu
+"muscle pain,chills,headache",Flu
+"body ache,sore throat,weakness",Malaria
+"body ache,nausea,sore throat",Malaria
+"vomiting,runny nose,fever",Malaria
+"sore throat,runny nose,body ache",Malaria
+"shortness of breath,body ache,chills",COVID-19
+"headache,chills,nausea",Flu
+"chills,vomiting,body ache",Malaria
+"chills,vomiting,shortness of breath",Malaria
+"chills,shortness of breath,nausea",COVID-19
+"shortness of breath,body ache,cough",COVID-19
+"nausea,shortness of breath,cough",COVID-19
+"vomiting,shortness of breath,weakness",Malaria
+"fever,vomiting,shortness of breath",Malaria
+"muscle pain,cough,vomiting",Malaria
+"sore throat,runny nose,weakness",Malaria
+"sore throat,shortness of breath,chills",COVID-19
+"sore throat,nausea,muscle pain",Flu
+"cough,headache,body ache",Malaria
+"chills,vomiting,shortness of breath",Malaria
+"cough,runny nose,muscle pain",COVID-19
+"vomiting,fever,muscle pain",Flu
+"weakness,shortness of breath,cough",COVID-19
+"weakness,chills,fever",Flu
+"runny nose,fever,cough",COVID-19
+"muscle pain,fever,nausea",Flu
+"weakness,runny nose,cough",Malaria
+"fever,sore throat,shortness of breath",COVID-19
+"body ache,vomiting,shortness of breath",Malaria
+"muscle pain,vomiting,sore throat",Malaria
+"weakness,nausea,chills",Malaria
+"vomiting,headache,body ache",Malaria
+"fever,body ache,muscle pain",Flu
+"body ache,weakness,muscle pain",Malaria
+"weakness,vomiting,body ache",Malaria
+"shortness of breath,fever,chills",Flu
+"shortness of breath,sore throat,muscle pain",COVID-19
+"cough,body ache,chills",Malaria
+"fever,shortness of breath,weakness",COVID-19
+"nausea,runny nose,muscle pain",Flu
+"chills,muscle pain,cough",Flu
+"shortness of breath,vomiting,muscle pain",COVID-19
+"body ache,sore throat,vomiting",Malaria
+"nausea,cough,vomiting",Malaria
+"sore throat,fever,weakness",Malaria
+"body ache,vomiting,runny nose",Malaria
+"sore throat,weakness,nausea",Malaria
+"fever,muscle pain,runny nose",Flu
+"runny nose,cough,shortness of breath",COVID-19
+"weakness,runny nose,sore throat",Malaria
+"shortness of breath,fever,body ache",COVID-19
+"fever,vomiting,body ache",Malaria
+"cough,muscle pain,weakness",COVID-19
+"muscle pain,sore throat,fever",Flu
+"vomiting,cough,body ache",Malaria
+"headache,vomiting,nausea",Malaria
+"chills,shortness of breath,fever",Flu
+"weakness,headache,fever",Flu
+"cough,sore throat,weakness",COVID-19
+"nausea,runny nose,weakness",Malaria
+"shortness of breath,muscle pain,chills",Flu
+"headache,cough,fever",Flu
+"runny nose,fever,vomiting",Malaria
+"weakness,vomiting,runny nose",Malaria
+"runny nose,vomiting,headache",Malaria
+"muscle pain,vomiting,runny nose",Malaria
+"runny nose,weakness,fever",Malaria
+"sore throat,vomiting,fever",Malaria
+"sore throat,shortness of breath,runny nose",COVID-19
+"chills,sore throat,vomiting",Malaria
+"shortness of breath,fever,runny nose",COVID-19
+"chills,headache,weakness",Flu
+"shortness of breath,fever,body ache",COVID-19
+"shortness of breath,nausea,headache",COVID-19
+"vomiting,muscle pain,fever",Flu
+"nausea,runny nose,shortness of breath",COVID-19
+"cough,body ache,vomiting",Malaria
+"nausea,headache,fever",Flu
+"body ache,runny nose,fever",Malaria
+"cough,vomiting,headache",Malaria
+"shortness of breath,muscle pain,headache",Flu
+"sore throat,vomiting,headache",Malaria
+"headache,weakness,fever",Flu
+"nausea,runny nose,cough",COVID-19
+"chills,muscle pain,body ache",Flu
+"cough,fever,chills",Flu
+"shortness of breath,vomiting,cough",COVID-19
+"body ache,weakness,nausea",Malaria
+"cough,runny nose,fever",COVID-19
+"muscle pain,weakness,body ache",Malaria
+"weakness,muscle pain,nausea",Malaria
+"headache,chills,nausea",Flu
+"fever,cough,shortness of breath",COVID-19
+"weakness,fever,shortness of breath",COVID-19
+"nausea,cough,sore throat",COVID-19
+"vomiting,fever,nausea",Malaria
+"nausea,weakness,muscle pain",Malaria
+"vomiting,runny nose,fever",Malaria
+"headache,muscle pain,chills",Flu
+"weakness,body ache,vomiting",Malaria
+"shortness of breath,cough,vomiting",COVID-19
+"nausea,fever,weakness",Malaria
+"headache,chills,nausea",Flu
+"body ache,cough,nausea",Malaria
+"nausea,sore throat,weakness",Malaria
+"chills,body ache,runny nose",Malaria
+"runny nose,nausea,chills",Flu
+"sore throat,fever,weakness",Malaria
+"cough,sore throat,chills",COVID-19
+"cough,weakness,sore throat",COVID-19
+"shortness of breath,chills,headache",Flu
+"shortness of breath,muscle pain,cough",COVID-19
+"shortness of breath,cough,body ache",COVID-19
+"fever,shortness of breath,body ache",COVID-19
+"shortness of breath,runny nose,vomiting",COVID-19
+"nausea,weakness,sore throat",Malaria
+"body ache,sore throat,vomiting",Malaria
+"muscle pain,runny nose,shortness of breath",COVID-19
+"nausea,sore throat,weakness",Malaria
+"shortness of breath,muscle pain,body ache",COVID-19
+"muscle pain,fever,body ache",Flu
+"fever,headache,nausea",Flu
+"sore throat,fever,chills",Flu
+"muscle pain,runny nose,weakness",Flu
+"fever,weakness,nausea",Malaria
+"vomiting,sore throat,fever",Malaria
+"vomiting,cough,nausea",Malaria
+"runny nose,fever,sore throat",Cold
+"headache,shortness of breath,weakness",COVID-19
+"nausea,body ache,headache",Malaria
+"muscle pain,fever,body ache",Flu
+"headache,cough,chills",Flu
+"cough,headache,shortness of breath",COVID-19
+"body ache,nausea,sore throat",Malaria
+"fever,sore throat,headache",Flu
+"fever,headache,cough",Flu
+"muscle pain,cough,sore throat",Flu
+"headache,shortness of breath,runny nose",COVID-19
+"headache,chills,runny nose",Flu
+"fever,nausea,headache",Flu
+"nausea,headache,chills",Flu
+"vomiting,weakness,cough",Malaria
+"nausea,runny nose,chills",Flu
+"sore throat,headache,weakness",Malaria
+"body ache,runny nose,cough",Malaria
+"vomiting,headache,body ache",Malaria
+"weakness,body ache,muscle pain",Malaria
+"runny nose,weakness,fever",Malaria
+"muscle pain,nausea,headache",Flu
+"headache,cough,fever",Flu
+"sore throat,vomiting,cough",Malaria
+"fever,muscle pain,vomiting",Flu
+"chills,fever,weakness",Flu
+"nausea,chills,runny nose",Allergy
+"muscle pain,runny nose,cough",Flu
+"chills,weakness,cough",Malaria
+"runny nose,cough,weakness",COVID-19
+"runny nose,weakness,muscle pain",Malaria
+"headache,sore throat,cough",COVID-19
+"shortness of breath,sore throat,nausea",COVID-19
+"headache,cough,fever",Flu
+"sore throat,body ache,cough",Malaria
+"shortness of breath,body ache,chills",COVID-19
+"fever,chills,sore throat",Flu
+"runny nose,chills,shortness of breath",COVID-19
+"weakness,sore throat,nausea",Malaria
+"weakness,nausea,sore throat",Malaria
+"headache,fever,body ache",Flu
+"fever,weakness,runny nose",Malaria
+"shortness of breath,muscle pain,runny nose",COVID-19
+"shortness of breath,vomiting,nausea",Malaria
+"body ache,shortness of breath,sore throat",Malaria
+"muscle pain,chills,headache",Flu
+"sore throat,headache,weakness",Malaria
+"nausea,muscle pain,body ache",Malaria
+"vomiting,headache,runny nose",Malaria
+"shortness of breath,runny nose,sore throat",COVID-19
+"runny nose,body ache,sore throat",Malaria
+"vomiting,headache,cough",Malaria
+"headache,runny nose,fever",Flu
+"headache,chills,sore throat",Flu
+"runny nose,weakness,chills",Malaria
+"chills,vomiting,cough",Malaria
+"fever,sore throat,runny nose",Cold
+"vomiting,headache,runny nose",Malaria
+"nausea,muscle pain,fever",Flu
+"nausea,chills,fever",Flu
+"weakness,runny nose,headache",Flu
+"cough,headache,chills",Flu
+"sore throat,headache,shortness of breath",COVID-19
+"shortness of breath,vomiting,body ache",Malaria
+"muscle pain,cough,vomiting",Malaria
+"cough,shortness of breath,nausea",COVID-19
+"vomiting,cough,body ache",Malaria
+"body ache,runny nose,muscle pain",Malaria
+"sore throat,runny nose,body ache",Malaria
+"headache,body ache,fever",Flu
+"vomiting,fever,weakness",Malaria
+"muscle pain,weakness,sore throat",Flu
+"muscle pain,chills,runny nose",Flu
+"muscle pain,fever,body ache",Flu
+"sore throat,body ache,vomiting",Malaria
+"nausea,chills,fever",Flu
+"runny nose,headache,sore throat",Flu
+"vomiting,shortness of breath,cough",COVID-19
+"weakness,chills,fever",Flu
+"runny nose,vomiting,cough",Malaria
+"sore throat,body ache,shortness of breath",Malaria
+"body ache,runny nose,cough",Malaria
+"muscle pain,vomiting,weakness",Malaria
+"vomiting,nausea,sore throat",Malaria
+"sore throat,vomiting,chills",Malaria
+"sore throat,chills,runny nose",Allergy
+"sore throat,shortness of breath,nausea",COVID-19
+"cough,headache,vomiting",Malaria
+"weakness,sore throat,runny nose",Malaria
+"cough,muscle pain,fever",Flu
+"cough,fever,chills",Flu
+"weakness,chills,cough",Malaria
+"cough,weakness,muscle pain",COVID-19
+"vomiting,body ache,shortness of breath",Malaria
+"vomiting,headache,chills",Flu
+"nausea,shortness of breath,runny nose",COVID-19
+"shortness of breath,muscle pain,runny nose",COVID-19
+"vomiting,fever,chills",Flu
+"cough,fever,weakness",COVID-19
+"muscle pain,chills,vomiting",Flu
+"vomiting,nausea,headache",Malaria
+"muscle pain,nausea,shortness of breath",COVID-19
+"sore throat,muscle pain,fever",Flu
+"headache,nausea,weakness",Malaria
+"sore throat,runny nose,chills",Flu
+"vomiting,chills,fever",Flu
+"vomiting,chills,fever",Flu
+"headache,runny nose,vomiting",Allergy
+"sore throat,vomiting,runny nose",Malaria
+"cough,muscle pain,vomiting",Malaria
+"headache,fever,nausea",Flu
+"muscle pain,cough,chills",Flu
+"weakness,nausea,muscle pain",Malaria
+"sore throat,muscle pain,cough",Flu
+"muscle pain,sore throat,shortness of breath",COVID-19
+"fever,body ache,muscle pain",Flu
+"nausea,chills,headache",Flu
+"weakness,fever,sore throat",Malaria
+"runny nose,body ache,cough",Malaria
+"shortness of breath,sore throat,nausea",COVID-19
+"muscle pain,body ache,shortness of breath",Malaria
+"body ache,muscle pain,weakness",Malaria
+"headache,sore throat,body ache",Malaria
+"fever,nausea,headache",Flu
+"sore throat,cough,headache",COVID-19
+"runny nose,weakness,chills",Malaria
+"muscle pain,cough,shortness of breath",COVID-19
+"shortness of breath,headache,chills",Flu
+"body ache,shortness of breath,nausea",Malaria
+"sore throat,vomiting,body ache",Malaria
+"runny nose,sore throat,muscle pain",Flu
+"cough,runny nose,weakness",COVID-19
+"nausea,sore throat,shortness of breath",COVID-19
+"headache,cough,nausea",COVID-19
+"vomiting,headache,muscle pain",Flu
+"fever,vomiting,body ache",Malaria
+"fever,chills,headache",Flu
+"body ache,cough,weakness",Malaria
+"muscle pain,sore throat,runny nose",Flu
+"sore throat,chills,body ache",Malaria
+"nausea,sore throat,vomiting",Malaria
+"fever,cough,shortness of breath",COVID-19
+"fever,muscle pain,body ache",Flu
+"chills,weakness,body ache",Malaria
+"weakness,headache,shortness of breath",COVID-19
+"weakness,headache,vomiting",Malaria
+"weakness,body ache,runny nose",Malaria
+"muscle pain,weakness,headache",Flu
+"sore throat,body ache,muscle pain",Malaria
+"chills,fever,body ache",Flu
+"muscle pain,weakness,nausea",Malaria
+"headache,muscle pain,shortness of breath",Flu
+"body ache,nausea,shortness of breath",Malaria
+"vomiting,fever,chills",Flu
+"shortness of breath,chills,fever",Flu
+"nausea,weakness,shortness of breath",Malaria
+"body ache,weakness,headache",Malaria
+"muscle pain,sore throat,runny nose",Flu
+"body ache,chills,weakness",Malaria
+"sore throat,vomiting,chills",Malaria
+"cough,muscle pain,body ache",Malaria
+"vomiting,headache,cough",Malaria
+"cough,weakness,sore throat",COVID-19
+"runny nose,cough,fever",COVID-19
+"muscle pain,runny nose,vomiting",Malaria
+"headache,cough,nausea",COVID-19
+"headache,fever,muscle pain",Flu
+"body ache,nausea,shortness of breath",Malaria
+"shortness of breath,muscle pain,cough",COVID-19
+"runny nose,cough,headache",Flu
+"cough,nausea,weakness",Malaria
+"nausea,runny nose,shortness of breath",COVID-19
+"runny nose,weakness,body ache",Malaria
+"vomiting,weakness,headache",Malaria
+"fever,sore throat,body ache",Malaria
+"sore throat,nausea,muscle pain",Flu
+"runny nose,shortness of breath,vomiting",COVID-19
+"headache,muscle pain,vomiting",Flu
+"vomiting,body ache,sore throat",Malaria
+"headache,chills,cough",Flu
+"weakness,chills,shortness of breath",COVID-19
+"headache,cough,body ache",Malaria
+"shortness of breath,sore throat,body ache",COVID-19
+"weakness,sore throat,body ache",Malaria
+"shortness of breath,sore throat,nausea",COVID-19
+"sore throat,chills,headache",Flu
+"nausea,shortness of breath,vomiting",Malaria
+"nausea,muscle pain,fever",Flu
+"cough,chills,nausea",COVID-19
+"nausea,chills,body ache",Malaria
+"shortness of breath,muscle pain,sore throat",COVID-19
+"muscle pain,sore throat,body ache",Malaria
+"fever,headache,shortness of breath",Flu
+"muscle pain,runny nose,shortness of breath",COVID-19
+"muscle pain,headache,cough",Flu
+"headache,weakness,sore throat",Malaria
+"chills,weakness,cough",Malaria
+"fever,shortness of breath,vomiting",COVID-19
+"body ache,fever,cough",Malaria
+"weakness,sore throat,cough",Malaria
+"muscle pain,sore throat,fever",Flu
+"body ache,shortness of breath,chills",Malaria
+"cough,muscle pain,sore throat",COVID-19
+"fever,muscle pain,headache",Flu
+"shortness of breath,fever,nausea",COVID-19
+"cough,fever,headache",Flu
+"fever,weakness,nausea",Malaria
+"runny nose,chills,body ache",Malaria
+"fever,sore throat,cough",COVID-19
+"body ache,chills,weakness",Malaria
+"headache,muscle pain,vomiting",Flu
+"sore throat,chills,shortness of breath",COVID-19
+"muscle pain,shortness of breath,chills",Flu
+"weakness,runny nose,headache",Flu
+"weakness,sore throat,runny nose",Malaria
+"weakness,chills,shortness of breath",COVID-19
+"chills,cough,vomiting",Malaria
+"fever,cough,chills",Flu
+"nausea,sore throat,vomiting",Malaria
+"vomiting,shortness of breath,fever",Malaria
+"shortness of breath,nausea,body ache",Malaria
+"fever,vomiting,runny nose",Malaria
+"body ache,vomiting,chills",Malaria
+"chills,headache,muscle pain",Flu
+"vomiting,weakness,nausea",Malaria
+"fever,body ache,weakness",Malaria
+"nausea,body ache,runny nose",Malaria

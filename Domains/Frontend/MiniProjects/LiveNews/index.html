@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live News Feed</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+</head>
+
+<body background="wallppr.jpg">
+
+  <header>
+    <nav class="glass-navbar">
+      <div class="nav-logo">🗞️ NewsNow</div>
+      <ul class="nav-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">World</a></li>
+        <li><a href="#">Science</a></li>
+        <li><a href="#">Sports</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search news...">
+    <button onclick="searchNews()">Search</button>
+  </div>
+
+  <div id="newsContainer"></div>
+  <div class="spinner" id="spinner" style="display: none;">Loading...</div>
+
+
+
+  <h1>📰 Live News Feed</h1>
+
+  <div id="news-container"></div>
+
+  <div id="loader">Loading...</div>
+
+  <script src="script.js">
+    document.getElementById("searchBar").addEventListener("keypress", function (e) {
+      if (e.key === "Enter") {
+        let query = e.target.value.trim();
+        if (query) {
+          alert("You searched for: " + query);
+          // TODO: Replace this with actual function to filter/fetch news
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

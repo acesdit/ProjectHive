@@ -1,0 +1,44 @@
+<html>
+  <head>
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% load static %}
+    <script src="{% static 'jquery-3.7.0.min.js' %}"></script>   
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">PCS Group</span>
+          {% if user.is_authenticated %}
+          <span><a href = "{% url 'logout' %}">Logout</a></span>
+          {% endif %}
+        </div>
+      </nav>
+      {% if user.is_superuser and request.path == '/'%}
+        <a href = "{% url 'product' %}">Pesan tiket coldplay di sini ya~</a>
+      {% endif %}
+      {% block content %}
+      {% endblock content %}
+
+      {% bootstrap_javascript %}
+      <script type="text/javascript">
+        let total = 0;
+
+        const prices = [50000,30000,10000];
+        
+        function calculate(){
+          total = 0;
+          const products = document.getElementsByClassName("products");
+
+          for(let x = 0;x<products.length;x++) {
+            const qty = document.getElementById(x+1).value;
+            total += qty*prices[x];
+          }
+          return total;
+        }
+      </script>
+    </body>
+    </div>
+
+</html>

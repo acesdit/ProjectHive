@@ -1,0 +1,36 @@
+{% extends "./main.html" %}
+{% block content %}
+
+<div class="container">
+    <a href = "{% url 'product' %}">Back to Product</a>
+    <h3 class="text-center">
+        Purchase History
+    </h3>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Trx ID</th>
+                <th>Trx Date</th>
+                <th class="text-center">Amount</th>
+                <th class="text-center">Coupon</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for purchase in history %}
+            <tr>
+                <td class="text-center">{{purchase.id}}</td>
+                <td>{{purchase.trx_date}}</td>
+                <td class="text-center">{{purchase.amount}}</td>
+                <td class="text-center">{{purchase.coupon}}</td>
+                <td>
+                    {{purchase.status}}
+                </td>
+            </tr>            
+            {% endfor %}
+        </tbody>
+        <tfooter></tfooter>
+    </table>
+</div>
+
+{% endblock %}

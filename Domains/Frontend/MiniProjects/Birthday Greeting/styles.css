@@ -1,0 +1,135 @@
+body {
+  background: linear-gradient(270deg, #ff69b4, #ffd700, #ffb6c1);
+  background-size: 600% 600%;
+  animation: bgMove 10s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+@keyframes bgMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+header {
+  font-size: 2em;
+  padding: 20px;
+  text-shadow: 0 0 8px white;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+}
+
+.greeting input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+  background-color: rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 16px;
+}
+
+.greeting button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: #ff4081;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.greeting button:hover {
+  background: #ff1c75;
+  transform: scale(1.05);
+}
+
+#greetingText {
+  margin-top: 30px;
+  font-size: 1.8em;
+  color: #fff;
+  text-shadow: 0 0 10px #ffeb3b;
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #fff, 0 0 10px #ff1493; }
+  to { text-shadow: 0 0 20px #fff, 0 0 40px #ff69b4; }
+}
+
+/* Birthday Cake */
+.cake {
+  position: relative;
+  margin-top: 150px;
+}
+
+.plate {
+  width: 200px;
+  height: 20px;
+  background: #eee;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.layer {
+  width: 180px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 10px;
+  position: relative;
+}
+.layer-bottom { background: #ffb6c1; top: -10px; }
+.layer-middle { background: #ff69b4; top: -20px; }
+.layer-top { background: #ff1493; top: -30px; }
+
+.candle {
+  width: 10px;
+  height: 40px;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+  border-radius: 5px;
+}
+
+.flame {
+  width: 12px;
+  height: 20px;
+  background: radial-gradient(ellipse at center, yellow, orange, red);
+  border-radius: 50%;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  animation: flicker 0.15s infinite alternate;
+}
+
+@keyframes flicker {
+  from { transform: translateX(-50%) scaleY(1); opacity: 0.8; }
+  to { transform: translateX(-50%) scaleY(1.2); opacity: 1; }
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  font-size: 0.9em;
+}

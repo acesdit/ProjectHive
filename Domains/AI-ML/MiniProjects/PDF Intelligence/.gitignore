@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+
+# --- UPDATED PROJECT-SPECIFIC RULES ---
+# Ignore all PDF and JSON files by default
+output/*.json
+test_pdfs/*.pdf
+
+# But DO NOT ignore these specific sample PDFs needed for the Docker demo
+!test_pdfs/SouthofFranceCities.pdf
+!test_pdfs/SouthofFranceCuisine.pdf
+!test_pdfs/SouthofFranceHistory.pdf
+!test_pdfs/SouthofFranceRestaurantsandHotels.pdf

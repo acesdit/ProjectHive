@@ -1,0 +1,112 @@
+/* --- Base Styles --- */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* --- Scoreboard --- */
+.player-card {
+    border-radius: 0.75rem;
+    border: 3px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.player-card.active-player {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+/* Active Player Colors (matches player colors) */
+#card-player-1.active-player {
+    border-color: var(--bs-primary);
+}
+
+#card-player-2.active-player {
+    border-color: var(--bs-danger);
+}
+
+/* --- Game Board --- */
+#game-board-container {
+    /* Ensures the board scales nicely */
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+
+#game-board {
+    display: grid;
+    /* Grid template columns/rows will be set by JS */
+}
+
+/* --- Grid Elements --- */
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #343a40;
+    border-radius: 50%;
+    /* Center the dot in its grid cell */
+    justify-self: center;
+    align-self: center;
+}
+
+.box {
+    /* This makes the box responsive */
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+/* --- Lines --- */
+.line {
+    /* Unclaimed line color */
+    background-color: #e9ecef;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.line:not(.claimed):hover {
+    background-color: #ced4da; /* Hover color */
+}
+
+.line.claimed {
+    cursor: not-allowed;
+}
+
+/* Specific line orientation */
+.h-line {
+    width: 100%;
+    height: 10px;
+    align-self: center;
+    /* Ensure a minimum clickable area */
+    min-width: 50px; 
+}
+
+.v-line {
+    width: 10px;
+    height: 100%;
+    justify-self: center;
+    /* Ensure a minimum clickable area */
+    min-height: 50px;
+}
+
+/* --- Player Colors --- */
+
+/* Player 1 (Bootstrap Primary) */
+.line.player-1 {
+    background-color: var(--bs-primary);
+}
+.box.player-1 {
+    background-color: rgba(var(--bs-primary-rgb), 0.5);
+}
+
+/* Player 2 (Bootstrap Danger) */
+.line.player-2 {
+    background-color: var(--bs-danger);
+}
+.box.player-2 {
+    background-color: rgba(var(--bs-danger-rgb), 0.5);
+}

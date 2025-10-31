@@ -57,8 +57,8 @@ body {
 }
 
 .equal {
-  grid-column: span 2;
   background: #ff8c00;
+  grid-column: span 1;
 }
 
 .equal:hover {

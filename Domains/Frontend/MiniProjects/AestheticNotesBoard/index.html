@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Aesthetic Notes Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sparkles" id="sparkles"></div>
+    
+    <div class="header">
+        <h1 class="title">
+            <span class="title-icon">✦</span>
+            Dreamy Notes
+            <span class="title-icon">✦</span>
+        </h1>
+        <p class="subtitle">Create your aesthetic note collection</p>
+    </div>
+
+    <div class="board" id="board">
+        <div class="empty-state" id="emptyState">
+            <div class="empty-state-icon">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+                    <circle cx="40" cy="40" r="35" stroke="currentColor" stroke-width="2" stroke-dasharray="4 4" opacity="0.3"/>
+                    <path d="M40 25 L40 55 M25 40 L55 40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+            <div class="empty-text">Click a color below to begin your journey</div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <div class="controls-label">Choose your vibe</div>
+        <div class="color-buttons">
+            <button class="color-btn lavender" data-color="lavender" title="Lavender Dreams">
+                <span class="color-btn-inner"></span>
+            </button>
+            <button class="color-btn mint" data-color="mint" title="Mint Fresh">
+                <span class="color-btn-inner"></span>
+            </button>
+            <button class="color-btn peach" data-color="peach" title="Peachy Keen">
+                <span class="color-btn-inner"></span>
+            </button>
+            <button class="color-btn sky" data-color="sky" title="Sky High">
+                <span class="color-btn-inner"></span>
+            </button>
+            <button class="color-btn rose" data-color="rose" title="Rose Garden">
+                <span class="color-btn-inner"></span>
+            </button>
+            <button class="color-btn cream" data-color="cream" title="Vanilla Cream">
+                <span class="color-btn-inner"></span>
+            </button>
+        </div>
+    </div>
+
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+[
+	{
+		"model": "product.product",
+		"id" : 1,
+		"fields":{
+			"product_name" : "Ultimate Experience",
+			"product_price" : 50000
+		}
+	},
+	{
+		"model": "product.product",
+		"id" : 2,
+		"fields":{
+			"product_name" : "Festival (Free Standing)",
+			"product_price" : 30000
+		}
+	},
+	{
+		"model": "product.product",
+		"id" : 3,
+		"fields":{
+			"product_name" : "Cat 8 (Numbered Seating)",
+			"product_price" : 10000
+		}
+	}
+]

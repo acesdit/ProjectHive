@@ -1,38 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scientific Calculator</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="calculator">
-    <input type="text" id="display" readonly>
+    <input type="text" id="display" readonly />
+
     <div class="buttons">
+      <!-- Top Row -->
       <button class="btn" onclick="clearDisplay()">C</button>
-      <button class="btn" onclick="deleteLast()">⌫</button>
-      <button class="btn" onclick="appendValue('%')">%</button>
-      <button class="btn" onclick="appendValue('/')">÷</button>
+      <button class="btn" onclick="deleteLast()">DEL</button>
+      <button class="btn" onclick="insert('(')">(</button>
+      <button class="btn" onclick="insert(')')">)</button>
 
-      <button class="btn" onclick="appendValue('7')">7</button>
-      <button class="btn" onclick="appendValue('8')">8</button>
-      <button class="btn" onclick="appendValue('9')">9</button>
-      <button class="btn" onclick="appendValue('*')">×</button>
+      <!-- Scientific Row 1 -->
+      <button class="btn" onclick="insertFunction('sin')">sin</button>
+      <button class="btn" onclick="insertFunction('cos')">cos</button>
+      <button class="btn" onclick="insertFunction('tan')">tan</button>
+      <button class="btn" onclick="insertFunction('sqrt')">√</button>
 
-      <button class="btn" onclick="appendValue('4')">4</button>
-      <button class="btn" onclick="appendValue('5')">5</button>
-      <button class="btn" onclick="appendValue('6')">6</button>
-      <button class="btn" onclick="appendValue('-')">−</button>
+      <!-- Scientific Row 2 -->
+      <button class="btn" onclick="insertFunction('log')">log</button>
+      <button class="btn" onclick="insertFunction('ln')">ln</button>
+      <button class="btn" onclick="insert('Math.PI')">π</button>
+      <button class="btn" onclick="insert('Math.E')">e</button>
 
-      <button class="btn" onclick="appendValue('1')">1</button>
-      <button class="btn" onclick="appendValue('2')">2</button>
-      <button class="btn" onclick="appendValue('3')">3</button>
-      <button class="btn" onclick="appendValue('+')">+</button>
+      <!-- Number and Operator Rows -->
+      <button class="btn" onclick="insert('7')">7</button>
+      <button class="btn" onclick="insert('8')">8</button>
+      <button class="btn" onclick="insert('9')">9</button>
+      <button class="btn" onclick="insert('/')">÷</button>
 
-      <button class="btn" onclick="appendValue('0')">0</button>
-      <button class="btn" onclick="appendValue('.')">.</button>
+      <button class="btn" onclick="insert('4')">4</button>
+      <button class="btn" onclick="insert('5')">5</button>
+      <button class="btn" onclick="insert('6')">6</button>
+      <button class="btn" onclick="insert('*')">×</button>
+
+      <button class="btn" onclick="insert('1')">1</button>
+      <button class="btn" onclick="insert('2')">2</button>
+      <button class="btn" onclick="insert('3')">3</button>
+      <button class="btn" onclick="insert('-')">−</button>
+
+      <button class="btn" onclick="insert('0')">0</button>
+      <button class="btn" onclick="insert('.')">.</button>
       <button class="btn equal" onclick="calculate()">=</button>
+      <button class="btn" onclick="insert('+')">+</button>
     </div>
   </div>
 

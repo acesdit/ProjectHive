@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personality Quiz</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .quiz-container {
+      background: #fff;
+      border-radius: 20px;
+      width: 400px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .question {
+      margin: 20px 0;
+      font-size: 18px;
+      color: #444;
+    }
+
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 10px;
+      background: #4a90e2;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .options button:hover {
+      background: #357abd;
+    }
+
+    .result {
+      display: none;
+      padding: 15px;
+    }
+
+    .result h3 {
+      color: #333;
+    }
+
+    .restart {
+      background-color: #f78ca0;
+      margin-top: 15px;
+    }
+
+    .restart:hover {
+      background-color: #f5576c;
+    }
+  </style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h2>🌟 Personality Quiz</h2>
+    <div id="quiz">
+      <div class="question" id="question"></div>
+      <div class="options" id="options"></div>
+    </div>
+    <div class="result" id="result">
+      <h3 id="result-title"></h3>
+      <p id="result-text"></p>
+      <button class="restart" onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  <script>
+    const quizData = [
+      {
+        question: "When studying, you prefer:",
+        options: [
+          { text: "Group discussions", type: "social" },
+          { text: "Quiet reading alone", type: "thinker" },
+          { text: "Listening to podcasts", type: "explorer" },
+        ],
+      },
+      {
+        question: "Your ideal weekend activity is:",
+        options: [
+          { text: "Exploring new places", type: "explorer" },
+          { text: "Watching documentaries", type: "thinker" },
+          { text: "Hanging out with friends", type: "social" },
+        ],
+      },
+      {
+        question: "You work best when you are:",
+        options: [
+          { text: "Around motivated people", type: "social" },
+          { text: "Left alone to focus", type: "thinker" },
+          { text: "Trying something creative", type: "explorer" },
+        ],
+      },
+    ];
+
+    let currentQuestion = 0;
+    let scores = { social: 0, thinker: 0, explorer: 0 };
+
+    const questionEl = document.getElementById("question");
+    const optionsEl = document.getElementById("options");
+    const resultEl = document.getElementById("result");
+    const resultTitleEl = document.getElementById("result-title");
+    const resultTextEl = document.getElementById("result-text");
+
+    function loadQuestion() {
+      const q = quizData[currentQuestion];
+      questionEl.textContent = q.question;
+      optionsEl.innerHTML = "";
+      q.options.forEach((opt) => {
+        const btn = document.createElement("button");
+        btn.textContent = opt.text;
+        btn.onclick = () => selectOption(opt.type);
+        optionsEl.appendChild(btn);
+      });
+    }
+
+    function selectOption(type) {
+      scores[type]++;
+      currentQuestion++;
+      if (currentQuestion < quizData.length) {
+        loadQuestion();
+      } else {
+        showResult();
+      }
+    }
+
+    function showResult() {
+      document.getElementById("quiz").style.display = "none";
+      resultEl.style.display = "block";
+
+      const personality = Object.keys(scores).reduce((a, b) =>
+        scores[a] > scores[b] ? a : b
+      );
+
+      let title, text;
+      if (personality === "social") {
+        title = "🎉 The Social Butterfly";
+        text =
+          "You love connecting with others and thrive in group learning environments!";
+      } else if (personality === "thinker") {
+        title = "🧠 The Deep Thinker";
+        text =
+          "You enjoy solitude, reflection, and deep understanding of complex topics.";
+      } else {
+        title = "🌍 The Explorer";
+        text =
+          "You’re curious, creative, and always ready to discover something new!";
+      }
+
+      resultTitleEl.textContent = title;
+      resultTextEl.textContent = text;
+    }
+
+    function restartQuiz() {
+      currentQuestion = 0;
+      scores = { social: 0, thinker: 0, explorer: 0 };
+      resultEl.style.display = "none";
+      document.getElementById("quiz").style.display = "block";
+      loadQuestion();
+    }
+
+    loadQuestion();
+  </script>
+</body>
+</html>

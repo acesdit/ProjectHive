@@ -1,0 +1,10 @@
+
+===Super User===
+username: admin_pcs
+password: pcs
+
+===User===
+username: user_pcs
+password: pcs12345
+
+You can create new use by logging in as admin at the admin page (http://localhost:8000/admin)

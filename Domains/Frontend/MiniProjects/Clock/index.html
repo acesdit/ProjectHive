@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital Clock</title>
+    <title>Digital Clock with Reminder</title>
     <style>
         * {
             margin: 0;
@@ -14,6 +14,7 @@
         body {
             font-family: 'Arial', sans-serif;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
@@ -27,13 +28,13 @@
             border-radius: 30px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             border: 2px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
         }
 
         .time {
             font-size: 80px;
             font-weight: bold;
             color: white;
-            text-align: center;
             letter-spacing: 5px;
             text-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
         }
@@ -41,40 +42,108 @@
         .date {
             font-size: 24px;
             color: rgba(255, 255, 255, 0.9);
-            text-align: center;
             margin-top: 20px;
         }
 
         .day {
             font-size: 18px;
             color: rgba(255, 255, 255, 0.7);
-            text-align: center;
             margin-top: 10px;
+        }
+
+        .reminder-container {
+            margin-top: 40px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .reminder-container h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .reminder-container input, .reminder-container select, .reminder-container button {
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: none;
+            margin: 5px;
+            font-size: 16px;
+        }
+
+        .reminder-container input[type="number"] {
+            width: 80px;
+        }
+
+        .reminder-container input[type="text"] {
+            width: 220px;
+        }
+
+        .reminder-container button {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .reminder-container button:hover {
+            background-color: #45a049;
+        }
+
+        .reminder-message {
+            color: #fff;
+            margin-top: 15px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="clock-container">
-        <div class="time" id="time">00:00:00</div>
+        <div class="time" id="time">00:00:00 AM</div>
         <div class="date" id="date">Loading...</div>
         <div class="day" id="day">Loading...</div>
     </div>
 
+    <div class="reminder-container">
+        <h2>Set a Reminder</h2>
+        <input type="text" id="reminderText" placeholder="Enter reminder text..."><br>
+        <input type="number" id="hour" placeholder="HH" min="1" max="12">
+        <input type="number" id="minute" placeholder="MM" min="0" max="59">
+        <select id="ampm">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+        <button id="setReminderBtn">Set Reminder</button>
+        <div class="reminder-message" id="reminderMessage"></div>
+    </div>
+
+    <!-- Alarm Sound -->
+    <audio id="alarmSound" src="https://actions.google.com/sounds/v1/alarms/alarm_clock.ogg" preload="auto"></audio>
+
     <script>
+         let reminder = null;
+        // Function to update digital clock
         function updateClock() {
             const now = new Date();
-            
+
             let hours = now.getHours();
             let minutes = now.getMinutes();
             let seconds = now.getSeconds();
-            
-            hours = hours < 10 ? '0' + hours : hours;
-            minutes = minutes < 10 ? '0' + minutes : minutes;
-            seconds = seconds < 10 ? '0' + seconds : seconds;
-            
-            const timeString = hours + ':' + minutes + ':' + seconds;
+            let ampm = hours >= 12 ? 'PM' : 'AM';
+
+            hours = hours % 12;
+            hours = hours ? hours : 12; // the hour '0' should be '12'
+
+            const displayHours = hours < 10 ? '0' + hours : hours;
+            const displayMinutes = minutes < 10 ? '0' + minutes : minutes;
+            const displaySeconds = seconds < 10 ? '0' + seconds : seconds;
+
+            const timeString = `${displayHours}:${displayMinutes}:${displaySeconds} ${ampm}`;
             document.getElementById('time').textContent = timeString;
-            
+
             const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
             
@@ -82,15 +151,53 @@
             const day = now.getDate();
             const month = months[now.getMonth()];
             const year = now.getFullYear();
-            
-            const dateString = month + ' ' + day + ', ' + year;
-            
-            document.getElementById('date').textContent = dateString;
+
+            document.getElementById('date').textContent = `${month} ${day}, ${year}`;
             document.getElementById('day').textContent = dayName;
+
+            checkReminder(displayHours, displayMinutes, ampm);
         }
-        
-        updateClock();
+
         setInterval(updateClock, 1000);
+        updateClock();
+
+        // Set Reminder Button
+        document.getElementById('setReminderBtn').addEventListener('click', function() {
+            const text = document.getElementById('reminderText').value.trim();
+            const hour = parseInt(document.getElementById('hour').value);
+            const minute = parseInt(document.getElementById('minute').value);
+            const ampm = document.getElementById('ampm').value;
+
+            if (!text || isNaN(hour) || isNaN(minute) || hour < 1 || hour > 12 || minute < 0 || minute > 59) {
+                document.getElementById('reminderMessage').textContent = "⚠️ Please enter valid text and time (1-12 hour format).";
+                return;
+            }
+
+            reminder = { text, hour, minute, ampm };
+            document.getElementById('reminderMessage').textContent = `✅ Reminder set for ${hour}:${minute.toString().padStart(2, '0')} ${ampm}`;
+        });
+
+        // Check Reminder Match
+        function checkReminder(currentHour, currentMinute, currentAmPm) {
+            if (!reminder) return;
+
+            if (
+                parseInt(currentHour) === reminder.hour &&
+                parseInt(currentMinute) === reminder.minute &&
+                currentAmPm === reminder.ampm
+            ) {
+                triggerAlarm(reminder.text);
+                reminder = null;
+            }
+        }
+
+        // Alarm Function
+        function triggerAlarm(message) {
+            const sound = document.getElementById('alarmSound');
+            sound.play();
+            alert(`🔔 Reminder: ${message}`);
+            document.getElementById('reminderMessage').textContent = "";
+        }
     </script>
 </body>
 </html>

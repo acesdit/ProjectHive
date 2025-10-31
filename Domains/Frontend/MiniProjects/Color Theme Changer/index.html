@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Theme Changer</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      transition: background-color 0.5s ease;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .red { background-color: #e74c3c; }
+    .blue { background-color: #3498db; }
+    .green { background-color: #2ecc71; }
+    .purple { background-color: #9b59b6; }
+  </style>
+</head>
+<body>
+  <h1>🎨 Click to Change Theme</h1>
+  <div class="buttons">
+    <button class="red" onclick="changeColor('#e74c3c')">Red</button>
+    <button class="blue" onclick="changeColor('#3498db')">Blue</button>
+    <button class="green" onclick="changeColor('#2ecc71')">Green</button>
+    <button class="purple" onclick="changeColor('#9b59b6')">Purple</button>
+  </div>
+
+  <script>
+    function changeColor(color) {
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+</body>
+</html>

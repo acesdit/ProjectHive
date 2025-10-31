@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyTasks | Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗓️ MyTasks</h1>
+    <p>Stay organized and manage your day efficiently!</p>
+  </header>
+
+  <section id="overview">
+    <h2>Overview</h2>
+    <p id="task-overview">You have 0 pending tasks today.</p>
+    <div class="actions">
+      <button id="addTaskBtn">➕ Add New Task</button>
+      <button id="viewCompletedBtn">🗂️ View Completed Tasks</button>
+      <button id="settingsBtn">⚙️ Settings</button>
+    </div>
+  </section>
+
+  <section id="taskList">
+    <h2>✅ Task List</h2>
+    <div id="filters">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="Work">Work</option>
+        <option value="Study">Study</option>
+        <option value="Personal">Personal</option>
+      </select>
+
+      <select id="filterPriority">
+        <option value="all">All Priorities</option>
+        <option value="High">High</option>
+        <option value="Medium">Medium</option>
+        <option value="Low">Low</option>
+      </select>
+    </div>
+
+    <ul id="tasksContainer"></ul>
+  </section>
+
+  <!-- Add/Edit Task Modal -->
+  <div id="taskModal" class="modal">
+    <div class="modal-content">
+      <h3 id="modalTitle">Add Task</h3>
+      <label>Task Title</label>
+      <input type="text" id="taskTitle" placeholder="Enter task title" />
+
+      <label>Description</label>
+      <textarea id="taskDesc" placeholder="Add notes..."></textarea>
+
+      <label>Due Date & Time</label>
+      <input type="datetime-local" id="taskDateTime" />
+
+      <label>Priority</label>
+      <select id="taskPriority">
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+
+      <label>Category</label>
+      <select id="taskCategory">
+        <option>Work</option>
+        <option>Study</option>
+        <option>Personal</option>
+      </select>
+
+      <div class="modal-actions">
+        <button id="saveTaskBtn">💾 Save</button>
+        <button id="cancelTaskBtn">❌ Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 MyTasks | Stay Productive 🌟</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

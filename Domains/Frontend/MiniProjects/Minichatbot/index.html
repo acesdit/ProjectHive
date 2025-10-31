@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Chatbot</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .chat-container {
+      background-color: white;
+      width: 350px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    h2 {
+      background-color: #4a90e2;
+      color: white;
+      margin: 0;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .chat-box {
+      flex: 1;
+      padding: 15px;
+      overflow-y: auto;
+      max-height: 400px;
+    }
+
+    .message {
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 10px;
+      max-width: 80%;
+    }
+
+    .user {
+      background-color: #d1e7ff;
+      align-self: flex-end;
+      text-align: right;
+    }
+
+    .bot {
+      background-color: #f1f1f1;
+      align-self: flex-start;
+    }
+
+    .input-area {
+      display: flex;
+      padding: 10px;
+      border-top: 1px solid #ddd;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 20px;
+      outline: none;
+      background-color: #f0f0f0;
+      margin-right: 10px;
+    }
+
+    button {
+      padding: 10px 15px;
+      border: none;
+      background-color: #4a90e2;
+      color: white;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #357ABD;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-container">
+    <h2>💬 Study Helper Bot</h2>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBox = document.getElementById("chat-box");
+    const userInput = document.getElementById("user-input");
+
+    function sendMessage() {
+      const message = userInput.value.trim();
+      if (message === "") return;
+
+      addMessage(message, "user");
+      userInput.value = "";
+
+      setTimeout(() => {
+        const reply = getBotReply(message.toLowerCase());
+        addMessage(reply, "bot");
+      }, 500);
+    }
+
+    function addMessage(text, sender) {
+      const messageDiv = document.createElement("div");
+      messageDiv.classList.add("message", sender);
+      messageDiv.innerText = text;
+      chatBox.appendChild(messageDiv);
+      chatBox.scrollTop = chatBox.scrollHeight;
+    }
+
+    function getBotReply(input) {
+      if (input.includes("hello") || input.includes("hi")) {
+        return "Hello there! 😊 How can I help you today?";
+      } else if (input.includes("study") || input.includes("tips")) {
+        return "📚 Tip: Study in 25-minute sessions (Pomodoro method).";
+      } else if (input.includes("exam")) {
+        return "Your exams are opportunities to show what you’ve learned! 💪";
+      } else if (input.includes("bye")) {
+        return "Goodbye! 👋 Have a productive day!";
+      } else if (input.includes("time")) {
+        return "⏰ Current time: " + new Date().toLocaleTimeString();
+      } else if (input.includes("motivate")) {
+        return "✨ Keep going — small steps every day lead to big results!";
+      } else {
+        return "I'm not sure about that 🤔, but keep learning!";
+      }
+    }
+  </script>
+</body>
+</html>

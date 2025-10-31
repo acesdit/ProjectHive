@@ -1,0 +1,129 @@
+{% extends "./main.html" %}
+{% block content %}
+{% load static %}
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'konser-coldplay.jpeg' %}" class="card-img-top" alt="konser-coldplay.jpeg">
+      <div class="card-body">
+        <h5 class="card-title">Ultimate Experience</h5>
+        <p class="card-text">Rp 50,000</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-body-secondary"></small>
+        <input type="number" value="0" min="0" id="1" name="product1" class="products form-control" productname="Ultimate Experience">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'konser-coldplay.jpeg' %}" class="card-img-top" alt="konser-coldplay.jpeg">
+      <div class="card-body">
+        <h5 class="card-title">Festival (Free Standing)</h5>
+        <p class="card-text">Rp 30,000</p>
+      </div>
+      <div class="card-footer">
+        <input type="number" value="0" min="0" id="2" name="product2" class="products form-control" productname="Festival (Free Standing)">
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="{% static 'konser-coldplay.jpeg' %}" class="card-img-top" alt="konser-coldplay.jpeg">
+      <div class="card-body">
+        <h5 class="card-title">Cat 8 (Numbered Seating)</h5>
+        <p class="card-text">Rp 10,000</p>
+      </div>
+      <div class="card-footer">
+        <input type="number" value="0" min="0" id="3" name="product3" class="products form-control" productname="Cat 8 (Numbered Seating)">
+      </div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary form-control mt-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottomLabel">Checkout</button>
+
+<div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title " id="offcanvasRightLabel">Summary</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="container">
+      <div class="row">
+        <div class="col-3">Item Name</div>
+        <div class="col-3 ">Qty</div>
+        <div class="col-3">Price</div>
+        <div class="col-3 text-end">Total</div>
+      </div>
+      <div class="row" id="cart">
+
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-9">Grand Total</div>
+        <div class="col-3 text-end" id="grandtotal">0</div>
+      </div>
+      <div class="row">
+        <p id="coupon"></p>
+      </div>
+
+        <button type="button" class="btn btn-success" id="Confirm">Confirm</button>
+
+      
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+var coupon = 0;
+var cart = [];
+// var total = 0;
+
+const myOffcanvas = document.getElementById('offcanvasBottom');
+myOffcanvas.addEventListener('show.bs.offcanvas', event => {
+  $("#cart").empty();
+  cart = [];
+  const products = document.getElementsByClassName("products");
+  let cart_html = '';
+
+  for(let x = 0;x<products.length;x++) {
+    const qty = document.getElementById(x+1).value;
+    cart.push(qty);
+
+    if (qty>0) {
+      const total = qty*prices[x];      
+      cart_html += '<div class="col-3">'+$(products[x]).attr("productname")+'</div><div class="col-3">'+$(products[x]).val()+'</div><div class="col-3">'+prices[x]+'</div><div class="col-3 text-end">'+total+'</div>';
+    }
+  }
+  $("#cart").append(cart_html);
+  total = calculate();
+  $("#grandtotal").text(total);
+
+  coupon = (total/100000);
+  if (total>50000 && total<100000) {coupon = 1;}
+  if (coupon>0) {
+    $("#coupon").text("Selamat anda berhak mendapatkan "+Math.floor(coupon)+" kupon untuk transaksi ini!");
+  }
+  
+})
+
+$("#Confirm").click(function(){
+  if(total==0){alert("cart anda masih kosong"); return;}
+  let post_data = {
+    coupon: Math.floor(coupon),
+    cart:cart,
+    amount:total
+  };
+  const post_url = "/checkout/";
+  console.log("post_data: ", post_data);
+  $.post(post_url, JSON.stringify(post_data),function(data){
+    if(data.success){
+      window.location.href = "/history/"
+    }
+    
+  });
+});
+</script>
+
+{% endblock %}

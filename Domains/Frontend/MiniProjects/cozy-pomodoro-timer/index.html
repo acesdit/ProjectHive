@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🌸 Cozy Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background elements -->
+    <div class="background-decor">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+        <div class="stars"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="title">
+                <span class="title-deco">✿</span>
+                Cozy Focus Timer
+                <span class="title-deco">✿</span>
+            </h1>
+            <p class="subtitle">Take gentle breaks, stay productive 🌿</p>
+        </header>
+
+        <!-- Main Timer Card -->
+        <div class="timer-card">
+            <!-- Mode Tabs -->
+            <div class="mode-tabs">
+                <button class="mode-tab active" data-mode="work">
+                    <span class="tab-icon">☕</span>
+                    <span class="tab-text">Focus</span>
+                </button>
+                <button class="mode-tab" data-mode="short">
+                    <span class="tab-icon">🌸</span>
+                    <span class="tab-text">Short Break</span>
+                </button>
+                <button class="mode-tab" data-mode="long">
+                    <span class="tab-icon">🌙</span>
+                    <span class="tab-text">Long Break</span>
+                </button>
+            </div>
+
+            <!-- Timer Display -->
+            <div class="timer-display">
+                <svg class="progress-ring" width="280" height="280">
+                    <circle class="progress-ring-bg" cx="140" cy="140" r="120"></circle>
+                    <circle class="progress-ring-circle" cx="140" cy="140" r="120"></circle>
+                </svg>
+                <div class="timer-content">
+                    <div class="timer-time" id="timerDisplay">25:00</div>
+                    <div class="timer-label" id="timerLabel">Ready to focus?</div>
+                </div>
+            </div>
+
+            <!-- Control Buttons -->
+            <div class="controls">
+                <button class="control-btn start-btn" id="startBtn">
+                    <span class="btn-icon">▶</span>
+                    <span class="btn-text">Start</span>
+                </button>
+                <button class="control-btn reset-btn" id="resetBtn">
+                    <span class="btn-icon">↻</span>
+                    <span class="btn-text">Reset</span>
+                </button>
+            </div>
+
+            <!-- Session Counter -->
+            <div class="session-counter">
+                <span class="session-icon">🍅</span>
+                <span class="session-text">Sessions completed: <strong id="sessionCount">0</strong></span>
+            </div>
+        </div>
+
+        <!-- Settings Panel -->
+        <div class="settings-card">
+            <h3 class="settings-title">
+                <span>⚙️</span> Customize Your Timer
+            </h3>
+            
+            <div class="settings-grid">
+                <div class="setting-item">
+                    <label class="setting-label">
+                        <span class="label-icon">☕</span>
+                        Focus Time
+                    </label>
+                    <div class="input-group">
+                        <input type="number" class="setting-input" id="workDuration" min="1" max="60" value="25">
+                        <span class="input-unit">min</span>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <label class="setting-label">
+                        <span class="label-icon">🌸</span>
+                        Short Break
+                    </label>
+                    <div class="input-group">
+                        <input type="number" class="setting-input" id="shortBreakDuration" min="1" max="30" value="5">
+                        <span class="input-unit">min</span>
+                    </div>
+                </div>
+
+                <div class="setting-item">
+                    <label class="setting-label">
+                        <span class="label-icon">🌙</span>
+                        Long Break
+                    </label>
+                    <div class="input-group">
+                        <input type="number" class="setting-input" id="longBreakDuration" min="1" max="60" value="15">
+                        <span class="input-unit">min</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ambient Sounds -->
+        <div class="sounds-card">
+            <h3 class="sounds-title">
+                <span>🎵</span> Ambient Sounds
+            </h3>
+            <div class="sound-buttons">
+                <button class="sound-btn" data-sound="rain">
+                    <span class="sound-icon">🌧️</span>
+                    <span class="sound-text">Rain</span>
+                </button>
+                <button class="sound-btn" data-sound="birds">
+                    <span class="sound-icon">🐦</span>
+                    <span class="sound-text">Birds</span>
+                </button>
+                <button class="sound-btn" data-sound="waves">
+                    <span class="sound-icon">🌊</span>
+                    <span class="sound-text">Waves</span>
+                </button>
+                <button class="sound-btn" data-sound="fire">
+                    <span class="sound-icon">🔥</span>
+                    <span class="sound-text">Fireplace</span>
+                </button>
+            </div>
+            <div class="volume-control">
+                <span class="volume-icon">🔊</span>
+                <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+            </div>
+        </div>
+
+        <!-- Footer Quote -->
+        <div class="footer-quote">
+            <p class="quote-text">"Small steps every day lead to big changes" 🌱</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Feedback Collector</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #f6d365, #fda085);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      border-radius: 15px;
+      width: 380px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #444;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background-color: #ff7b54;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #ff5a2a;
+    }
+
+    .feedback-list {
+      margin-top: 15px;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    .feedback-item {
+      background: #f9f9f9;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .feedback-item h4 {
+      margin: 0;
+      color: #333;
+    }
+
+    .feedback-item p {
+      margin: 5px 0 0;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>🗣️ Feedback Collector</h2>
+    <input type="text" id="name" placeholder="Your name (optional)" />
+    <textarea id="feedback" rows="3" placeholder="Enter your feedback..."></textarea>
+    <button onclick="addFeedback()">Submit Feedback</button>
+
+    <div class="feedback-list" id="feedback-list"></div>
+  </div>
+
+  <script>
+    const feedbackList = document.getElementById("feedback-list");
+
+    function addFeedback() {
+      const name = document.getElementById("name").value.trim() || "Anonymous";
+      const feedback = document.getElementById("feedback").value.trim();
+
+      if (feedback === "") {
+        alert("Please enter your feedback!");
+        return;
+      }
+
+      const feedbackData = { name, feedback };
+      saveToLocalStorage(feedbackData);
+      displayFeedback(feedbackData);
+
+      document.getElementById("feedback").value = "";
+      document.getElementById("name").value = "";
+    }
+
+    function saveToLocalStorage(feedbackData) {
+      const allFeedback = JSON.parse(localStorage.getItem("feedbackList")) || [];
+      allFeedback.push(feedbackData);
+      localStorage.setItem("feedbackList", JSON.stringify(allFeedback));
+    }
+
+    function displayFeedback({ name, feedback }) {
+      const div = document.createElement("div");
+      div.classList.add("feedback-item");
+      div.innerHTML = `<h4>${name}</h4><p>${feedback}</p>`;
+      feedbackList.prepend(div);
+    }
+
+    function loadFeedback() {
+      const allFeedback = JSON.parse(localStorage.getItem("feedbackList")) || [];
+      allFeedback.forEach(displayFeedback);
+    }
+
+    loadFeedback();
+  </script>
+</body>
+</html>

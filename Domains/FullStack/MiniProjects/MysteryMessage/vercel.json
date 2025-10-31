@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "buildCommand": "npm run vercel-build",
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/:path*" },
+    { "source": "/u/:path*", "destination": "/u/:path*" },
+    { "source": "/dashboard/:path*", "destination": "/dashboard/:path*" },
+    { "source": "/sign-in", "destination": "/sign-in" },
+    { "source": "/sign-up", "destination": "/sign-up" },
+    { "source": "/verify/:path*", "destination": "/verify/:path*" },
+    { "source": "/_next/:path*", "destination": "/_next/:path*" },
+    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/((?!_next/|api/|u/|dashboard/|sign-in|sign-up|verify/).+)", "destination": "/" }
+  ],
+  "headers": [
+    {
+      "source": "/api/auth/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, max-age=0" }
+      ]
+    }
+  ]
+}

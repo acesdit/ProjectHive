@@ -1,0 +1,277 @@
+/* General page styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    /* background-color: #FAF7F3; */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background: #f5f5f5; */
+}
+
+/* Glassmorphism Navbar */
+.glass-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background: #000000;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-menu li a:hover::after {
+  width: 100%;
+}
+
+.nav-menu li a:hover {
+  color: black;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .glass-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-menu li a {
+    width: 100%;
+  }
+}
+
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 50px;
+  background: white;
+  /* box-shadow: 4px 4px 12px #bcbcbc, -4px -4px 12px #ffffff; */
+  padding: 8px 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.search-container:hover {
+  box-shadow: 6px 6px 14px #b5b5b5, -6px -6px 14px #ffffff;
+}
+
+.search-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 12px;
+  color: #333;
+}
+
+.search-container button {
+  border: none;
+  background: #5d5c5c;
+  color: white;
+  border-radius: 50%;
+  padding: 10px 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-container button:hover {
+  background: #005bcc;
+}
+
+.search-container button i {
+  font-size: 18px;
+}
+
+#newsContainer {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.news-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.spinner {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+}
+
+
+/* Container to hold all news cards */
+#news-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Individual news card */
+.news-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border: 6px solid black;
+}
+
+/* Card title */
+.news-card h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+}
+
+/* Description */
+.news-card p {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Link */
+.news-card a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Loader text */
+#loader {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #444;
+}
+.card {
+    background: #F0E4D3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+}
+.card img {
+  width: 100%;
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Crop image to fit without distortion */
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 15px;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+}

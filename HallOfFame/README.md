@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
+
+**[@sujal-pawar](https://github.com/sujal-pawar)**
+
+*Contributions: 7 PRs across 4 domain(s)*
+
+*Domains: AI-ML, Backend, Frontend, FullStack*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
 
 **[@mekapilgupta](https://github.com/mekapilgupta)**
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -157,22 +173,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 4 PRs across 2 domain(s)*
 
 *Domains: AI-ML, Backend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
-
-**[@AksharGoyal](https://github.com/AksharGoyal)**
-
-*Contributions: 4 PRs across 3 domain(s)*
-
-*Domains: AI-ML, Backend, cli*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-29
+**Last Updated:** 2025-10-31
 
 ---
 
