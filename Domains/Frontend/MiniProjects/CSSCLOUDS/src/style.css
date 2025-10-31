@@ -1,0 +1,220 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color:#A8F1FF;
+}
+.cloud{
+  transform: translateX(-250px);
+  top:60px;
+  width:140px;
+  height:40px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud::before{
+ content:'';
+  position:absolute;
+  width:40px;
+  height:35px;
+  background:#fff;
+  border-radius:50%;
+  top:-16px;
+  left:15px;
+}
+.cloud::after{
+  content:'';
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:#fff;
+  border-radius:50%;
+  top:-40px;
+  right:15px;
+}
+.cloud-one{
+  transform: translateX(-250px);
+  top:120px;
+  width:140px;
+  height:40px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-one::before{
+ content:'';
+  position:absolute;
+  width:40px;
+  height:35px;
+  background:#fff;
+  border-radius:50%;
+  top:-16px;
+  left:15px;
+}
+.cloud-one::after{
+  content:'';
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:#fff;
+  border-radius:50%;
+  top:-40px;
+  right:15px;
+}
+.cloud-two{
+  transform: translateX(-250px);
+  top:20px;
+  width:140px;
+  height:40px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-two::before{
+ content:'';
+  position:absolute;
+  width:40px;
+  height:35px;
+  background:#fff;
+  border-radius:50%;
+  top:-16px;
+  left:15px;
+}
+.cloud-two::after{
+  content:'';
+  position:absolute;
+  width:80px;
+  height:80px;
+  background:#fff;
+  border-radius:50%;
+  top:-40px;
+  right:15px;
+}
+.cloud-lg{
+  transform: translateX(-250px);
+  top:10px;
+  width:170px;
+  height:50px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-lg::before{
+ content:'';
+  position:absolute;
+  width:60px;
+  height:55px;
+  background:#fff;
+  border-radius:50%;
+  top:-35px;
+  left:15px;
+}
+.cloud-lg::after{
+  content:'';
+  position:absolute;
+  width:110px;
+  height:110px;
+  background:#fff;
+  border-radius:50%;
+  top:-60px;
+  right:15px;
+}
+.cloud-sm{
+  transform: translateX(-250px);
+  top:60px;
+  width:80px;
+  height:20px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-sm::before{
+ content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:#fff;
+  border-radius:50%;
+  top:-13px;
+  left:10px;
+}
+.cloud-sm::after{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:45px;
+  background:#fff;
+  border-radius:50%;
+  top:-27px;
+  right:5px;
+}
+.cloud-sm1{
+  transform: translateX(-250px);
+  top:-120px;
+  width:80px;
+  height:20px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-sm1::before{
+ content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:#fff;
+  border-radius:50%;
+  top:-13px;
+  left:10px;
+}
+.cloud-sm1::after{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:45px;
+  background:#fff;
+  border-radius:50%;
+  top:-27px;
+  right:5px;
+}
+.cloud-sm2{
+  transform: translateX(-250px);
+  top:30px;
+  width:80px;
+  height:20px;
+  background:#fff;
+  border-radius:50px;
+  position:relative;
+}
+.cloud-sm2::before{
+ content:'';
+  position:absolute;
+  width:20px;
+  height:20px;
+  background:#fff;
+  border-radius:50%;
+  top:-13px;
+  left:10px;
+}
+.cloud-sm2::after{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:45px;
+  background:#fff;
+  border-radius:50%;
+  top:-27px;
+  right:5px;
+}
+@keyframes float {
+  0%   { transform: translateX(-250px); }
+  90%  { transform: translateX(100vw); }
+  100% { transform: translateX(100vw); }
+}
+.cloud       { animation: float 60s linear infinite; animation-delay: 0s; }
+.cloud-one   { animation: float 60s linear infinite; animation-delay: 10s; }
+.cloud-two   { animation: float 60s linear infinite; animation-delay: 20s; }
+.cloud-lg    { animation: float 70s linear infinite; animation-delay: 30s; }
+.cloud-sm    { animation: float 50s linear infinite; animation-delay: 5s; }
+.cloud-sm1   { animation: float 55s linear infinite; animation-delay: 45s; }
+.cloud-sm2   { animation: float 65s linear infinite; animation-delay: 25s; }
