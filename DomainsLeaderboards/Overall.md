@@ -26,20 +26,20 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 14 | [@Tryxns](https://github.com/Tryxns) | 3 | 2 (Backend, FullStack) | Recent |
 | 15 | [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 | 1 (CompetitiveProgramming) | Recent |
 | 16 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 17 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 18 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
-| 19 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
-| 20 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 21 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 2 | 2 (Blockchain, Frontend) | Recent |
-| 22 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
-| 23 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
-| 24 | [@kayode96-max](https://github.com/kayode96-max) | 2 | 1 (Frontend) | Recent |
-| 25 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
-| 26 | [@khyati262](https://github.com/khyati262) | 2 | 1 (Frontend) | Recent |
-| 27 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
-| 28 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
-| 29 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 30 | [@Shravanidorle](https://github.com/Shravanidorle) | 1 | 1 (Frontend) | Recent |
+| 17 | [@shwetharbaliga](https://github.com/shwetharbaliga) | 2 | 1 (Frontend) | Recent |
+| 18 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 19 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
+| 20 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
+| 21 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 22 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 2 | 2 (Blockchain, Frontend) | Recent |
+| 23 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
+| 24 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 25 | [@kayode96-max](https://github.com/kayode96-max) | 2 | 1 (Frontend) | Recent |
+| 26 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
+| 27 | [@khyati262](https://github.com/khyati262) | 2 | 1 (Frontend) | Recent |
+| 28 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
+| 29 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
+| 30 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
 | 31 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
 | 32 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 33 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
@@ -55,6 +55,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 43 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
 | 44 | [@supritimishra](https://github.com/supritimishra) | 1 | 1 (Frontend) | Recent |
 | 45 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
+| 46 | [@bavi404](https://github.com/bavi404) | 1 | 1 (cli) | Recent |
 
 ---
 
@@ -72,6 +73,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 |
 | [@anujaugale617](https://github.com/anujaugale617) | 3 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
+| [@shwetharbaliga](https://github.com/shwetharbaliga) | 2 |
 | [@shravanidorle](https://github.com/shravanidorle) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@kayode96-max](https://github.com/kayode96-max) | 2 |
@@ -80,7 +82,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@Shravanidorle](https://github.com/Shravanidorle) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 1 |
@@ -210,6 +211,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
+| [@bavi404](https://github.com/bavi404) | 1 |
 
 ---
 
