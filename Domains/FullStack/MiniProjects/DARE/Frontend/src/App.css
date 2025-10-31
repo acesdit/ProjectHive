@@ -1,0 +1,9 @@
+/* src/index.css or src/tailwind.css */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+/* App.css */
+.btn.btn-primary {
+  padding: 0.2rem 1rem; /* Adjust padding to reduce button size */
+  font-size: 0.8rem; /* Adjust font size to reduce button size */
+}
