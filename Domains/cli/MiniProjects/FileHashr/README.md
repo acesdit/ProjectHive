@@ -1,6 +1,6 @@
 # FileHashr
 
-**Contributor:** acesdit
+**Contributor:** bavi404
 
 ## Description
 Simple CLI tool to generate cryptographic hashes (SHA256 by default) for files or stdin. Useful for integrity checks and quick verifications.
